@@ -4,49 +4,73 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/favicon.png" />
 
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
     <!-- Bootstrap CSS -->
     <link href="assets/libs/bootstrap/bootstrap.min.css" rel="stylesheet">
-
     <link rel="stylesheet" type="text/css" href="assets/libs/flickity/flickity.min.css"/>
-
     <link href="style.css" rel="stylesheet">
 
-    <title>Cenhomes.vn - Đại siêu thị dự án cho mọi nhu cầu bất động sản.</title>
+    <title>kingreal - Đại siêu thị dự án cho mọi nhu cầu bất động sản.</title>
   </head>
-  <body>
+  <body class="home">
 
     <header class="header">
       <div class="container">
         <nav class="navbar navbar-expand">
           <h1 class="header__logo me-3">
             <a href="index.html">
-              <img src="images/logo-cenhome-white.svg" alt="Logo">
+              <img src="images/logo-header.png" alt="Logo">
             </a>
           </h1>
 
-          <div class="main__nav me-5">
+          <div class="main__nav ms-auto me-xxl-5 d-none d-lg-block">
             <ul class="dn__menu">
-              <li class="menu-item"><a href="">Dự án</a></li>
-              <li class="menu-item"><a href="">Nhà bán lẻ</a></li>
-              <li class="menu-item me-4"><a href="">Nhà cho thuê</a></li>
-              <li class="menu-item"><a href="">Giá nhà đất</a></li>
-              <li class="menu-item"><a href="">Tin tức</a></li>
+              <li class="menu-item"><a href="">Về Kingreal</a></li>
+              <li class="menu-item"><a href="">Dự Án BĐS</a></li>
+              <li class="menu-item"><a href="">Dịch vụ bán</a></li>
+              <li class="menu-item"><a href="">Dịch vụ cho thuê</a></li>
+              <li class="menu-item"><a href="">Tin tức - Sự kiện</a></li>
+              <li class="menu-item"><a href="">Tuyển dụng</a></li>
+              <li class="menu-item"><a href="">Liên hệ</a></li>
             </ul>
           </div>
-
-          <div class="dropdown -header ms-auto me-4">
-            <button class="header__btn dropdown-toggle" type="button" id="dropdownHeader" data-bs-toggle="dropdown" aria-expanded="false">trở thành đại lý</button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownHeader">
-              <li><a class="dropdown-item" href="#">Trở thành đại lý tổ chức</a></li>
-              <li><a class="dropdown-item" href="#">Trở thành đại lý cá nhân chuyên nghiệp</a></li>
-              <li><a class="dropdown-item" href="#">Trở thành đại lý cá nhân bán chuyên</a></li>
-            </ul>
+          <div class="languages ms-auto">
+            <div class="languages__label">
+              <img src="assets/flag/vi.png" width="36" height="24" alt="">
+            </div>
+            <div class="languages__content">
+              <p class="languages__text">Select language</p>
+              <ul class="">
+                <li class="">
+                  <a href="">
+                  <img src="assets/flag/en.png" width="36" height="24">
+                  <span>English</span>
+                  </a>
+                </li>
+                <li class="active">
+                  <a href="">
+                  <img src="assets/flag/cn.png" width="36" height="24">
+                  <span>Chinese</span>
+                  </a>
+                </li>
+                <li class="active">
+                  <a href="">
+                  <img src="assets/flag/vi.png" width="36" height="24">
+                  <span>Tiếng Việt</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
 
-          <div class="">
-            <a href="" class="btn__link me-4"><span class="icon-addnew"></span> Đăng tin</a>
-            <a href="" class="btn__link"><span class="icon-user"></span> Đăng nhập</a>
+          <div class="d-lg-none d-lg-none ms-3">
+            <div class="menu-mb__btn" data-id="menu__mobile">
+              <span class="iconz-bar"></span>
+              <span class="iconz-bar"></span>
+              <span class="iconz-bar"></span>
+            </div>
           </div>
 
         </nav>
@@ -55,637 +79,1271 @@
 
     <section class="home-banner">
       <div class="home-banner__wrap">
-
           <div class="home-banner__thumb">
-            <img data-src="https://img.cenhomes.vn/cms/baner-top-desktop111520212-14402.jpg" class="lazyloaded" alt="" src="https://img.cenhomes.vn/cms/baner-top-desktop111520212-14402.jpg">
-          </div>
-          <div class="home-banner__text">
-            <div class="container">
-              <div class="home-banner__text__title">
-                  Hơn 2 triệu căn nhà, <br>
-                  500 dự án trên toàn quốc
-              </div>
-              <div class="home-banner__text__excerpt">
-                  Đại siêu thị dự án cho mọi nhu cầu bất động sản
-              </div>
-            </div>
+            <img alt="" src="images/header-banner-01.png">
           </div>
       </div>
-    </section>
 
-    <section class="home-category">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3">
-            <div class="el__item">
-              <a href="" class="" target="_blank">
-                <div class="el__item__meta">
-                  <h3 class="el__item__title">Dự án</h3>
-                  <div class="el__item__icon">
-                    <img alt="" src="images/category-icon-buy-blue.svg">
-                    <img alt="" src="images/category-icon-buy.svg">
-                 </div>
-                 <div class="el__item__excerpt">
-                   <p>423 dự án</p>
-                   <p>420,749 lượt tìm kiếm trong 24h</p>
-                   <small>Bảng hàng trực tuyến của hơn 423 dự án duy nhất chỉ có trên Cenhomes.vn</small>
-                 </div>
+      <div class="tab-search">
 
+
+      <ul class="nav nav-tabs" id="searchTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="searchTab01-tab" data-bs-toggle="tab" data-bs-target="#searchTab01" type="button" role="tab" aria-controls="searchTab01" aria-selected="true">Dự án</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="searchTab02-tab" data-bs-toggle="tab" data-bs-target="#searchTab02" type="button" role="tab" aria-controls="searchTab02" aria-selected="false">Sản phẩm BĐS bán</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="searchTab03-tab" data-bs-toggle="tab" data-bs-target="#searchTab03" type="button" role="tab" aria-controls="searchTab03" aria-selected="false">Sản phẩm BĐS cho thuê</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="searchTabContent">
+        <div class="tab-pane fade show active" id="searchTab01" role="tabpanel" aria-labelledby="searchTab01-tab">
+          <form role="search" method="get" class="box__searchAdvanced" action="https://happyproperty.com.vn">
+
+                <div class="row mb-4">
+                  <div class="col-auto">
+                    <select name="" id="">
+                      <option>Chọn loại BĐS</option>
+                      <option>Chọn loại BĐS</option>
+                      <option>Chọn loại BĐS</option>
+                      <option>Chọn loại BĐS</option>
+                      <option>Chọn loại BĐS</option>
+                    </select>
+                  </div>
+                  <div class="col">
+                      <div class="d-flex align-items-center">
+                          <input type="text" class="search-field form-control" value="" name="s" placeholder="Tìm theo tên Đường, Phường hoặc Quận">
+                          <button type="submit" class="searchAdvanced__submit"><i class="icon-search mr-md-2"></i><span class="d-none d-md-inline-block">Tìm kiếm</span></button>
+                      </div>
+                  </div>
                 </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="el__item">
-              <a href="" class="" target="_blank">
-                <div class="el__item__meta">
-                  <h3 class="el__item__title">Nhà bán lẻ</h3>
-                  <div class="el__item__icon">
-                    <img alt="" src="https://img.cenhomes.vn/cms/category-icon-rent-blue.svg">
-                    <img alt="" src="https://img.cenhomes.vn/cms/category-icon-rent.svg">
-                 </div>
-                 <div class="el__item__excerpt">
-                   <p>288,332 nhà đã ký gửi</p>
-                   <p>5 phút có 1 giao dịch thành công</p>
-                   <small>Giá bán, quy trình làm việc rõ ràng, minh bạch. Chủ nhà & khách làm việc trực tiếp</small>
-                 </div>
-
+                <div class="row row-cols-md-5">
+                  <div class="col">
+                    <select name="" id="">
+                      <option>Khoảng giá</option>
+                      <option>Chọn loại BĐS</option>
+                      <option>Chọn loại BĐS</option>
+                      <option>Chọn loại BĐS</option>
+                      <option>Chọn loại BĐS</option>
+                    </select>
+                  </div>
+                  <div class="col">
+                    <select name="" id="">
+                      <option>Diện tích</option>
+                      <option>Chọn loại BĐS</option>
+                      <option>Chọn loại BĐS</option>
+                      <option>Chọn loại BĐS</option>
+                      <option>Chọn loại BĐS</option>
+                    </select>
+                  </div>
+                  <div class="col">
+                    <select name="" id="">
+                      <option>Hướng</option>
+                      <option>Chọn loại BĐS</option>
+                      <option>Chọn loại BĐS</option>
+                      <option>Chọn loại BĐS</option>
+                      <option>Chọn loại BĐS</option>
+                    </select>
+                  </div>
+                  <div class="col">
+                    <select name="" id="">
+                      <option>Tình trạng</option>
+                      <option>Chọn loại BĐS</option>
+                      <option>Chọn loại BĐS</option>
+                      <option>Chọn loại BĐS</option>
+                      <option>Chọn loại BĐS</option>
+                    </select>
+                  </div>
+                  <div class="col">
+                    <select name="" id="">
+                      <option>Tìm kiếm nâng cao</option>
+                      <option>Chọn loại BĐS</option>
+                      <option>Chọn loại BĐS</option>
+                      <option>Chọn loại BĐS</option>
+                      <option>Chọn loại BĐS</option>
+                    </select>
+                  </div>
                 </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="el__item">
-              <a href="" class="" target="_blank">
-                <div class="el__item__meta">
-                  <h3 class="el__item__title">Nhà Cho Thuê</h3>
-                  <div class="el__item__icon">
-                    <img alt="" src="images/category-icon-sell-blue.svg">
-                    <img alt="" src="images/category-icon-sell.svg">
-                 </div>
-                 <div class="el__item__excerpt">
-                   <p>13,731 nhà thuê</p>
-                   <p>56,163 lượt tìm kiếm trong ngày</p>
-                   <small>Chủ nhà và khách thuê được chứng thực an toàn khi giao dịch</small>
-                 </div>
-
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="el__item -special">
-              <a href="" class="" target="_blank">
-                <div class="el__item__meta">
-                  <div class="el__item__icon">
-                    <img alt="" src="https://cenhomesvn.s3.ap-southeast-1.amazonaws.com/cyber-agent-logo.png">
-                 </div>
-                 <div class="el__item__excerpt">
-                   <p>Thu nhập không giới hạn</p>
-                   <p>Hoa hồng lên tới 9 con số</p>
-                   <small>Cộng đồng đại lý bất động sản cá nhân <br> đầu tiên và duy nhất tại Việt Nam.</small>
-                 </div>
-
-                </div>
-              </a>
-            </div>
-          </div>
+          </form>
 
         </div>
+        <div class="tab-pane fade" id="searchTab02" role="tabpanel" aria-labelledby="searchTab02-tab">...2</div>
+        <div class="tab-pane fade" id="searchTab03" role="tabpanel" aria-labelledby="searchTab03-tab">.2..</div>
       </div>
+
+
+
     </section>
 
-    <section class="home-bannerSlider">
-      <div class="container">
-        <div class="el__slider flickity" data-flickity='{ "autoPlay": true,"pauseAutoPlayOnHover": false, "wrapAround": true, "cellAlign": "left", "prevNextButtons": false, "pageDots": false }'>
-          <div class="slider__item__wrap">
-            <div class="el__thumb">
-              <img src="images/home-slider-1.jpg" alt="">
-            </div>
-          </div>
-          <div class="slider__item__wrap">
-            <div class="el__thumb">
-              <img src="images/home-slider-2.jpg" alt="">
-            </div>
-          </div>
-          <div class="slider__item__wrap">
-            <div class="el__thumb">
-              <img src="images/home-slider-3.jpg" alt="">
-            </div>
-          </div>
-        </div>
+    <section class="home-wellcome">
+      <div class="container text-center">
+        <p>King Real là thương hiệu bất động sản uy tín Việt Nam, hoạt động trong lĩnh <br>vực phát triển, chuyển nhượng và vận hành bất động sản</p>
       </div>
     </section>
 
     <section class="home-project">
       <div class="container">
-        <header class="sc__header">
-          <h2 class="sc__header__title">DỰ ÁN NỔI BẬT</h2>
-          <div class="sc__header__sub">Bao gồm 63 tỉnh thành trên cả nước, hơn 423 dự án trên toàn quốc.</div>
+        <header class="sc__header d-flex align-items-center">
+          <h2 class="sc__header__title">dự án bất động sản</h2>
+          <div class="ms-auto">
+            <a href="" class="sc__readmore">Xem tiếp</a>
+          </div>
         </header>
 
-        <ul class="nav nav-pills -s1" id="projectTab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="project01-tab" data-bs-toggle="tab" data-bs-target="#project01" type="button" role="tab" aria-controls="project01" aria-selected="true">Chung cư</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="project02-tab" data-bs-toggle="tab" data-bs-target="#project02" type="button" role="tab" aria-controls="project02" aria-selected="false">Biệt thự & Shophouse</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="project03-tab" data-bs-toggle="tab" data-bs-target="#project03" type="button" role="tab" aria-controls="project03" aria-selected="false">Condotel</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="project04-tab" data-bs-toggle="tab" data-bs-target="#project04" type="button" role="tab" aria-controls="project04" aria-selected="false">Đất nền dự án</button>
-          </li>
-        </ul>
-        <div class="tab-content" id="projectTabContent">
-          <div class="tab-pane fade show active" id="project01" role="tabpanel" aria-labelledby="project01-tab">
-            <div class="row">
-              <div class="col-md-3">
-                <div class="project__item">
-                  <div class="project__item__thumb">
-                    <a href="" class="dnfix__thumb">
-                      <img src="images/project-item-01-small.jpg" alt="">
-                    </a>
-                    <div class="project__item__top">
-                      <p class="project__item__stt"><span>Đang mở bán</span></p>
-                      <button class="project__item__heart"></button>
-                    </div>
-                    <div class="project__item__date">2 tháng trước</div>
-                  </div>
-                  <div class="project__item__meta">
-                    <a href=""><h3 class="project__item__title">Sky Park Residence</h3></a>
-                    <div class="d-flex mb-3">
-                      <p class="-address">Cầu Giấy, Hà Nội</p>
-                      <p class="-species ms-auto">Chung cư</p>
-                    </div>
-                    <div class="d-flex">
-                      <p class="price">Giá từ: <b>4 - 7 tỷ</b></p>
-                      <p class="number ms-auto">Số căn: <b>304</b></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="project__item">
-                  <div class="project__item__thumb">
-                    <a href="" class="dnfix__thumb">
-                      <img src="images/project-item-01-small.jpg" alt="">
-                    </a>
-                    <div class="project__item__top">
-                      <p class="project__item__stt">
-                        <span class="monopoly">Độc quyền</span>
-                        <span>Đang mở bán</span>
-                      </p>
-                      <button class="project__item__heart"></button>
-                    </div>
-                    <div class="project__item__date">2 tháng trước</div>
-                  </div>
-                  <div class="project__item__meta">
-                    <a href=""><h3 class="project__item__title">Sky Park Residence</h3></a>
-                    <div class="d-flex mb-3">
-                      <p class="-address">Cầu Giấy, Hà Nội</p>
-                      <p class="-species ms-auto">Chung cư</p>
-                    </div>
-                    <div class="d-flex">
-                      <p class="price">Giá từ: <b>4 - 7 tỷ</b></p>
-                      <p class="number ms-auto">Số căn: <b>304</b></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="project__item">
-                  <div class="project__item__thumb">
-                    <a href="" class="dnfix__thumb">
-                      <img src="images/project-item-01-small.jpg" alt="">
-                    </a>
-                    <div class="project__item__top">
-                      <p class="project__item__stt"><span>Đang mở bán</span></p>
-                      <button class="project__item__heart"></button>
-                    </div>
-                    <div class="project__item__date">2 tháng trước</div>
-                  </div>
-                  <div class="project__item__meta">
-                    <a href=""><h3 class="project__item__title">Sky Park Residence</h3></a>
-                    <div class="d-flex mb-3">
-                      <p class="-address">Cầu Giấy, Hà Nội</p>
-                      <p class="-species ms-auto">Chung cư</p>
-                    </div>
-                    <div class="d-flex">
-                      <p class="price">Giá từ: <b>4 - 7 tỷ</b></p>
-                      <p class="number ms-auto">Số căn: <b>304</b></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="project__item">
-                  <div class="project__item__thumb">
-                    <a href="" class="dnfix__thumb">
-                      <img src="images/project-item-01-small.jpg" alt="">
-                    </a>
-                    <div class="project__item__top">
-                      <p class="project__item__stt"><span>Đang mở bán</span></p>
-                      <button class="project__item__heart"></button>
-                    </div>
-                    <div class="project__item__date">2 tháng trước</div>
-                  </div>
-                  <div class="project__item__meta">
-                    <a href=""><h3 class="project__item__title">Sky Park Residence</h3></a>
-                    <div class="d-flex mb-3">
-                      <p class="-address">Cầu Giấy, Hà Nội</p>
-                      <p class="-species ms-auto">Chung cư</p>
-                    </div>
-                    <div class="d-flex">
-                      <p class="price">Giá từ: <b>4 - 7 tỷ</b></p>
-                      <p class="number ms-auto">Số căn: <b>304</b></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="project__item">
-                  <div class="project__item__thumb">
-                    <a href="" class="dnfix__thumb">
-                      <img src="images/project-item-01-small.jpg" alt="">
-                    </a>
-                    <div class="project__item__top">
-                      <p class="project__item__stt"><span>Đang mở bán</span></p>
-                      <button class="project__item__heart"></button>
-                    </div>
-                    <div class="project__item__date">2 tháng trước</div>
-                  </div>
-                  <div class="project__item__meta">
-                    <a href=""><h3 class="project__item__title">Sky Park Residence</h3></a>
-                    <div class="d-flex mb-3">
-                      <p class="-address">Cầu Giấy, Hà Nội</p>
-                      <p class="-species ms-auto">Chung cư</p>
-                    </div>
-                    <div class="d-flex">
-                      <p class="price">Giá từ: <b>4 - 7 tỷ</b></p>
-                      <p class="number ms-auto">Số căn: <b>304</b></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="project__item">
-                  <div class="project__item__thumb">
-                    <a href="" class="dnfix__thumb">
-                      <img src="images/project-item-01-small.jpg" alt="">
-                    </a>
-                    <div class="project__item__top">
-                      <p class="project__item__stt"><span>Đang mở bán</span></p>
-                      <button class="project__item__heart"></button>
-                    </div>
-                    <div class="project__item__date">2 tháng trước</div>
-                  </div>
-                  <div class="project__item__meta">
-                    <a href=""><h3 class="project__item__title">Sky Park Residence</h3></a>
-                    <div class="d-flex mb-3">
-                      <p class="-address">Cầu Giấy, Hà Nội</p>
-                      <p class="-species ms-auto">Chung cư</p>
-                    </div>
-                    <div class="d-flex">
-                      <p class="price">Giá từ: <b>4 - 7 tỷ</b></p>
-                      <p class="number ms-auto">Số căn: <b>304</b></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="project__item">
-                  <div class="project__item__thumb">
-                    <a href="" class="dnfix__thumb">
-                      <img src="images/project-item-01-small.jpg" alt="">
-                    </a>
-                    <div class="project__item__top">
-                      <p class="project__item__stt"><span>Đang mở bán</span></p>
-                      <button class="project__item__heart"></button>
-                    </div>
-                    <div class="project__item__date">2 tháng trước</div>
-                  </div>
-                  <div class="project__item__meta">
-                    <a href=""><h3 class="project__item__title">Sky Park Residence</h3></a>
-                    <div class="d-flex mb-3">
-                      <p class="-address">Cầu Giấy, Hà Nội</p>
-                      <p class="-species ms-auto">Chung cư</p>
-                    </div>
-                    <div class="d-flex">
-                      <p class="price">Giá từ: <b>4 - 7 tỷ</b></p>
-                      <p class="number ms-auto">Số căn: <b>304</b></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="project__item">
-                  <div class="project__item__thumb">
-                    <a href="" class="dnfix__thumb">
-                      <img src="images/project-item-01-small.jpg" alt="">
-                    </a>
-                    <div class="project__item__top">
-                      <p class="project__item__stt"><span>Đang mở bán</span></p>
-                      <button class="project__item__heart"></button>
-                    </div>
-                    <div class="project__item__date">2 tháng trước</div>
-                  </div>
-                  <div class="project__item__meta">
-                    <a href=""><h3 class="project__item__title">Sky Park Residence</h3></a>
-                    <div class="d-flex mb-3">
-                      <p class="-address">Cầu Giấy, Hà Nội</p>
-                      <p class="-species ms-auto">Chung cư</p>
-                    </div>
-                    <div class="d-flex">
-                      <p class="price">Giá từ: <b>4 - 7 tỷ</b></p>
-                      <p class="number ms-auto">Số căn: <b>304</b></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-          <div class="tab-pane fade" id="project02" role="tabpanel" aria-labelledby="project02-tab">...</div>
-          <div class="tab-pane fade" id="project03" role="tabpanel" aria-labelledby="project03-tab">...</div>
-          <div class="tab-pane fade" id="project04" role="tabpanel" aria-labelledby="project04-tab">...</div>
-        </div>
-
-      </div>
-    </section>
-
-    <section class="home-space">
-      <div class="container">
-        <header class="sc__header -white pb-3">
-          <h2 class="sc__header__title">Tra cứu theo khu vực</h2>
-        </header>
-        <div class="d-flex">
-          <ul class="nav nav-pills -s1" id="spaceTab" role="tablist">
-            <li class="nav-item" role="presentation">
-              <button class="nav-link active" id="space01-tab" data-bs-toggle="tab" data-bs-target="#space01" type="button" role="tab" aria-controls="space01" aria-selected="true">Hà Nội</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="space02-tab" data-bs-toggle="tab" data-bs-target="#space02" type="button" role="tab" aria-controls="space02" aria-selected="false">TP. Hồ Chí Minh</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="space03-tab" data-bs-toggle="tab" data-bs-target="#space03" type="button" role="tab" aria-controls="space03" aria-selected="false">Đà Nẵng</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="space04-tab" data-bs-toggle="tab" data-bs-target="#space04" type="button" role="tab" aria-controls="space04" aria-selected="false">Bình Dương</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="space05-tab" data-bs-toggle="tab" data-bs-target="#space05" type="button" role="tab" aria-controls="space05" aria-selected="false">Đồng Nai</button>
-            </li>
-          </ul>
-          <a href="" class="ms-auto sc__readmore">Xem thêm</a>
-        </div>
-        <div class="tab-content" id="spaceTabContent">
-          <div class="tab-pane fade show active" id="space01" role="tabpanel" aria-labelledby="space01-tab">
-            <div class="row">
-              <div class="col-md-3">
-                <div class="el__item">
-                  <a href="" class="d-flex">
-                    <div class="el__item__thumb dnfix__thumb">
-                        <img src="images/nam-tu-lien-ha-noi.jpg" alt="">
-                    </div>
-                    <div class="el__item__meta">
-                      <h3 class="el__item__title">Quận Nam Từ Liêm</h3>
-                      <div class="el__item__excerpt">
-                        <p><b>8,959</b> căn nhà đang bán</p>
-                        <p><b>677</b> căn nhà cho thuê</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="el__item">
-                  <a href="" class="d-flex">
-                    <div class="el__item__thumb dnfix__thumb">
-                        <img src="images/nam-tu-lien-ha-noi.jpg" alt="">
-                    </div>
-                    <div class="el__item__meta">
-                      <h3 class="el__item__title">Quận Nam Từ Liêm</h3>
-                      <div class="el__item__excerpt">
-                        <p><b>8,959</b> căn nhà đang bán</p>
-                        <p><b>677</b> căn nhà cho thuê</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="el__item">
-                  <a href="" class="d-flex">
-                    <div class="el__item__thumb dnfix__thumb">
-                        <img src="images/nam-tu-lien-ha-noi.jpg" alt="">
-                    </div>
-                    <div class="el__item__meta">
-                      <h3 class="el__item__title">Quận Nam Từ Liêm</h3>
-                      <div class="el__item__excerpt">
-                        <p><b>8,959</b> căn nhà đang bán</p>
-                        <p><b>677</b> căn nhà cho thuê</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="el__item">
-                  <a href="" class="d-flex">
-                    <div class="el__item__thumb dnfix__thumb">
-                        <img src="images/nam-tu-lien-ha-noi.jpg" alt="">
-                    </div>
-                    <div class="el__item__meta">
-                      <h3 class="el__item__title">Quận Nam Từ Liêm</h3>
-                      <div class="el__item__excerpt">
-                        <p><b>8,959</b> căn nhà đang bán</p>
-                        <p><b>677</b> căn nhà cho thuê</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="el__item">
-                  <a href="" class="d-flex">
-                    <div class="el__item__thumb dnfix__thumb">
-                        <img src="images/nam-tu-lien-ha-noi.jpg" alt="">
-                    </div>
-                    <div class="el__item__meta">
-                      <h3 class="el__item__title">Quận Nam Từ Liêm</h3>
-                      <div class="el__item__excerpt">
-                        <p><b>8,959</b> căn nhà đang bán</p>
-                        <p><b>677</b> căn nhà cho thuê</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="el__item">
-                  <a href="" class="d-flex">
-                    <div class="el__item__thumb dnfix__thumb">
-                        <img src="images/nam-tu-lien-ha-noi.jpg" alt="">
-                    </div>
-                    <div class="el__item__meta">
-                      <h3 class="el__item__title">Quận Nam Từ Liêm</h3>
-                      <div class="el__item__excerpt">
-                        <p><b>8,959</b> căn nhà đang bán</p>
-                        <p><b>677</b> căn nhà cho thuê</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="el__item">
-                  <a href="" class="d-flex">
-                    <div class="el__item__thumb dnfix__thumb">
-                        <img src="images/nam-tu-lien-ha-noi.jpg" alt="">
-                    </div>
-                    <div class="el__item__meta">
-                      <h3 class="el__item__title">Quận Nam Từ Liêm</h3>
-                      <div class="el__item__excerpt">
-                        <p><b>8,959</b> căn nhà đang bán</p>
-                        <p><b>677</b> căn nhà cho thuê</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="el__item">
-                  <a href="" class="d-flex">
-                    <div class="el__item__thumb dnfix__thumb">
-                        <img src="images/nam-tu-lien-ha-noi.jpg" alt="">
-                    </div>
-                    <div class="el__item__meta">
-                      <h3 class="el__item__title">Quận Nam Từ Liêm</h3>
-                      <div class="el__item__excerpt">
-                        <p><b>8,959</b> căn nhà đang bán</p>
-                        <p><b>677</b> căn nhà cho thuê</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane fade" id="space02" role="tabpanel" aria-labelledby="space02-tab">...</div>
-          <div class="tab-pane fade" id="space03" role="tabpanel" aria-labelledby="space03-tab">...</div>
-          <div class="tab-pane fade" id="space04" role="tabpanel" aria-labelledby="space04-tab">...</div>
-          <div class="tab-pane fade" id="space05" role="tabpanel" aria-labelledby="space05-tab">...</div>
-        </div>
-
-      </div>
-    </section>
-
-    <section class="home-city">
-      <div class="container">
-        <header class="sc__header">
-          <h2 class="sc__header__title">NHÀ BÁN TẠI CÁC THÀNH PHỐ LỚN</h2>
-        </header>
-
-        <div class="el__box">
-          <div class="row">
-            <div class="col-md-3">
-              <div class="el__item ef--zoomin">
-                <div class="el__item__thumb">
-                  <div class="dnfix__thumb -contain">
-                    <img src="images/province_hn.jpg" alt="">
-                  </div>
-                </div>
-                <div class="el__item__meta">
-                  <h3 class="el__item__title">Hà Nội</h3>
-                  <div class="el__item__excerpt">Xem ngay 149,656 tin</div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="el__item -small ef--zoomin">
-                <div class="el__item__thumb">
-                  <div class="dnfix__thumb">
-                    <img src="images/province_hp.jpg" alt="">
-                  </div>
-                </div>
-                <div class="el__item__meta">
-                  <h3 class="el__item__title">Hải Phòng</h3>
-                  <div class="el__item__excerpt">Xem ngay 9,384 tin</div>
-                </div>
-              </div>
-              <div class="el__item -small ef--zoomin">
-                <div class="el__item__thumb">
-                  <div class="dnfix__thumb">
-                    <img src="images/province_tth.jpg" alt="">
-                  </div>
-                </div>
-                <div class="el__item__meta">
-                  <h3 class="el__item__title">Thừa Thiên Huế</h3>
-                  <div class="el__item__excerpt">Xem ngay 11,752 tin</div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="el__item -small ef--zoomin">
-                <div class="el__item__thumb">
-                  <div class="dnfix__thumb">
-                    <img src="images/province_bd.jpg" alt="">
-                  </div>
-                </div>
-                <div class="el__item__meta">
-                  <h3 class="el__item__title">Bình Dương</h3>
-                  <div class="el__item__excerpt">Xem ngay 6,520 tin</div>
-                </div>
-              </div>
-              <div class="el__item -small ef--zoomin">
-                <div class="el__item__thumb">
-                  <div class="dnfix__thumb">
-                    <img src="images/province_dn.jpg" alt="">
-                  </div>
-                </div>
-                <div class="el__item__meta">
-                  <h3 class="el__item__title">Đồng Nai</h3>
-                  <div class="el__item__excerpt">Xem ngay 7,240 tin</div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="el__item ef--zoomin">
-                <div class="el__item__thumb">
-                  <div class="dnfix__thumb -contain">
-                    <img src="images/province_hcm.jpg" alt="">
-                  </div>
-                </div>
-                <div class="el__item__meta">
-                  <h3 class="el__item__title">TP. Hồ Chí Minh</h3>
-                  <div class="el__item__excerpt">Xem ngay 46,115 tin</div>
-                </div>
-              </div>
-            </div>
-
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="home-list">
-      <div class="container">
         <div class="row">
-          <div class="col-md-3">
 
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="project__item">
+              <div class="project__item__thumb">
+                <a href="" class="dnfix__thumb">
+                  <img src="images/project-item-01-small.png" alt="">
+                </a>
+              </div>
+              <div class="project__item__meta">
+                <a href=""><h3 class="project__item__title text__truncate -n1">Khu Đô thị FPT City Đà Nẵng</h3></a>
+                <div class="d-flex mb-3">
+                  <p class="-address">Phường Hoà Hải, Quận Ngũ Hành Sơn, Thành Phố Đà Nẵng</p>
+                </div>
+                <p class="price">Giá từ: <b>4 - 7 tỷ</b></p>
+              </div>
+            </div>
+          </div><!-- .col-md-3 -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="project__item">
+              <div class="project__item__thumb">
+                <a href="" class="dnfix__thumb">
+                  <img src="images/project-item-02-small.png" alt="">
+                </a>
+              </div>
+              <div class="project__item__meta">
+                <a href=""><h3 class="project__item__title text__truncate -n1">Tam Ky Central City</h3></a>
+                <div class="d-flex mb-3">
+                  <p class="-address">Phường Trường Xuân, Thành Phố Tam Kỳ, Tỉnh Quảng Nam</p>
+                </div>
+                <p class="price">Giá từ: <b>1.3 - 2.5 tỷ</b></p>
+              </div>
+            </div>
+          </div><!-- .col-md-3 -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="project__item">
+              <div class="project__item__thumb">
+                <a href="" class="dnfix__thumb">
+                  <img src="images/project-item-03-small.png" alt="">
+                </a>
+              </div>
+              <div class="project__item__meta">
+                <a href=""><h3 class="project__item__title text__truncate -n1">KĐT Phố Chợ Đầu Mối Chiên Đàn</h3></a>
+                <div class="d-flex mb-3">
+                  <p class="-address">Tam Đàn, Phú Ninh, Thành phố Tam Kỳ, Tỉnh Quảng Nam</p>
+                </div>
+                <p class="price">Giá từ: <b>1.3 - 2.5 tỷ</b></p>
+              </div>
+            </div>
+          </div><!-- .col-md-3 -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="project__item">
+              <div class="project__item__thumb">
+                <a href="" class="dnfix__thumb">
+                  <img src="images/project-item-04-small.png" alt="">
+                </a>
+              </div>
+              <div class="project__item__meta">
+                <a href=""><h3 class="project__item__title text__truncate -n1">Căn hộ Ocean View Đà Nẵng</h3></a>
+                <div class="d-flex mb-3">
+                  <p class="-address">95 Ngô Quyền, Thọ Quang, Sơn Trà, Thành phố Đà Nẵng</p>
+                </div>
+                <p class="price">Giá từ: <b>3 - 4.5 tỷ</b></p>
+              </div>
+            </div>
+          </div><!-- .col-md-3 -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="project__item">
+              <div class="project__item__thumb">
+                <a href="" class="dnfix__thumb">
+                  <img src="images/project-item-05-small.png" alt="">
+                </a>
+              </div>
+              <div class="project__item__meta">
+                <a href=""><h3 class="project__item__title text__truncate -n1">Đà Nẵng Sunview - Chung cư CC</h3></a>
+                <div class="d-flex mb-3">
+                  <p class="-address">Âu Cơ, Hòa Khánh Bắc, Liên Chiểu, Thành Phố Đà Nẵng</p>
+                </div>
+                <p class="price">Giá từ: <b>2 - 2.5 tỷ</b></p>
+              </div>
+            </div>
+          </div><!-- .col-md-3 -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="project__item">
+              <div class="project__item__thumb">
+                <a href="" class="dnfix__thumb">
+                  <img src="images/project-item-06-small.png" alt="">
+                </a>
+              </div>
+              <div class="project__item__meta">
+                <a href=""><h3 class="project__item__title text__truncate -n1">Euro Village 1 - Làng Châu Âu</h3></a>
+                <div class="d-flex mb-3">
+                  <p class="-address">Trần Hưng Đạo, An Hải Tây, Sơn Trà, Thành phố Đà Nẵng</p>
+                </div>
+                <p class="price">Giá từ: <b>15 - 35 tỷ</b></p>
+              </div>
+            </div>
+          </div><!-- .col-md-3 -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="project__item">
+              <div class="project__item__thumb">
+                <a href="" class="dnfix__thumb">
+                  <img src="images/project-item-07-small.png" alt="">
+                </a>
+              </div>
+              <div class="project__item__meta">
+                <a href=""><h3 class="project__item__title text__truncate -n1">Căn hộ Cao cấp The Monarchy</h3></a>
+                <div class="d-flex mb-3">
+                  <p class="-address">Trần Hưng Đạo, An Hải Tây, Sơn Trà, Đà Nẵng</p>
+                </div>
+                <p class="price">Giá từ: <b>3.5 - 4.5 tỷ</b></p>
+              </div>
+            </div>
+          </div><!-- .col-md-3 -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="project__item">
+              <div class="project__item__thumb">
+                <a href="" class="dnfix__thumb">
+                  <img src="images/project-item-08-small.png" alt="">
+                </a>
+              </div>
+              <div class="project__item__meta">
+                <a href=""><h3 class="project__item__title text__truncate -n1">Dự án Casamia Hội An</h3></a>
+                <div class="d-flex mb-3">
+                  <p class="-address">Võng Nhi, Cẩm An Hội An, Quảng Nam</p>
+                </div>
+                <p class="price">Giá từ: <b>4 - 7 tỷ</b></p>
+              </div>
+            </div>
+          </div><!-- .col-md-3 -->
+
+
+        </div>
+
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <img src="images/bannerads-01.png" alt="">
+        </div>
+        <div class="col-md-6 mb-3">
+          <img src="images/bannerads-02.png" alt="">
+        </div>
+      </div>
+    </div>
+
+    <section class="home-project">
+      <div class="container">
+        <header class="sc__header d-flex align-items-center">
+          <h2 class="sc__header__title">bất động sản mua bán </h2>
+          <div class="ms-auto">
+            <a href="" class="sc__readmore">Xem tiếp</a>
+          </div>
+        </header>
+
+        <div class="row">
+
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="project__item">
+              <div class="project__item__thumb">
+                <a href="" class="dnfix__thumb">
+                  <img src="images/project2-item-01-small.png" alt="">
+                </a>
+              </div>
+              <div class="project__item__meta">
+                <a href=""><h3 class="project__item__title text__truncate -n2">Nhà Đẹp cho thuê giá hợp lí thị trường bên Hải Châu</h3></a>
+                <div class="d-flex mb-3">
+                  <p class="-address">Ngũ Hành Sơn - Đà Nẵng</p>
+                </div>
+                <div class="d-flex mb-2">
+                    <p class="price">Giá: <b>14.5 triệu/tháng</b></p>
+                    <p class="ms-auto">Kiệt ô tô</p>
+                </div>
+                <div class="project__item__option row gx-1">
+                  <p class="col-4"><i class="icon-info"></i> 70m2</p>
+                  <p class="col-4 text-center">4 PN - 3WC</p>
+                  <p class="col-4 text-end">Đông Nam</p>
+                </div>
+              </div>
+            </div>
+          </div><!-- .col-md-3 -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="project__item">
+              <div class="project__item__thumb">
+                <a href="" class="dnfix__thumb">
+                  <img src="images/project2-item-02-small.png" alt="">
+                </a>
+              </div>
+              <div class="project__item__meta">
+                <a href=""><h3 class="project__item__title text__truncate -n2">Bán nhà MT Điện Biên Phủ, khu kinh doanh sầm uất</h3></a>
+                <div class="d-flex mb-3">
+                  <p class="-address">Thanh Khê - Đà Nẵng</p>
+                </div>
+                <div class="d-flex mb-2">
+                    <p class="price">Giá: <b>8 tỷ</b></p>
+                    <p class="ms-auto">Nhà phố</p>
+                </div>
+                <div class="project__item__option row gx-1">
+                  <p class="col-4"><i class="icon-info"></i> 100m2</p>
+                  <p class="col-4 text-center">4 PN - 3WC</p>
+                  <p class="col-4 text-end">Đông Nam</p>
+                </div>
+              </div>
+            </div>
+          </div><!-- .col-md-3 -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="project__item">
+              <div class="project__item__thumb">
+                <a href="" class="dnfix__thumb">
+                  <img src="images/project2-item-03-small.png" alt="">
+                </a>
+              </div>
+              <div class="project__item__meta">
+                <a href=""><h3 class="project__item__title text__truncate -n2">Bán nhà 3 tầng mặt tiền Lý Tự Trọng khu trung tâm</h3></a>
+                <div class="d-flex mb-3">
+                  <p class="-address">Hải Châu - Đà Nẵng</p>
+                </div>
+                <div class="d-flex mb-2">
+                    <p class="price">Giá: <b>3.45 tỷ</b></p>
+                    <p class="ms-auto">Kiệt ô tô</p>
+                </div>
+                <div class="project__item__option row gx-1">
+                  <p class="col-4"><i class="icon-info"></i> 20m2</p>
+                  <p class="col-4 text-center">2 PN - 2WC</p>
+                  <p class="col-4 text-end">Đông Nam</p>
+                </div>
+              </div>
+            </div>
+          </div><!-- .col-md-3 -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="project__item">
+              <div class="project__item__thumb">
+                <a href="" class="dnfix__thumb">
+                  <img src="images/project2-item-04-small.png" alt="">
+                </a>
+              </div>
+              <div class="project__item__meta">
+                <a href=""><h3 class="project__item__title text__truncate -n2">MT Kỳ Đồng nhà 3 tầng gần chợ kinh doanh sầm uất</h3></a>
+                <div class="d-flex mb-3">
+                  <p class="-address">Ngũ Hành Sơn - Đà Nẵng</p>
+                </div>
+                <div class="d-flex mb-2">
+                    <p class="price">Giá: <b>3.9 tỷ</b></p>
+                    <p class="ms-auto">Nhà phố</p>
+                </div>
+                <div class="project__item__option row gx-1">
+                  <p class="col-4"><i class="icon-info"></i> 22m2</p>
+                  <p class="col-4 text-center">4 PN - 3WC</p>
+                  <p class="col-4 text-end">Đông Nam</p>
+                </div>
+              </div>
+            </div>
+          </div><!-- .col-md-3 -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="project__item">
+              <div class="project__item__thumb">
+                <a href="" class="dnfix__thumb">
+                  <img src="images/project2-item-05-small.png" alt="">
+                </a>
+              </div>
+              <div class="project__item__meta">
+                <a href=""><h3 class="project__item__title text__truncate -n2">Nhà Đẹp cho thuê giá hợp lí thị trường bên Hải Châu</h3></a>
+                <div class="d-flex mb-3">
+                  <p class="-address">Ngũ Hành Sơn - Đà Nẵng</p>
+                </div>
+                <div class="d-flex mb-2">
+                    <p class="price">Giá: <b>14.5 triệu/tháng</b></p>
+                    <p class="ms-auto">Kiệt ô tô</p>
+                </div>
+                <div class="project__item__option row gx-1">
+                  <p class="col-4"><i class="icon-info"></i> 70m2</p>
+                  <p class="col-4 text-center">4 PN - 3WC</p>
+                  <p class="col-4 text-end">Đông Nam</p>
+                </div>
+              </div>
+            </div>
+          </div><!-- .col-md-3 -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="project__item">
+              <div class="project__item__thumb">
+                <a href="" class="dnfix__thumb">
+                  <img src="images/project2-item-06-small.png" alt="">
+                </a>
+              </div>
+              <div class="project__item__meta">
+                <a href=""><h3 class="project__item__title text__truncate -n2">Bán nhà MT Điện Biên Phủ, khu kinh doanh sầm uất</h3></a>
+                <div class="d-flex mb-3">
+                  <p class="-address">Thanh Khê - Đà Nẵng</p>
+                </div>
+                <div class="d-flex mb-2">
+                    <p class="price">Giá: <b>8 tỷ</b></p>
+                    <p class="ms-auto">Nhà phố</p>
+                </div>
+                <div class="project__item__option row gx-1">
+                  <p class="col-4"><i class="icon-info"></i> 100m2</p>
+                  <p class="col-4 text-center">4 PN - 3WC</p>
+                  <p class="col-4 text-end">Đông Nam</p>
+                </div>
+              </div>
+            </div>
+          </div><!-- .col-md-3 -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="project__item">
+              <div class="project__item__thumb">
+                <a href="" class="dnfix__thumb">
+                  <img src="images/project2-item-07-small.png" alt="">
+                </a>
+              </div>
+              <div class="project__item__meta">
+                <a href=""><h3 class="project__item__title text__truncate -n2">Bán nhà 3 tầng mặt tiền Lý Tự Trọng khu trung tâm</h3></a>
+                <div class="d-flex mb-3">
+                  <p class="-address">Hải Châu - Đà Nẵng</p>
+                </div>
+                <div class="d-flex mb-2">
+                    <p class="price">Giá: <b>3.45 tỷ</b></p>
+                    <p class="ms-auto">Kiệt ô tô</p>
+                </div>
+                <div class="project__item__option row gx-1">
+                  <p class="col-4"><i class="icon-info"></i> 20m2</p>
+                  <p class="col-4 text-center">2 PN - 2WC</p>
+                  <p class="col-4 text-end">Đông Nam</p>
+                </div>
+              </div>
+            </div>
+          </div><!-- .col-md-3 -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="project__item">
+              <div class="project__item__thumb">
+                <a href="" class="dnfix__thumb">
+                  <img src="images/project2-item-08-small.png" alt="">
+                </a>
+              </div>
+              <div class="project__item__meta">
+                <a href=""><h3 class="project__item__title text__truncate -n2">MT Kỳ Đồng nhà 3 tầng gần chợ kinh doanh sầm uất</h3></a>
+                <div class="d-flex mb-3">
+                  <p class="-address">Ngũ Hành Sơn - Đà Nẵng</p>
+                </div>
+                <div class="d-flex mb-2">
+                    <p class="price">Giá: <b>3.9 tỷ</b></p>
+                    <p class="ms-auto">Nhà phố</p>
+                </div>
+                <div class="project__item__option row gx-1">
+                  <p class="col-4"><i class="icon-info"></i> 22m2</p>
+                  <p class="col-4 text-center">4 PN - 3WC</p>
+                  <p class="col-4 text-end">Đông Nam</p>
+                </div>
+              </div>
+            </div>
+          </div><!-- .col-md-3 -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="project__item">
+              <div class="project__item__thumb">
+                <a href="" class="dnfix__thumb">
+                  <img src="images/project2-item-09-small.png" alt="">
+                </a>
+              </div>
+              <div class="project__item__meta">
+                <a href=""><h3 class="project__item__title text__truncate -n2">Nhà Đẹp cho thuê giá hợp lí thị trường bên Hải Châu</h3></a>
+                <div class="d-flex mb-3">
+                  <p class="-address">Ngũ Hành Sơn - Đà Nẵng</p>
+                </div>
+                <div class="d-flex mb-2">
+                    <p class="price">Giá: <b>14.5 triệu/tháng</b></p>
+                    <p class="ms-auto">Kiệt ô tô</p>
+                </div>
+                <div class="project__item__option row gx-1">
+                  <p class="col-4"><i class="icon-info"></i> 70m2</p>
+                  <p class="col-4 text-center">4 PN - 3WC</p>
+                  <p class="col-4 text-end">Đông Nam</p>
+                </div>
+              </div>
+            </div>
+          </div><!-- .col-md-3 -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="project__item">
+              <div class="project__item__thumb">
+                <a href="" class="dnfix__thumb">
+                  <img src="images/project2-item-10-small.png" alt="">
+                </a>
+              </div>
+              <div class="project__item__meta">
+                <a href=""><h3 class="project__item__title text__truncate -n2">Bán nhà MT Điện Biên Phủ, khu kinh doanh sầm uất</h3></a>
+                <div class="d-flex mb-3">
+                  <p class="-address">Thanh Khê - Đà Nẵng</p>
+                </div>
+                <div class="d-flex mb-2">
+                    <p class="price">Giá: <b>8 tỷ</b></p>
+                    <p class="ms-auto">Nhà phố</p>
+                </div>
+                <div class="project__item__option row gx-1">
+                  <p class="col-4"><i class="icon-info"></i> 100m2</p>
+                  <p class="col-4 text-center">4 PN - 3WC</p>
+                  <p class="col-4 text-end">Đông Nam</p>
+                </div>
+              </div>
+            </div>
+          </div><!-- .col-md-3 -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="project__item">
+              <div class="project__item__thumb">
+                <a href="" class="dnfix__thumb">
+                  <img src="images/project2-item-11-small.png" alt="">
+                </a>
+              </div>
+              <div class="project__item__meta">
+                <a href=""><h3 class="project__item__title text__truncate -n2">Bán nhà 3 tầng mặt tiền Lý Tự Trọng khu trung tâm</h3></a>
+                <div class="d-flex mb-3">
+                  <p class="-address">Hải Châu - Đà Nẵng</p>
+                </div>
+                <div class="d-flex mb-2">
+                    <p class="price">Giá: <b>3.45 tỷ</b></p>
+                    <p class="ms-auto">Kiệt ô tô</p>
+                </div>
+                <div class="project__item__option row gx-1">
+                  <p class="col-4"><i class="icon-info"></i> 20m2</p>
+                  <p class="col-4 text-center">2 PN - 2WC</p>
+                  <p class="col-4 text-end">Đông Nam</p>
+                </div>
+              </div>
+            </div>
+          </div><!-- .col-md-3 -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="project__item">
+              <div class="project__item__thumb">
+                <a href="" class="dnfix__thumb">
+                  <img src="images/project2-item-12-small.png" alt="">
+                </a>
+              </div>
+              <div class="project__item__meta">
+                <a href=""><h3 class="project__item__title text__truncate -n2">MT Kỳ Đồng nhà 3 tầng gần chợ kinh doanh sầm uất</h3></a>
+                <div class="d-flex mb-3">
+                  <p class="-address">Ngũ Hành Sơn - Đà Nẵng</p>
+                </div>
+                <div class="d-flex mb-2">
+                    <p class="price">Giá: <b>3.9 tỷ</b></p>
+                    <p class="ms-auto">Nhà phố</p>
+                </div>
+                <div class="project__item__option row gx-1">
+                  <p class="col-4"><i class="icon-info"></i> 22m2</p>
+                  <p class="col-4 text-center">4 PN - 3WC</p>
+                  <p class="col-4 text-end">Đông Nam</p>
+                </div>
+              </div>
+            </div>
+          </div><!-- .col-md-3 -->
+
+
+
+        </div>
+
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <img src="images/bannerads-03.png" alt="">
+        </div>
+        <div class="col-md-6 mb-3">
+          <img src="images/bannerads-04.png" alt="">
+        </div>
+      </div>
+    </div>
+
+    <section class="home-project">
+      <div class="container">
+        <header class="sc__header d-flex">
+          <h2 class="sc__header__title">bất động sản cho thuê</h2>
+          <div class="ms-auto">
+            <a href="" class="sc__readmore">Xem tiếp</a>
+          </div>
+        </header>
+
+        <div class="row">
+
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="project__item">
+              <div class="project__item__thumb">
+                <a href="" class="dnfix__thumb">
+                  <img src="images/project3-item-01-small.png" alt="">
+                </a>
+              </div>
+              <div class="project__item__meta">
+                <a href=""><h3 class="project__item__title text__truncate -n2">Nhà Đẹp cho thuê giá hợp lí thị trường bên Hải Châu</h3></a>
+                <div class="d-flex mb-3">
+                  <p class="-address">Ngũ Hành Sơn - Đà Nẵng</p>
+                </div>
+                <div class="d-flex mb-2">
+                    <p class="price">Giá: <b>44.5 triệu/tháng</b></p>
+                    <p class="ms-auto">Kiệt ô tô</p>
+                </div>
+                <div class="project__item__option row gx-1">
+                  <p class="col-4"><i class="icon-info"></i> 70m2</p>
+                  <p class="col-4 text-center">4 PN - 3WC</p>
+                  <p class="col-4 text-end">Đông Nam</p>
+                </div>
+              </div>
+            </div>
+          </div><!-- .col-md-3 -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="project__item">
+              <div class="project__item__thumb">
+                <a href="" class="dnfix__thumb">
+                  <img src="images/project3-item-02-small.png" alt="">
+                </a>
+              </div>
+              <div class="project__item__meta">
+                <a href=""><h3 class="project__item__title text__truncate -n2">Bán nhà MT Điện Biên Phủ, khu kinh doanh sầm uất</h3></a>
+                <div class="d-flex mb-3">
+                  <p class="-address">Thanh Khê - Đà Nẵng</p>
+                </div>
+                <div class="d-flex mb-2">
+                    <p class="price">Giá: <b>8 triệu/tháng</b></p>
+                    <p class="ms-auto">Nhà phố</p>
+                </div>
+                <div class="project__item__option row gx-1">
+                  <p class="col-4"><i class="icon-info"></i> 100m2</p>
+                  <p class="col-4 text-center">4 PN - 3WC</p>
+                  <p class="col-4 text-end">Đông Nam</p>
+                </div>
+              </div>
+            </div>
+          </div><!-- .col-md-3 -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="project__item">
+              <div class="project__item__thumb">
+                <a href="" class="dnfix__thumb">
+                  <img src="images/project3-item-03-small.png" alt="">
+                </a>
+              </div>
+              <div class="project__item__meta">
+                <a href=""><h3 class="project__item__title text__truncate -n2">Bán nhà 3 tầng mặt tiền Lý Tự Trọng khu trung tâm</h3></a>
+                <div class="d-flex mb-3">
+                  <p class="-address">Hải Châu - Đà Nẵng</p>
+                </div>
+                <div class="d-flex mb-2">
+                    <p class="price">Giá: <b>6.5 triệu/tháng</b></p>
+                    <p class="ms-auto">Kiệt ô tô</p>
+                </div>
+                <div class="project__item__option row gx-1">
+                  <p class="col-4"><i class="icon-info"></i> 20m2</p>
+                  <p class="col-4 text-center">2 PN - 2WC</p>
+                  <p class="col-4 text-end">Đông Nam</p>
+                </div>
+              </div>
+            </div>
+          </div><!-- .col-md-3 -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="project__item">
+              <div class="project__item__thumb">
+                <a href="" class="dnfix__thumb">
+                  <img src="images/project3-item-04-small.png" alt="">
+                </a>
+              </div>
+              <div class="project__item__meta">
+                <a href=""><h3 class="project__item__title text__truncate -n2">MT Kỳ Đồng nhà 3 tầng gần chợ kinh doanh sầm uất</h3></a>
+                <div class="d-flex mb-3">
+                  <p class="-address">Ngũ Hành Sơn - Đà Nẵng</p>
+                </div>
+                <div class="d-flex mb-2">
+                    <p class="price">Giá: <b>8 triệu/tháng</b></p>
+                    <p class="ms-auto">Nhà phố</p>
+                </div>
+                <div class="project__item__option row gx-1">
+                  <p class="col-4"><i class="icon-info"></i> 22m2</p>
+                  <p class="col-4 text-center">4 PN - 3WC</p>
+                  <p class="col-4 text-end">Đông Nam</p>
+                </div>
+              </div>
+            </div>
+          </div><!-- .col-md-3 -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="project__item">
+              <div class="project__item__thumb">
+                <a href="" class="dnfix__thumb">
+                  <img src="images/project3-item-05-small.png" alt="">
+                </a>
+              </div>
+              <div class="project__item__meta">
+                <a href=""><h3 class="project__item__title text__truncate -n2">Nhà Đẹp cho thuê giá hợp lí thị trường bên Hải Châu</h3></a>
+                <div class="d-flex mb-3">
+                  <p class="-address">Ngũ Hành Sơn - Đà Nẵng</p>
+                </div>
+                <div class="d-flex mb-2">
+                    <p class="price">Giá: <b>14.5 triệu/tháng</b></p>
+                    <p class="ms-auto">Kiệt ô tô</p>
+                </div>
+                <div class="project__item__option row gx-1">
+                  <p class="col-4"><i class="icon-info"></i> 70m2</p>
+                  <p class="col-4 text-center">4 PN - 3WC</p>
+                  <p class="col-4 text-end">Đông Nam</p>
+                </div>
+              </div>
+            </div>
+          </div><!-- .col-md-3 -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="project__item">
+              <div class="project__item__thumb">
+                <a href="" class="dnfix__thumb">
+                  <img src="images/project3-item-06-small.png" alt="">
+                </a>
+              </div>
+              <div class="project__item__meta">
+                <a href=""><h3 class="project__item__title text__truncate -n2">Bán nhà MT Điện Biên Phủ, khu kinh doanh sầm uất</h3></a>
+                <div class="d-flex mb-3">
+                  <p class="-address">Thanh Khê - Đà Nẵng</p>
+                </div>
+                <div class="d-flex mb-2">
+                    <p class="price">Giá: <b>8 triệu/tháng</b></p>
+                    <p class="ms-auto">Nhà phố</p>
+                </div>
+                <div class="project__item__option row gx-1">
+                  <p class="col-4"><i class="icon-info"></i> 100m2</p>
+                  <p class="col-4 text-center">4 PN - 3WC</p>
+                  <p class="col-4 text-end">Đông Nam</p>
+                </div>
+              </div>
+            </div>
+          </div><!-- .col-md-3 -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="project__item">
+              <div class="project__item__thumb">
+                <a href="" class="dnfix__thumb">
+                  <img src="images/project3-item-07-small.png" alt="">
+                </a>
+              </div>
+              <div class="project__item__meta">
+                <a href=""><h3 class="project__item__title text__truncate -n2">Bán nhà 3 tầng mặt tiền Lý Tự Trọng khu trung tâm</h3></a>
+                <div class="d-flex mb-3">
+                  <p class="-address">Hải Châu - Đà Nẵng</p>
+                </div>
+                <div class="d-flex mb-2">
+                    <p class="price">Giá: <b>8 triệu/tháng</b></p>
+                    <p class="ms-auto">Kiệt ô tô</p>
+                </div>
+                <div class="project__item__option row gx-1">
+                  <p class="col-4"><i class="icon-info"></i> 20m2</p>
+                  <p class="col-4 text-center">2 PN - 2WC</p>
+                  <p class="col-4 text-end">Đông Nam</p>
+                </div>
+              </div>
+            </div>
+          </div><!-- .col-md-3 -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="project__item">
+              <div class="project__item__thumb">
+                <a href="" class="dnfix__thumb">
+                  <img src="images/project3-item-08-small.png" alt="">
+                </a>
+              </div>
+              <div class="project__item__meta">
+                <a href=""><h3 class="project__item__title text__truncate -n2">MT Kỳ Đồng nhà 3 tầng gần chợ kinh doanh sầm uất</h3></a>
+                <div class="d-flex mb-3">
+                  <p class="-address">Ngũ Hành Sơn - Đà Nẵng</p>
+                </div>
+                <div class="d-flex mb-2">
+                    <p class="price">Giá: <b>6 triệu/tháng</b></p>
+                    <p class="ms-auto">Nhà phố</p>
+                </div>
+                <div class="project__item__option row gx-1">
+                  <p class="col-4"><i class="icon-info"></i> 22m2</p>
+                  <p class="col-4 text-center">4 PN - 3WC</p>
+                  <p class="col-4 text-end">Đông Nam</p>
+                </div>
+              </div>
+            </div>
+          </div><!-- .col-md-3 -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="project__item">
+              <div class="project__item__thumb">
+                <a href="" class="dnfix__thumb">
+                  <img src="images/project3-item-09-small.png" alt="">
+                </a>
+              </div>
+              <div class="project__item__meta">
+                <a href=""><h3 class="project__item__title text__truncate -n2">Nhà Đẹp cho thuê giá hợp lí thị trường bên Hải Châu</h3></a>
+                <div class="d-flex mb-3">
+                  <p class="-address">Ngũ Hành Sơn - Đà Nẵng</p>
+                </div>
+                <div class="d-flex mb-2">
+                    <p class="price">Giá: <b>14.5 triệu/tháng</b></p>
+                    <p class="ms-auto">Kiệt ô tô</p>
+                </div>
+                <div class="project__item__option row gx-1">
+                  <p class="col-4"><i class="icon-info"></i> 70m2</p>
+                  <p class="col-4 text-center">4 PN - 3WC</p>
+                  <p class="col-4 text-end">Đông Nam</p>
+                </div>
+              </div>
+            </div>
+          </div><!-- .col-md-3 -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="project__item">
+              <div class="project__item__thumb">
+                <a href="" class="dnfix__thumb">
+                  <img src="images/project3-item-10-small.png" alt="">
+                </a>
+              </div>
+              <div class="project__item__meta">
+                <a href=""><h3 class="project__item__title text__truncate -n2">Bán nhà MT Điện Biên Phủ, khu kinh doanh sầm uất</h3></a>
+                <div class="d-flex mb-3">
+                  <p class="-address">Thanh Khê - Đà Nẵng</p>
+                </div>
+                <div class="d-flex mb-2">
+                    <p class="price">Giá: <b>8 triệu/tháng</b></p>
+                    <p class="ms-auto">Nhà phố</p>
+                </div>
+                <div class="project__item__option row gx-1">
+                  <p class="col-4"><i class="icon-info"></i> 100m2</p>
+                  <p class="col-4 text-center">4 PN - 3WC</p>
+                  <p class="col-4 text-end">Đông Nam</p>
+                </div>
+              </div>
+            </div>
+          </div><!-- .col-md-3 -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="project__item">
+              <div class="project__item__thumb">
+                <a href="" class="dnfix__thumb">
+                  <img src="images/project3-item-11-small.png" alt="">
+                </a>
+              </div>
+              <div class="project__item__meta">
+                <a href=""><h3 class="project__item__title text__truncate -n2">Bán nhà 3 tầng mặt tiền Lý Tự Trọng khu trung tâm</h3></a>
+                <div class="d-flex mb-3">
+                  <p class="-address">Hải Châu - Đà Nẵng</p>
+                </div>
+                <div class="d-flex mb-2">
+                    <p class="price">Giá: <b>8 triệu/tháng</b></p>
+                    <p class="ms-auto">Kiệt ô tô</p>
+                </div>
+                <div class="project__item__option row gx-1">
+                  <p class="col-4"><i class="icon-info"></i> 20m2</p>
+                  <p class="col-4 text-center">2 PN - 2WC</p>
+                  <p class="col-4 text-end">Đông Nam</p>
+                </div>
+              </div>
+            </div>
+          </div><!-- .col-md-3 -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="project__item">
+              <div class="project__item__thumb">
+                <a href="" class="dnfix__thumb">
+                  <img src="images/project3-item-12-small.png" alt="">
+                </a>
+              </div>
+              <div class="project__item__meta">
+                <a href=""><h3 class="project__item__title text__truncate -n2">MT Kỳ Đồng nhà 3 tầng gần chợ kinh doanh sầm uất</h3></a>
+                <div class="d-flex mb-3">
+                  <p class="-address">Ngũ Hành Sơn - Đà Nẵng</p>
+                </div>
+                <div class="d-flex mb-2">
+                    <p class="price">Giá: <b>6 triệu/tháng</b></p>
+                    <p class="ms-auto">Nhà phố</p>
+                </div>
+                <div class="project__item__option row gx-1">
+                  <p class="col-4"><i class="icon-info"></i> 22m2</p>
+                  <p class="col-4 text-center">4 PN - 3WC</p>
+                  <p class="col-4 text-end">Đông Nam</p>
+                </div>
+              </div>
+            </div>
+          </div><!-- .col-md-3 -->
+        </div>
+
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 -left">
+          <section class="home-new">
+            <header class="sc__header">
+              <h2 class="sc__header__title">tin nổi bật</h2>
+            </header>
+            <div class="el__box">
+                <div class="row">
+
+                  <div class="col-md-8 border-end">
+                    <div class="el__item -large">
+                      <div class="row gx-3">
+                        <div class="col-lg-7 col-xxl-8 mb-3 mb-xxl-0">
+                          <div class="el__item__thumb">
+                            <a href="" class="dnfix__thumb"><img src="images/home-new-01.png" alt="" class="img-fluid mx-auto"></a>
+                          </div>
+                        </div>
+                        <div class="col-lg-5 col-xxl-4">
+                          <div class="el__item__meta">
+                            <p class="el__item__title"><a href="" >Quảng Nam sắp có thêm khu công nghiệp công nghệ cao Thăng Bình</a></p>
+                            <p class="el__item__excerpt ">
+                              Bên cạnh việc quy hoạch khu công nghiệp Tam Thăng Mở rộng hơn 361 ha, Quảng Nam đang tiếp tục nghiên cứu lập quy hoạch khu công nghiệp công nghệ cao Thăng Bình. Cả 2 khu công nghiệp này đều có tính chất là khu công nghiệp sinh thái.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <h3 class="el__box__title">Hoạt động King Real</h3>
+
+                    <div class="el__item -small">
+                      <div class="el__item__thumb">
+                        <a href="" class="dnfix__thumb"><img src="images/home-new-02.png" alt="" class="img-fluid mx-auto"></a>
+                      </div>
+                      <div class="el__item__meta">
+                        <p class="el__item__title text__truncate -n3"><a href="" >Sửa đổi Luật Đất đai 2013: Cần đưa khung giá đất sát với thị trường</a></p>
+                      </div>
+                    </div>
+                    <div class="el__item -small">
+                      <div class="el__item__thumb">
+                        <a href="" class="dnfix__thumb"><img src="images/home-new-03.png" alt="" class="img-fluid mx-auto"></a>
+                      </div>
+                      <div class="el__item__meta">
+                        <p class="el__item__title text__truncate -n3"><a href="" >Đà Nẵng Các công trình xây dựng ở vùng nào được phép thi công trở lại?</a></p>
+                      </div>
+                    </div>
+                    <div class="el__item -small">
+                      <div class="el__item__thumb">
+                        <a href="" class="dnfix__thumb"><img src="images/home-new-04.png" alt="" class="img-fluid mx-auto"></a>
+                      </div>
+                      <div class="el__item__meta">
+                        <p class="el__item__title text__truncate -n3"><a href="" >4 chính sách mới về đất đai, nhà ở từ ngày 1/9</a></p>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+          </section>
+        </div>
+        <div class="col-xl-3 -right">
+          <section class="home-new d-none d-xl-block">
+            <header class="sc__header">
+              <h2 class="sc__header__title">Góc chia sẻ</h2>
+            </header>
+            <div class="el__box -scroll">
+              <div class="el__box__wrap">
+                <div class="el__item -small">
+                  <div class="el__item__thumb">
+                    <a href="" class="dnfix__thumb"><img src="images/home-new-05.png" alt="" class="img-fluid mx-auto"></a>
+                  </div>
+                  <div class="el__item__meta">
+                    <p class="el__item__title text__truncate -n3"><a href="" >Quảng Nam sắp có thêm khu công nghiệp công nghệ cao Thăng Bình</a></p>
+                  </div>
+                </div>
+                <div class="el__item -small">
+                  <div class="el__item__thumb">
+                    <a href="" class="dnfix__thumb"><img src="images/home-new-06.png" alt="" class="img-fluid mx-auto"></a>
+                  </div>
+                  <div class="el__item__meta">
+                    <p class="el__item__title text__truncate -n3"><a href="" >Quảng Nam sắp có thêm khu công nghiệp công nghệ cao Thăng Bình</a></p>
+                  </div>
+                </div>
+                <div class="el__item -small">
+                  <div class="el__item__thumb">
+                    <a href="" class="dnfix__thumb"><img src="images/home-new-07.png" alt="" class="img-fluid mx-auto"></a>
+                  </div>
+                  <div class="el__item__meta">
+                    <p class="el__item__title text__truncate -n3"><a href="" >Quảng Nam sắp có thêm khu công nghiệp công nghệ cao Thăng Bình</a></p>
+                  </div>
+                </div>
+                <div class="el__item -small">
+                  <div class="el__item__thumb">
+                    <a href="" class="dnfix__thumb"><img src="images/home-new-08.png" alt="" class="img-fluid mx-auto"></a>
+                  </div>
+                  <div class="el__item__meta">
+                    <p class="el__item__title text__truncate -n3"><a href="" >Quảng Nam sắp có thêm khu công nghiệp công nghệ cao Thăng Bình</a></p>
+                  </div>
+                </div>
+                <div class="el__item -small">
+                  <div class="el__item__thumb">
+                    <a href="" class="dnfix__thumb"><img src="images/home-new-02.png" alt="" class="img-fluid mx-auto"></a>
+                  </div>
+                  <div class="el__item__meta">
+                    <p class="el__item__title text__truncate -n3"><a href="" >Quảng Nam sắp có thêm khu công nghiệp công nghệ cao Thăng Bình</a></p>
+                  </div>
+                </div>
+                <div class="el__item -small">
+                  <div class="el__item__thumb">
+                    <a href="" class="dnfix__thumb"><img src="images/home-new-03.png" alt="" class="img-fluid mx-auto"></a>
+                  </div>
+                  <div class="el__item__meta">
+                    <p class="el__item__title text__truncate -n3"><a href="" >Quảng Nam sắp có thêm khu công nghiệp công nghệ cao Thăng Bình</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <section class="home-why">
+      <div class="container">
+      <header class="sc__header">
+        <h2 class="sc__header__title">Vì sao chọn king real</h2>
+      </header>
+      <div class="sc__content">
+        <div class="row row-cols-md-5">
+          <div class="el__col col">
+            <div class="el__item">
+              <div class="el__item__thumb">
+                <div class="dnfix__thumb -contain">
+                  <img src="images/home-why-01.png" alt="">
+                </div>
+              </div>
+              <div class="el__item__meta">
+                <h3 class="el__item__title">Sản phẩm đa dạng, phong phú</h3>
+              </div>
+            </div>
+          </div>
+          <div class="el__col col">
+            <div class="el__item">
+              <div class="el__item__thumb">
+                <div class="dnfix__thumb -contain">
+                  <img src="images/home-why-02.png" alt="">
+                </div>
+              </div>
+              <div class="el__item__meta">
+                <h3 class="el__item__title">Đội ngũ chuyên nghiệp, tận tâm</h3>
+              </div>
+            </div>
+          </div>
+          <div class="el__col col">
+            <div class="el__item">
+              <div class="el__item__thumb">
+                <div class="dnfix__thumb -contain">
+                  <img src="images/home-why-03.png" alt="">
+                </div>
+              </div>
+              <div class="el__item__meta">
+                <h3 class="el__item__title">Uy tín, minh bạch, nhanh chóng</h3>
+              </div>
+            </div>
+          </div>
+          <div class="el__col col">
+            <div class="el__item">
+              <div class="el__item__thumb">
+                <div class="dnfix__thumb -contain">
+                  <img src="images/home-why-04.png" alt="">
+                </div>
+              </div>
+              <div class="el__item__meta">
+                <h3 class="el__item__title">Thông tin đầy đủ, trung thực</h3>
+              </div>
+            </div>
+          </div>
+          <div class="el__col col">
+            <div class="el__item">
+              <div class="el__item__thumb">
+                <div class="dnfix__thumb -contain">
+                  <img src="images/home-why-05.png" alt="">
+                </div>
+              </div>
+              <div class="el__item__meta">
+                <h3 class="el__item__title">Giá trị bền vừng, cùng nhau thịnh vượng</h3>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
+      </div>
+    </section>
+
+    <section class="home-partners">
+      <div class="container">
+          <div class="sc__content d-flex align-items-center">
+            <div class="col-auto col--left">
+              <header class="sc__header mb-lg-0">
+                <h2 class="sc__header__title">đối tác<br>khách hàng</h2>
+              </header>
+            </div>
+            <div class="col--right">
+                <div class="el__slider flickity" data-flickity='{ "wrapAround": true, "cellAlign": "left", "prevNextButtons": false, "pageDots": false }'>
+                  <div class="slider__item__wrap col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="el__item">
+                      <div class="el__item__thumb">
+                        <div class="dnfix__thumb -contain">
+                          <img src="images/home-doitac-01.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider__item__wrap col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="el__item">
+                      <div class="el__item__thumb">
+                        <div class="dnfix__thumb -contain">
+                          <img src="images/home-doitac-02.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider__item__wrap col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="el__item">
+                      <div class="el__item__thumb">
+                        <div class="dnfix__thumb -contain">
+                          <img src="images/home-doitac-03.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider__item__wrap col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="el__item">
+                      <div class="el__item__thumb">
+                        <div class="dnfix__thumb -contain">
+                          <img src="images/home-doitac-04.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider__item__wrap col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="el__item">
+                      <div class="el__item__thumb">
+                        <div class="dnfix__thumb -contain">
+                          <img src="images/home-doitac-05.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider__item__wrap col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="el__item">
+                      <div class="el__item__thumb">
+                        <div class="dnfix__thumb -contain">
+                          <img src="images/home-doitac-06.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
       </div>
     </section>
 
 
+    <footer class="footer">
+      <div class="container">
+          <div class=" row">
+              <div class="footer__item col-md-12 col-lg-4 mb-4 mb-lg-0">
+                <div class="footer__logo">
+                  <img src="images/logo.png" alt="">
+                </div>
+                <div class="footer__header -logo">
+                  <h3 class="footer__title">Công ty Cổ phần Đầu tư King Real</h3>
+                </div>
+                <ul class="footer__address">
+                    <li><i class="icon-location"></i>Số 296 Đường 2/9, Q. Hải Châu, TP. Đà Nẵng Số 05 Đỗ Quang, Tam Kỳ</li>
+                    <li class=""><i class="icon-email"></i><a href="mailto:info@kingreal.com" class="footer--email">info@kingreal.com</a></li>
+                </ul>
+
+                <div>
+                  <a href="0905789789" class="btn__cskh"><span class="-text"><i class="icon-cskh"></i>CSKH</span><strong>0905.789.789 - 0909.789.789</strong></a>
+                </div>
+              </div>
+              <div class="col-md-12 col-lg-8">
+                  <div class="row">
+                    <div class="footer__item col-6 col-md-4">
+                      <div class="footer__header">
+                        <h3 class="footer__title">Công ty</h3>
+                      </div>
+                      <ul class="footer__list">
+                        <li><a href="">Tuyển dụng</a></li>
+                        <li><a href="">Quy chế hoạt động</a></li>
+                        <li><a href="">Về King Real</a></li>
+                        <li><a href="">Điều khoản thỏa thuận</a></li>
+                      </ul>
+                    </div>
+                    <div class="footer__item col-6 col-md-4">
+                      <div class="footer__header">
+                        <h3 class="footer__title">Dịch vụ BĐS</h3>
+                      </div>
+                      <ul class="footer__list">
+                        <li><a href="">Mua bán BĐS</a></li>
+                        <li><a href="">Cho thuê BĐS</a></li>
+                        <li><a href="">Định giá BĐS</a></li>
+                        <li><a href="">Thông tin Quy hoạch</a></li>
+                        <li><a href="">Ký gửi BĐS</a></li>
+                      </ul>
+                    </div>
+                    <div class="footer__item col-6 col-md-4">
+                      <div class="footer__header">
+                        <h3 class="footer__title">Kết nối với chúng tôi</h3>
+                      </div>
+                      <ul class="footer__socical">
+                        <li><a href="https://www.facebook.com/kingreal.vn">Facebook</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCzC-MlOAcqlvbAUeR4yjL_w/featured">Youtube</a></li>
+                        <li><a href="https://rd.zapps.vn/detail/3772327780181913788?id=6834812ec46b2d35747a&pageId=3772327780181913788">Zalo</a></li>
+                        <li><a href="https://www.instagram.com/kingreal.vn/">Instagram</a></li>
+                      </ul>
+                    </div>
+
+
+                  </div>
+              </div>
+
+          </div>
+      </div>
+    </footer>
+    <div class="footer__copyright">
+      <div class="container text-center">
+        <p>© 2011-2021 Công ty Cổ phần Đầu tư King Real</p>
+      </div>
+    </div>
+
+    <nav id="menu__mobile" class="nav__mobile">
+      <div class="nav__mobile__header d-flex">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo-header.png" alt="Logo">
+          </a>
+        </div>
+        <div class="ms-auto">
+          <!-- <span class="icon-close js-menu__close"></span> -->
+          <div class="menu-mb__btn">
+            <span class="iconz-bar"></span>
+            <span class="iconz-bar"></span>
+            <span class="iconz-bar"></span>
+          </div>
+
+        </div>
+      </div>
+      <div class="nav__mobile__content">
+        <ul class="nav__mobile--ul">
+          <li class="menu-item"><a href="">Về Kingreal</a></li>
+          <li class="menu-item"><a href="">Dự Án BĐS</a></li>
+          <li class="menu-item"><a href="">Dịch vụ bán</a></li>
+          <li class="menu-item"><a href="">Dịch vụ cho thuê</a></li>
+          <li class="menu-item"><a href="">Tin tức - Sự kiện</a></li>
+          <li class="menu-item"><a href="">Tuyển dụng</a></li>
+          <li class="menu-item"><a href="">Liên hệ</a></li>
+        </ul>
+
+        <div class="footer__item ">
+          <h3 class="">Kết nối với chúng tôi</h3>
+          <ul class="footer__socical">
+            <li><a href="https://www.facebook.com/kingreal.vn">Facebook</a></li>
+            <li><a href="https://www.youtube.com/channel/UCzC-MlOAcqlvbAUeR4yjL_w/featured">Youtube</a></li>
+            <li><a href="https://rd.zapps.vn/detail/3772327780181913788?id=6834812ec46b2d35747a&pageId=3772327780181913788">Zalo</a></li>
+            <li><a href="https://www.instagram.com/kingreal.vn/">Instagram</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="assets/libs/bootstrap/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="assets/libs/flickity/flickity.pkgd.min.js"></script>
 
+    <script type="text/javascript" src="assets/libs/flickity/flickity.pkgd.min.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
