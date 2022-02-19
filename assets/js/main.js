@@ -97,6 +97,7 @@ $(document).ready(function(){
     $('.menu-mb__btn').dnmenu()
 
 
+
     //Select Item
     function dnselect(elm) {
         var dnselect_parent = $(elm).closest('.js-dnselect')
@@ -104,20 +105,46 @@ $(document).ready(function(){
             e.preventDefault();
             $(this).closest('.js-dnselect').toggleClass('active');
         })
+
+
         $(elm).closest('.js-dnselect').find('li label').on("click",function(e) {
-            console.log(1)
-            var dnselect_parent = $(this).closest('.js-dnselect')
-            var text = $(this).text()
+
+            // var dnselect_parent = $(this).closest('.js-dnselect')
+            // var text = $(this).text()
 
 
-            dnselect_parent.find('li').removeClass('active')
-            $(this).closest('li').addClass('active')
-            dnselect_parent.removeClass('active')
-            dnselect_parent.find('.js-dnselect__label').text(text)
+            // dnselect_parent.find('li').removeClass('active')
+            // $(this).closest('li').addClass('active')
+            // dnselect_parent.removeClass('active')
+            // dnselect_parent.find('.js-dnselect__label').text(text)
         })
-        $('.js-dnselect').mousedown(function(e){ e.stopPropagation(); });
+
+        $('.dnselect__content').mousedown(function(e){ e.stopPropagation(); });
+
+        // $(document).click(function (e) {
+
+        //     $parent = $(e.target).closest('.js-dnselect')
+        //     console.log(e.target)
+        //     console.log($(".js-dnselect .dnselect__label").is(e.target))
+        //     // If a dropdown has a class active AND if the dropdown or the link is not the target of the click
+        //     if ($(".js-dnselect").hasClass("active") && !$(".js-dnselect .dnselect__label").is(e.target)) {
+        //         // Remove class active
+        //         $(".js-dnselect").removeClass("active");
+        //         console.log(22222222)
+        //     }else{
+        //        $(".js-dnselect").removeClass("active");
+        //     }
+        // });
 
         $(document).mousedown(function(e){ $('.js-dnselect').removeClass('active'); });
     }
     dnselect('.js-dnselect__label')
+
+
+    $('.bs__select__ok').on('click', function (event) {
+    $('.bs__select__label').removeClass('show');
+});
+
+
+
 });
