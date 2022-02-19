@@ -96,4 +96,28 @@ $(document).ready(function(){
     };
     $('.menu-mb__btn').dnmenu()
 
+
+    //Select Item
+    function dnselect(elm) {
+        var dnselect_parent = $(elm).closest('.js-dnselect')
+        $(elm).click(function(e) {
+            e.preventDefault();
+            $(this).closest('.js-dnselect').toggleClass('active');
+        })
+        $(elm).closest('.js-dnselect').find('li label').on("click",function(e) {
+            console.log(1)
+            var dnselect_parent = $(this).closest('.js-dnselect')
+            var text = $(this).text()
+
+
+            dnselect_parent.find('li').removeClass('active')
+            $(this).closest('li').addClass('active')
+            dnselect_parent.removeClass('active')
+            dnselect_parent.find('.js-dnselect__label').text(text)
+        })
+        $('.js-dnselect').mousedown(function(e){ e.stopPropagation(); });
+
+        $(document).mousedown(function(e){ $('.js-dnselect').removeClass('active'); });
+    }
+    dnselect('.js-dnselect__label')
 });
