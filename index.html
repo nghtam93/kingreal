@@ -108,20 +108,20 @@
                     <div class="dnselect__label js-dnselect__label">Chọn loại BĐS</div>
                     <div class="dnselect__content">
                       <ul class="js-dnselect__list">
-                        <li><label><input type="radio" name="cate" value=""><span class="checkmark"></span><span><span>Chung cư</span></label></li>
-                        <li><label><input type="radio" name="cate" value="20"><span class="checkmark"></span><span><span>Chung cư mini</span></label></li>
-                        <li><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span><span>Tập thể</span></label></li>
-                        <li><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span><span>Condotel</span></label></li>
-                        <li><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span><span>Nhà ở</span></label></li>
-                        <li><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span><span>Nhà mặt tiền</span></label></li>
-                        <li><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span><span>Nhà liền kề & Biệt thự</span></label></li>
-                        <li><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span><span>Shophouse</span></label></li>
-                        <li><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span><span>Đất ở</span></label></li>
-                        <li><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span><span>Đất nền dự án</span></label></li>
-                        <li><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span><span>Đất nông nghiệp</span></label></li>
-                        <li><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span><span>Trang trại</span></label></li>
-                        <li><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span><span>Khách sạn</span></label></li>
-                        <li><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span><span>Nhà nghỉ</span></label></li>
+                        <li><label><input type="radio" name="cate" value=""><span class="checkmark"></span><span class="-text"><span>Chung cư</span></label></li>
+                        <li><label><input type="radio" name="cate" value="20"><span class="checkmark"></span><span class="-text"><span>Chung cư mini</span></label></li>
+                        <li><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span class="-text"><span>Tập thể</span></label></li>
+                        <li><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span class="-text"><span>Condotel</span></label></li>
+                        <li><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span class="-text"><span>Nhà ở</span></label></li>
+                        <li><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span class="-text"><span>Nhà mặt tiền</span></label></li>
+                        <li><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span class="-text"><span>Nhà liền kề & Biệt thự</span></label></li>
+                        <li><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span class="-text"><span>Shophouse</span></label></li>
+                        <li><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span class="-text"><span>Đất ở</span></label></li>
+                        <li><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span class="-text"><span>Đất nền dự án</span></label></li>
+                        <li><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span class="-text"><span>Đất nông nghiệp</span></label></li>
+                        <li><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span class="-text"><span>Trang trại</span></label></li>
+                        <li><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span class="-text"><span>Khách sạn</span></label></li>
+                        <li><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span class="-text"><span>Nhà nghỉ</span></label></li>
                       </ul>
                       <div class="p-2 text-center">
                         <a href="" class="dnselect__ok">Áp dụng</a>
@@ -140,8 +140,8 @@
               </div>
               <div class="row row-cols-md-4 g-2 g-md-3">
                 <div class="col-auto">
-                  <div class="dnselect js-dnselect">
-                    <div class="dnselect__label js-dnselect__label">Khoảng giá</div>
+                  <div class="dnselect js-dnselect -price">
+                    <div class="dnselect__label js-dnselect__label" data-pc="Khoảng giá" data-mb="Giá">Khoảng giá</div>
                     <div class="dnselect__content">
                       <div class="dnselect__content__header">
                         <button class="btn js-close">Đóng</button>
@@ -149,21 +149,21 @@
                         <button class="btn-reset"> Đặt lại </button>
                       </div>
                       <ul class="js-dnselect__list">
-                        <li><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span>Thỏa thuận</span></label></li>
-                        <li><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span><= 1 tỷ</span></label></li>
-                        <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span>1 - 2 tỷ</span></label></li>
-                        <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span>2 - 3 tỷ</span></label></li>
-                        <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span>3 - 5 tỷ</span></label></li>
-                        <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span>5 - 7 tỷ</span></label></li>
-                        <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span>7 - 10 tỷ</span></label></li>
-                        <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span>10 - 20 tỷ</span></label></li>
-                        <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span>20 - 30 tỷ</span></label></li>
-                        <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span>30 - 50 tỷ</span></label></li>
-                        <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span>30 - 50 tỷ</span></label></li>
-                        <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span>50 - 100 tỷ</span></label></li>
-                        <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span>> 100 tỷ</span></label></li>
+                        <li><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span class="-text">Thỏa thuận</span></label></li>
+                        <li><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span class="-text"><= 1 tỷ</span></label></li>
+                        <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">1 - 2 tỷ</span></label></li>
+                        <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">2 - 3 tỷ</span></label></li>
+                        <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">3 - 5 tỷ</span></label></li>
+                        <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">5 - 7 tỷ</span></label></li>
+                        <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">7 - 10 tỷ</span></label></li>
+                        <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">10 - 20 tỷ</span></label></li>
+                        <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">20 - 30 tỷ</span></label></li>
+                        <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">30 - 50 tỷ</span></label></li>
+                        <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">30 - 50 tỷ</span></label></li>
+                        <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">50 - 100 tỷ</span></label></li>
+                        <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">> 100 tỷ</span></label></li>
                       </ul>
-                      <div class="p-2 text-center">
+                      <div class="dnselect__content__footer p-2 text-center">
                         <a href="" class="dnselect__ok">Áp dụng</a>
                       </div>
                     </div>
@@ -193,12 +193,12 @@
                                 <input type="text" class="citytab__isearch form-control" placeholder="Tìm kiếm">
                               </div>
                               <div class="nav__citytab__list">
-                                <div><label><input type="radio" name="city[]" value="1"><span class="checkmark"></span><span>Thành phố Hồ Chí Minh</span></label></div>
-                                <div><label><input type="radio" name="city[]" value="2"><span class="checkmark"></span><span>Thành phố Hà Nội</span></label></div>
-                                <div><label><input type="radio" name="city[]" value="3"><span class="checkmark"></span><span>Thành phố Đà Nẵng</span></label></div>
-                                <div><label><input type="radio" name="city[]" value="4"><span class="checkmark"></span><span>Tỉnh Bình Dương</span></label></div>
-                                <div><label><input type="radio" name="city[]" value="5"><span class="checkmark"></span><span>Thành phố Hải Phòng</span></label></div>
-                                <div><label><input type="radio" name="city[]" value="6"><span class="checkmark"></span><span>Tỉnh Quảng Ninh</span></label></div>
+                                <div><label><input type="radio" name="city[]" value="1"><span class="checkmark"></span><span class="-text">Thành phố Hồ Chí Minh</span></label></div>
+                                <div><label><input type="radio" name="city[]" value="2"><span class="checkmark"></span><span class="-text">Thành phố Hà Nội</span></label></div>
+                                <div><label><input type="radio" name="city[]" value="3"><span class="checkmark"></span><span class="-text">Thành phố Đà Nẵng</span></label></div>
+                                <div><label><input type="radio" name="city[]" value="4"><span class="checkmark"></span><span class="-text">Tỉnh Bình Dương</span></label></div>
+                                <div><label><input type="radio" name="city[]" value="5"><span class="checkmark"></span><span class="-text">Thành phố Hải Phòng</span></label></div>
+                                <div><label><input type="radio" name="city[]" value="6"><span class="checkmark"></span><span class="-text">Tỉnh Quảng Ninh</span></label></div>
                               </div>
                               <div class="dnselect__content__footer p-2 text-center">
                                 <a href="" class="dnselect__ok">Áp dụng</a>
@@ -212,13 +212,13 @@
                               </div>
 
                               <div class="nav__citytab__list">
-                                <div><label><input type="checkbox" name="district[]" value="1"><span class="checkmark"></span><span>Huyện Bàu Bàng</span></label></div>
-                                <div><label><input type="checkbox" name="district[]" value="2"><span class="checkmark"></span><span>Huyện Bàu Bàng 1</span></label></div>
-                                <div><label><input type="checkbox" name="district[]" value="3"><span class="checkmark"></span><span>Huyện Bàu Bàng 2</span></label></div>
-                                <div><label><input type="checkbox" name="district[]" value="4"><span class="checkmark"></span><span>Huyện Bàu Bàng 3</span></label></div>
-                                <div><label><input type="checkbox" name="district[]" value="5"><span class="checkmark"></span><span>Huyện Bàu Bàng 4</span></label></div>
-                                <div><label><input type="checkbox" name="district[]" value="6"><span class="checkmark"></span><span>Huyện Bàu Bàng 5</span></label></div>
-                                <div><label><input type="checkbox" name="district[]" value="7"><span class="checkmark"></span><span>Huyện Bàu Bàng 6</span></label></div>
+                                <div><label><input type="checkbox" name="district[]" value="1"><span class="checkmark"></span><span class="-text">Huyện Bàu Bàng</span></label></div>
+                                <div><label><input type="checkbox" name="district[]" value="2"><span class="checkmark"></span><span class="-text">Huyện Bàu Bàng 1</span></label></div>
+                                <div><label><input type="checkbox" name="district[]" value="3"><span class="checkmark"></span><span class="-text">Huyện Bàu Bàng 2</span></label></div>
+                                <div><label><input type="checkbox" name="district[]" value="4"><span class="checkmark"></span><span class="-text">Huyện Bàu Bàng 3</span></label></div>
+                                <div><label><input type="checkbox" name="district[]" value="5"><span class="checkmark"></span><span class="-text">Huyện Bàu Bàng 4</span></label></div>
+                                <div><label><input type="checkbox" name="district[]" value="6"><span class="checkmark"></span><span class="-text">Huyện Bàu Bàng 5</span></label></div>
+                                <div><label><input type="checkbox" name="district[]" value="7"><span class="checkmark"></span><span class="-text">Huyện Bàu Bàng 6</span></label></div>
                               </div>
                               <div class="p-2 text-center">
                                 <a href="" class="dnselect__ok">Áp dụng</a>
@@ -235,16 +235,16 @@
                     <div class="dnselect__label js-dnselect__label">Diện tích</div>
                     <div class="dnselect__content">
                       <ul class="js-dnselect__list">
-                        <li><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span>< 30 m²</span></label></li>
-                        <li><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span>30 - 50 m²</span></label></li>
-                        <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span>50 - 70 m²</span></label></li>
-                        <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span>70 - 100 m²</span></label></li>
-                        <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span>100 - 150 m²</span></label></li>
-                        <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span>150 - 300 m²</span></label></li>
-                        <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span>300 - 500 m²</span></label></li>
-                        <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span>>= 500 m²</span></label></li>
+                        <li><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span class="-text">< 30 m²</span></label></li>
+                        <li><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span class="-text">30 - 50 m²</span></label></li>
+                        <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">50 - 70 m²</span></label></li>
+                        <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">70 - 100 m²</span></label></li>
+                        <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">100 - 150 m²</span></label></li>
+                        <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">150 - 300 m²</span></label></li>
+                        <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">300 - 500 m²</span></label></li>
+                        <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">>= 500 m²</span></label></li>
                       </ul>
-                      <div class="p-2 text-center">
+                      <div class="dnselect__content__footer p-2 text-center">
                         <a href="" class="dnselect__ok">Áp dụng</a>
                       </div>
                     </div>
@@ -257,67 +257,68 @@
                       Tìm kiếm nâng cao
                     </button>
                     <div class="dropdown-menu dropdown-menu-end -large" aria-labelledby="dropdownMenuButton1">
-                  <div class="d-flex align-items-center justify-content-between mb-2">
-                    <span>Số phòng tắm</span>
-                    <div class="dnselect js-dnselect">
-                      <div class="dnselect__label js-dnselect__label">Tất cả</div>
-                      <div class="dnselect__content">
-                        <ul class="js-dnselect__list">
-                          <li><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span>1</span></label></li>
-                          <li><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span>2 Phòng</span></label></li>
-                          <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span>3 Phòng</span></label></li>
-                          <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span>4 Phòng</span></label></li>
-                          <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span>5 Phòng</span></label></li>
-                          <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span>>= 6</span></label></li>
-                        </ul>
-                        <div class="p-2 text-center">
-                          <a href="" class="dnselect__ok">Áp dụng</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="d-flex align-items-center justify-content-between mb-2">
-                    <span>Số phòng ngủ</span>
-                    <div class="dnselect js-dnselect">
-                      <div class="dnselect__label js-dnselect__label">Tất cả</div>
-                      <div class="dnselect__content">
-                        <ul class="js-dnselect__list">
-                          <li><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span>1</span></label></li>
-                          <li><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span>2 Phòng</span></label></li>
-                          <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span>3 Phòng</span></label></li>
-                          <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span>4 Phòng</span></label></li>
-                          <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span>5 Phòng</span></label></li>
-                          <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span>>= 6</span></label></li>
-                        </ul>
-                        <div class="p-2 text-center">
-                          <a href="" class="dnselect__ok">Áp dụng</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="d-flex align-items-center justify-content-between mb-2">
-                    <span>Hướng</span>
 
-                    <div class="dnselect js-dnselect">
-                        <div class="dnselect__label js-dnselect__label">Tất cả</div>
-                        <div class="dnselect__content">
-                          <ul class="js-dnselect__list">
-                            <li><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span>Đông</span></label></li>
-                            <li><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span>Tây</span></label></li>
-                            <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span>Nam</span></label></li>
-                            <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span>Bắc</span></label></li>
-                            <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span>Đông Bác</span></label></li>
-                            <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span>Đông Nam</span></label></li>
-                            <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span>Tây Bắc</span></label></li>
-                            <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span>Tây Nam</span></label></li>
-                          </ul>
-                          <div class="p-2 text-center">
-                            <a href="" class="dnselect__ok">Áp dụng</a>
+                      <div class="d-flex align-items-center justify-content-between mb-2">
+                        <span>Số phòng tắm</span>
+                        <div class="dnselect js-dnselect">
+                          <div class="dnselect__label js-dnselect__label">Tất cả</div>
+                          <div class="dnselect__content">
+                            <ul class="js-dnselect__list">
+                              <li><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span class="-text">1</span></label></li>
+                              <li><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span class="-text">2 Phòng</span></label></li>
+                              <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">3 Phòng</span></label></li>
+                              <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">4 Phòng</span></label></li>
+                              <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">5 Phòng</span></label></li>
+                              <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">>= 6</span></label></li>
+                            </ul>
+                            <div class="dnselect__content__footer p-2 text-center">
+                              <a href="" class="dnselect__ok">Áp dụng</a>
+                            </div>
                           </div>
                         </div>
                       </div>
+                      <div class="d-flex align-items-center justify-content-between mb-2">
+                        <span>Số phòng ngủ</span>
+                        <div class="dnselect js-dnselect">
+                          <div class="dnselect__label js-dnselect__label">Tất cả</div>
+                          <div class="dnselect__content">
+                            <ul class="js-dnselect__list">
+                              <li><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span class="-text">1</span></label></li>
+                              <li><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span class="-text">2 Phòng</span></label></li>
+                              <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">3 Phòng</span></label></li>
+                              <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">4 Phòng</span></label></li>
+                              <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">5 Phòng</span></label></li>
+                              <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">>= 6</span></label></li>
+                            </ul>
+                            <div class="dnselect__content__footer p-2 text-center">
+                              <a href="" class="dnselect__ok">Áp dụng</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-between mb-2">
+                        <span>Hướng</span>
 
-                  </div>
+                        <div class="dnselect js-dnselect">
+                            <div class="dnselect__label js-dnselect__label">Tất cả</div>
+                            <div class="dnselect__content">
+                              <ul class="js-dnselect__list">
+                                <li><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span class="-text">Đông</span></label></li>
+                                <li><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span class="-text">Tây</span></label></li>
+                                <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">Nam</span></label></li>
+                                <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">Bắc</span></label></li>
+                                <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">Đông Bác</span></label></li>
+                                <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">Đông Nam</span></label></li>
+                                <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">Tây Bắc</span></label></li>
+                                <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">Tây Nam</span></label></li>
+                              </ul>
+                              <div class="dnselect__content__footer p-2 text-center">
+                                <a href="" class="dnselect__ok">Áp dụng</a>
+                              </div>
+                            </div>
+                          </div>
+
+                      </div>
                     </div>
                   </div>
 
@@ -333,86 +334,89 @@
                         <span>Bộ lọc</span>
                         <button class="btn-reset"> Đặt lại </button>
                       </div>
-                      <div class="dnselect__item p-3">
-                        <div class="dnselect__mb__header">Loại nhà đất</div>
-                        <ul class="js-dnselect__list row">
-                            <li class="col-6"><label><input type="radio" name="cate" value=""><span class="checkmark"></span><span><span>Chung cư</span></label></li>
-                          <li class="col-6"><label><input type="radio" name="cate" value="20"><span class="checkmark"></span><span><span>Chung cư mini</span></label></li>
-                          <li class="col-6"><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span><span>Tập thể</span></label></li>
-                          <li class="col-6"><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span><span>Condotel</span></label></li>
-                          <li class="col-6"><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span><span>Nhà ở</span></label></li>
-                          <li class="col-6"><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span><span>Nhà mặt tiền</span></label></li>
-                          <li class="col-6"><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span><span>Nhà liền kề & Biệt thự</span></label></li>
-                          <li class="col-6"><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span><span>Shophouse</span></label></li>
-                          <li class="col-6"><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span><span>Đất ở</span></label></li>
-                          <li class="col-6"><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span><span>Đất nền dự án</span></label></li>
-                          <li class="col-6"><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span><span>Đất nông nghiệp</span></label></li>
-                          <li class="col-6"><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span><span>Trang trại</span></label></li>
-                          <li class="col-6"><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span><span>Khách sạn</span></label></li>
-                          <li class="col-6"><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span><span>Nhà nghỉ</span></label></li>
-                        </ul>
+                      <div class="dnselect__items">
+                        <div class="dnselect__item">
+                          <div class="dnselect__mb__header px-3 pt-3">Loại nhà đất</div>
+                          <ul class="js-dnselect__list row gx-0 pb-0">
+                              <li class="col-6"><label><input type="radio" name="cate" value=""><span class="checkmark"></span><span class="-text">Chung cư</span></label></li>
+                            <li class="col-6"><label><input type="radio" name="cate" value="20"><span class="checkmark"></span><span class="-text">Chung cư mini</span></label></li>
+                            <li class="col-6"><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span class="-text">Tập thể</span></label></li>
+                            <li class="col-6"><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span class="-text">Condotel</span></label></li>
+                            <li class="col-6"><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span class="-text">Nhà ở</span></label></li>
+                            <li class="col-6"><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span class="-text">Nhà mặt tiền</span></label></li>
+                            <li class="col-6"><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span class="-text">Nhà liền kề & Biệt thự</span></label></li>
+                            <li class="col-6"><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span class="-text">Shophouse</span></label></li>
+                            <li class="col-6"><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span class="-text">Đất ở</span></label></li>
+                            <li class="col-6"><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span class="-text">Đất nền dự án</span></label></li>
+                            <li class="col-6"><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span class="-text">Đất nông nghiệp</span></label></li>
+                            <li class="col-6"><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span class="-text">Trang trại</span></label></li>
+                            <li class="col-6"><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span class="-text">Khách sạn</span></label></li>
+                            <li class="col-6"><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span class="-text">Nhà nghỉ</span></label></li>
+                          </ul>
 
-                      </div>
-                      <hr>
-                      <div class="dnselect__item p-3">
-                        <div class="dnselect__mb__header">Diện tích</div>
-                        <ul class="js-dnselect__list row">
-                          <li class="col-6"><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span>< 30 m²</span></label></li>
-                          <li class="col-6"><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span>30 - 50 m²</span></label></li>
-                          <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span>50 - 70 m²</span></label></li>
-                          <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span>70 - 100 m²</span></label></li>
-                          <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span>100 - 150 m²</span></label></li>
-                          <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span>150 - 300 m²</span></label></li>
-                          <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span>300 - 500 m²</span></label></li>
-                          <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span>>= 500 m²</span></label></li>
-                        </ul>
-                      </div>
-                      <hr>
-                      <div class="dnselect__item p-3">
-                        <div class="dnselect__mb__header">Số phòng ngủ</div>
-                        <ul class="js-dnselect__list row">
-                          <li class="col-6"><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span>1</span></label></li>
-                          <li class="col-6"><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span>2 Phòng</span></label></li>
-                          <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span>3 Phòng</span></label></li>
-                          <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span>4 Phòng</span></label></li>
-                          <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span>5 Phòng</span></label></li>
-                          <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span>>= 6</span></label></li>
-                        </ul>
-                      </div>
-                      <hr>
-                      <div class="dnselect__item p-3">
-                          <div class="dnselect__mb__header">Số phòng tắm</div>
-                          <ul class="js-dnselect__list row">
-                            <li class="col-6"><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span>1</span></label></li>
-                            <li class="col-6"><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span>2 Phòng</span></label></li>
-                            <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span>3 Phòng</span></label></li>
-                            <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span>4 Phòng</span></label></li>
-                            <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span>5 Phòng</span></label></li>
-                            <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span>>= 6</span></label></li>
+                        </div>
+                        <hr class="m-1">
+                        <div class="dnselect__item">
+                          <div class="dnselect__mb__header px-3 pt-3">Diện tích</div>
+                          <ul class="js-dnselect__list row gx-0 pb-0">
+                            <li class="col-6"><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span class="-text">< 30 m²</span></label></li>
+                            <li class="col-6"><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span class="-text">30 - 50 m²</span></label></li>
+                            <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">50 - 70 m²</span></label></li>
+                            <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">70 - 100 m²</span></label></li>
+                            <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">100 - 150 m²</span></label></li>
+                            <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">150 - 300 m²</span></label></li>
+                            <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">300 - 500 m²</span></label></li>
+                            <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">>= 500 m²</span></label></li>
                           </ul>
-                      </div>
-                      <hr>
-                      <div class="dnselect__item p-3">
-                          <div class="dnselect__mb__header">Hướng</div>
-                          <ul class="js-dnselect__list row">
-                            <li class="col-6"><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span>Đông</span></label></li>
-                            <li class="col-6"><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span>Tây</span></label></li>
-                            <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span>Nam</span></label></li>
-                            <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span>Bắc</span></label></li>
-                            <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span>Đông Bác</span></label></li>
-                            <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span>Đông Nam</span></label></li>
-                            <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span>Tây Bắc</span></label></li>
-                            <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span>Tây Nam</span></label></li>
+                        </div>
+                        <hr class="m-1">
+                        <div class="dnselect__item">
+                          <div class="dnselect__mb__header px-3 pt-3">Số phòng ngủ</div>
+                          <ul class="js-dnselect__list row gx-0 pb-0">
+                            <li class="col-6"><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span class="-text">1</span></label></li>
+                            <li class="col-6"><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span class="-text">2 Phòng</span></label></li>
+                            <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">3 Phòng</span></label></li>
+                            <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">4 Phòng</span></label></li>
+                            <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">5 Phòng</span></label></li>
+                            <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">>= 6</span></label></li>
                           </ul>
+                        </div>
+                        <hr class="m-1">
+                        <div class="dnselect__item">
+                            <div class="dnselect__mb__header px-3 pt-3">Số phòng tắm</div>
+                            <ul class="js-dnselect__list row gx-0 pb-0">
+                              <li class="col-6"><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span class="-text">1</span></label></li>
+                              <li class="col-6"><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span class="-text">2 Phòng</span></label></li>
+                              <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">3 Phòng</span></label></li>
+                              <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">4 Phòng</span></label></li>
+                              <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">5 Phòng</span></label></li>
+                              <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">>= 6</span></label></li>
+                            </ul>
+                        </div>
+                        <hr class="m-1">
+                        <div class="dnselect__item">
+                            <div class="dnselect__mb__header px-3 pt-3">Hướng</div>
+                            <ul class="js-dnselect__list row gx-0 pb-0">
+                              <li class="col-6"><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span class="-text">Đông</span></label></li>
+                              <li class="col-6"><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span class="-text">Tây</span></label></li>
+                              <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">Nam</span></label></li>
+                              <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">Bắc</span></label></li>
+                              <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">Đông Bác</span></label></li>
+                              <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">Đông Nam</span></label></li>
+                              <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">Tây Bắc</span></label></li>
+                              <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">Tây Nam</span></label></li>
+                            </ul>
+                        </div>
                       </div>
-                      <div class="p-2 text-center">
+
+                      <div class="dnselect__content__footer p-2 text-center">
                         <a href="" class="dnselect__ok">Áp dụng</a>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <div class="col-auto d-md-none">
+                <div class="col d-md-none">
                   <div class="dnselect js-dnselect">
                     <div class="dnselect__label js-dnselect__label -order">Sắp xếp</div>
                     <div class="dnselect__content">
@@ -422,12 +426,12 @@
                         <button class="btn-reset"> Đặt lại </button>
                       </div>
                       <ul class="js-dnselect__list">
-                        <li><label><input type="radio" name="price[]" value="20"><span class="checkmark"></span><span>Mới nhất</span></label></li>
-                        <li><label><input type="radio" name="price[]" value="20"><span class="checkmark"></span><span>Cũ nhất</span></label></li>
-                        <li><label><input type="radio" name="price[]" value="13"><span class="checkmark"></span><span>Giá tăng dần</span></label></li>
-                        <li><label><input type="radio" name="price[]" value="13"><span class="checkmark"></span><span>Giá giảm dần</span></label></li>
+                        <li><label><input type="radio" name="price[]" value="20"><span class="checkmark"></span><span class="-text">Mới nhất</span></label></li>
+                        <li><label><input type="radio" name="price[]" value="20"><span class="checkmark"></span><span class="-text">Cũ nhất</span></label></li>
+                        <li><label><input type="radio" name="price[]" value="13"><span class="checkmark"></span><span class="-text">Giá tăng dần</span></label></li>
+                        <li><label><input type="radio" name="price[]" value="13"><span class="checkmark"></span><span class="-text">Giá giảm dần</span></label></li>
                       </ul>
-                      <div class="p-2 text-center">
+                      <div class="dnselect__content__footer p-2 text-center">
                         <a href="" class="dnselect__ok">Áp dụng</a>
                       </div>
                     </div>

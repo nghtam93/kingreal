@@ -125,12 +125,24 @@ $(document).ready(function(){
         })
         $('.js-dnselect').mousedown(function(e){ e.stopPropagation(); });
         $(document).mousedown(function(e){ $('.js-dnselect').removeClass('active'); $("body").removeClass('dnselect-open') });
+
+        $(window).on("load resize", function() {
+            $( ".js-dnselect__label").each(function( index ) {
+
+              let name = $(this).data("pc")
+
+                if (window.matchMedia("(max-width: 575px)").matches) {
+                   name = $(this).data("mb")
+                }
+                $(this).text(name)
+
+            });
+        })
+
+
     }
     dnselect('.js-dnselect__label')
 
-    // $('.bs__select__ok').on('click', function (event) {
-    //     $('.bs__select__label').removeClass('show');
-    // });
 
 
 });
