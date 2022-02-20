@@ -97,33 +97,39 @@ $(document).ready(function(){
     $('.menu-mb__btn').dnmenu()
 
 
-
     //Select Item
     function dnselect(elm) {
         var dnselect_parent = $(elm).closest('.js-dnselect')
         $(elm).click(function(e) {
-
             e.preventDefault();
-
+            isActive = true
+            $("body").addClass('dnselect-open')
             thiz = $(this).closest('.js-dnselect')
-            if(thiz.hasClass('active')){
+
+            if(thiz.hasClass('active')) isActive = false
+            if(isActive == true){
+                $('.js-dnselect').removeClass('active');
+                $(this).closest('.js-dnselect').addClass('active');
+                $("body").addClass('dnselect-open')
+            }else{
                 thiz.removeClass('active')
-                return
+                $("body").removeClass('dnselect-open')
             }
 
-            $('.js-dnselect').removeClass('active');
-            $(this).closest('.js-dnselect').addClass('active');
 
         })
-
+        $('.js-close').on("click",function(e) {
+            $('.js-dnselect').removeClass('active');
+            $("body").removeClass('dnselect-open')
+        })
         $('.js-dnselect').mousedown(function(e){ e.stopPropagation(); });
-        $(document).mousedown(function(e){ $('.js-dnselect').removeClass('active'); });
+        $(document).mousedown(function(e){ $('.js-dnselect').removeClass('active'); $("body").removeClass('dnselect-open') });
     }
     dnselect('.js-dnselect__label')
 
-    $('.bs__select__ok').on('click', function (event) {
-        $('.bs__select__label').removeClass('show');
-    });
+    // $('.bs__select__ok').on('click', function (event) {
+    //     $('.bs__select__label').removeClass('show');
+    // });
 
 
 });

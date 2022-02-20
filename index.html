@@ -93,15 +93,15 @@
 
           </li>
           <li class="nav-item" role="presentation">
-            <button class="nav-link" id="searchTab02-tab" data-bs-toggle="tab" data-bs-target="#searchTab02" type="button" role="tab" aria-controls="searchTab02" aria-selected="false"><span class="tab--check me-2"></span>Sản phẩm BĐS bán</button>
+            <button class="nav-link" id="searchTab02-tab" data-bs-toggle="tab" data-bs-target="#searchTab02" type="button" role="tab" aria-controls="searchTab02" aria-selected="false"><span class="tab--check me-2"></span>BĐS bán</button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="nav-link" id="searchTab03-tab" data-bs-toggle="tab" data-bs-target="#searchTab03" type="button" role="tab" aria-controls="searchTab03" aria-selected="false"><span class="tab--check me-2"></span>Sản phẩm BĐS cho thuê</button>
+            <button class="nav-link" id="searchTab03-tab" data-bs-toggle="tab" data-bs-target="#searchTab03" type="button" role="tab" aria-controls="searchTab03" aria-selected="false"><span class="tab--check me-2"></span>BĐS cho thuê</button>
           </li>
         </ul>
         <div class="tab-content" id="searchTabContent">
           <div class="tab-pane fade show active" id="searchTab01" role="tabpanel" aria-labelledby="searchTab01-tab">
-            <form role="search" method="get" class="box__searchAdvanced" action="https://happyproperty.com.vn">
+            <form role="search" method="get" class="box__searchAdvanced" action="">
               <div class="row mb-3">
                 <div class="col-auto bds__col--select d-none d-md-block">
                   <div class="dnselect js-dnselect">
@@ -143,6 +143,11 @@
                   <div class="dnselect js-dnselect">
                     <div class="dnselect__label js-dnselect__label">Khoảng giá</div>
                     <div class="dnselect__content">
+                      <div class="dnselect__content__header">
+                        <button class="btn js-close">Đóng</button>
+                        <span>Khoảng giá</span>
+                        <button class="btn-reset"> Đặt lại </button>
+                      </div>
                       <ul class="js-dnselect__list">
                         <li><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span>Thỏa thuận</span></label></li>
                         <li><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span><= 1 tỷ</span></label></li>
@@ -170,7 +175,7 @@
                     <div class="dnselect__content">
 
                         <div class="dnselect__content__header">
-                          <button class="btn btn-back">Đóng</button>
+                          <button class="btn js-close">Đóng</button>
                           <span>Khu vực</span>
                           <button class="btn-reset"> Đặt lại </button>
                         </div>
@@ -184,7 +189,6 @@
                         </ul>
                         <div class="tab-content" id="cityTabContent">
                           <div class="tab-pane fade show active" id="citytab01" role="tabpanel" aria-labelledby="citytab01-tab">
-
                               <div class="p-3">
                                 <input type="text" class="citytab__isearch form-control" placeholder="Tìm kiếm">
                               </div>
@@ -196,10 +200,9 @@
                                 <div><label><input type="radio" name="city[]" value="5"><span class="checkmark"></span><span>Thành phố Hải Phòng</span></label></div>
                                 <div><label><input type="radio" name="city[]" value="6"><span class="checkmark"></span><span>Tỉnh Quảng Ninh</span></label></div>
                               </div>
-                              <div class="p-2 text-center">
+                              <div class="dnselect__content__footer p-2 text-center">
                                 <a href="" class="dnselect__ok">Áp dụng</a>
                               </div>
-
 
                           </div>
                           <div class="tab-pane fade" id="citytab02" role="tabpanel" aria-labelledby="citytab02-tab">
@@ -227,7 +230,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-auto">
+                <div class="col-auto d-none d-md-block">
                   <div class="dnselect js-dnselect">
                     <div class="dnselect__label js-dnselect__label">Diện tích</div>
                     <div class="dnselect__content">
@@ -246,9 +249,9 @@
                       </div>
                     </div>
                   </div>
-
                 </div>
-                <div class="col-auto">
+
+                <div class="col-auto d-none d-md-block">
                   <div class="dropdown">
                     <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"  data-bs-auto-close="outside" aria-expanded="false">
                       Tìm kiếm nâng cao
@@ -318,9 +321,35 @@
                     </div>
                   </div>
 
-
-
                 </div>
+
+                <div class="col-auto d-md-none">
+                  <div class="dnselect js-dnselect">
+                    <div class="dnselect__label js-dnselect__label">Sắp xếp</div>
+                    <div class="dnselect__content">
+                      <div class="dnselect__content__header">
+                        <button class="btn js-close">Đóng</button>
+                        <span>Sắp xếp</span>
+                        <button class="btn-reset"> Đặt lại </button>
+                      </div>
+                      <ul class="js-dnselect__list">
+                        <li><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span>< 30 m²</span></label></li>
+                        <li><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span>30 - 50 m²</span></label></li>
+                        <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span>50 - 70 m²</span></label></li>
+                        <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span>70 - 100 m²</span></label></li>
+                        <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span>100 - 150 m²</span></label></li>
+                        <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span>150 - 300 m²</span></label></li>
+                        <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span>300 - 500 m²</span></label></li>
+                        <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span>>= 500 m²</span></label></li>
+                      </ul>
+                      <div class="p-2 text-center">
+                        <a href="" class="dnselect__ok">Áp dụng</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
               </div>
             </form>
           </div>
