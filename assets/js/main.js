@@ -119,6 +119,7 @@ $(document).ready(function(){
 
         })
         $('.js-close').on("click",function(e) {
+            e.preventDefault();
             $('.js-dnselect').removeClass('active');
             $("body").removeClass('dnselect-open')
         })

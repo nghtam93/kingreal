@@ -254,6 +254,24 @@ button,input,optgroup,select,textarea{max-width:100%;}
 .dnselect{position:relative;font-size:14px;}
 .dnselect .dnselect__label{width:auto;padding:6px 25px 6px 10px;cursor:pointer;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
 .dnselect .dnselect__label:before{content:'';position:absolute;top:15px;right:8px;width:10px;height:10px;background:url(assets/img/arrow-down.svg);background-repeat:no-repeat;background-size:contain;}
+
+.dnselect__label.-order:before{
+    top: 10px;
+    right: 8px;
+    width: 10px!important;
+    height: 14px!important;
+    background-image: url(assets/img/icon-sort-filter.svg);
+}
+.dnselect__label.-filter:before{
+    top: 10px;
+    right: 8px;
+    width: 14px!important;
+    height: 14px!important;
+    background-image: url(assets/img/icon-filter.svg);
+}
+
+
+
 .dnselect .dnselect__content{position:absolute;top:calc(100% + 2px);width:225px;left:0;padding:0;font-size:14px;pointer-events:none;opacity:0;background:#f0f2f6;transition:all .3s;box-shadow:0 4px 10px rgb(51 51 51 / 15%);z-index:1;}
 .dnselect .dnselect__content.-large{background-color:#fff;}
 .dnselect .js-dnselect__list{max-height:266px;overflow:auto;}
@@ -265,7 +283,7 @@ button,input,optgroup,select,textarea{max-width:100%;}
 .dnselect .js-dnselect__list>li:not(:last-child){border-bottom:0;}
 .dnselect label{position:relative;display:block;width:100%;align-items:center;overflow:hidden;text-overflow:ellipsis;word-break:break-word;-webkit-line-clamp:1;padding:4px 10px 4px 43px;cursor:pointer;}
 .dnselect .js-dnselect__list>li:not(:last-child){border-bottom:1px solid rgba(217,219,233,.33);}
-.dnselect .js-dnselect__list>li:hover{background-color:#ccc;}
+/*.dnselect .js-dnselect__list>li:hover{background-color:#f8ebd4;}*/
 .dnselect label>input{display:none;}
 .dnselect__ok{display:inline-block;background:#c89843;color:#fff;border-radius:30px;padding:1px 15px;font-size:12px;}
 .dnselect__ok:hover{color:#fff;}
@@ -277,12 +295,14 @@ button,input,optgroup,select,textarea{max-width:100%;}
 /**/
 input[type=checkbox] + .checkmark{position:absolute;left:15px;}
 input[type=checkbox] + .checkmark:before{content:"";display:block;width:17px;height:17px;position:absolute;top:3px;z-index:1;border:1.5px solid #a0a3bd;box-sizing:border-box;border-radius:3px;}
+input[type=checkbox]:checked~.checkmark + span{color: #f5881f;}
 input[type=checkbox]:checked~.checkmark:after{content:"";position:absolute;left:7px;top:6px;width:4px;height:8px;border:solid #fff;border-width:0 1px 1px 0;transform:rotate(45deg);z-index:2;}
 input[type=checkbox]:checked~.checkmark:before{border:2px solid #f5881f;background-color:#f5881f;}
 
 /**/
 input[type=radio] + .checkmark{position:absolute;left:15px;}
 input[type=radio] + .checkmark:before{content:"";display:block;width:18px;height:18px;position:absolute;top:3px;z-index:1;border:1.5px solid #a0a3bd;box-sizing:border-box;border-radius:50%;}
+input[type=radio]:checked~.checkmark + span{color: #f5881f;}
 input[type=radio]:checked~.checkmark:after{content:"";position:absolute;left:6px;top:9px;width:4px;height:4px;border:solid #fff;border-radius:50%;z-index:2;}
 input[type=radio]:checked~.checkmark:before{border:2px solid #f5881f;background-color:#f5881f;}
 
@@ -360,12 +380,37 @@ input[type=radio]:checked~.checkmark:before{border:2px solid #f5881f;background-
 	.home-new .el__item.-large .el__item__title{font-size:16px;}
 	.searchAdvanced__submit{min-width:39px;padding:10px;}
 	.tab-search .search-field{font-size:14px;}
-	.dnselect .dnselect__content{position:fixed;top:0;left:0;width:100%;height:100%;background:#fff;}
+	.dnselect .dnselect__content{position:fixed;top:0;left:0;width:100%;height:100%;background:#fff;overflow: auto;}
 	.tab-search .tab-content,.tab-search.tab-content>.tab-pane{height:100%;}
 	.dnselect-open{overflow:hidden;}
 	.dnselect-open .header{z-index:1;}
 	.dnselect__content__header{display:flex;}
 	.nav__citytab__list{}
+
+	.dnselect .dnselect__label {
+	    padding: 3px 25px 3px 10px;
+	    border: 1px solid #ccc;
+	    border-radius: 4px;
+	}
+	.dnselect .dnselect__label:before {
+	    width: 8px;
+	    height: 8px;
+	}
+	.dnselect .js-dnselect__list {
+    padding: 10px 0;
+}
+	.dnselect .js-dnselect__list>li:first-child {
+    margin-top: 0;
+}
+.dnselect .js-dnselect__list>li:not(:last-child) {
+    border-bottom: 0;
+}
+.box__searchAdvanced input, .box__searchAdvanced select, .box__searchAdvanced button {
+    border-color: #f0f0f0;
+    background: #f7f7f7;
+}
+
+
 }
 @media (max-width:575px){
 	.home-why .el__item .dnfix__thumb{padding-top:65px;}
