@@ -1,0 +1,1010 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/favicon.png" />
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="assets/libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/libs/flickity/flickity.min.css"/>
+    <link href="style.css" rel="stylesheet">
+
+    <title>Kingreal - Đại siêu thị dự án cho mọi nhu cầu bất động sản.</title>
+  </head>
+  <body class="">
+
+    <header class="header">
+      <div class="container">
+        <nav class="navbar navbar-expand">
+          <h1 class="header__logo me-3">
+            <a href="index.html">
+              <img src="images/logo-header.png" alt="Logo">
+            </a>
+          </h1>
+
+          <div class="main__nav ms-auto me-xxl-5 d-none d-lg-block">
+            <ul class="dn__menu">
+              <li class="menu-item"><a href="">Về Kingreal</a></li>
+              <li class="menu-item"><a href="bds-duan.html">Dự Án BĐS</a></li>
+              <li class="menu-item active"><a href="">Dịch vụ bán</a></li>
+              <li class="menu-item"><a href="">Dịch vụ cho thuê</a></li>
+              <li class="menu-item"><a href="">Tin tức - Sự kiện</a></li>
+              <li class="menu-item"><a href="">Tuyển dụng</a></li>
+              <li class="menu-item"><a href="">Liên hệ</a></li>
+            </ul>
+          </div>
+          <div class="languages ms-auto">
+            <div class="languages__label">
+              <img src="assets/flag/vi.png" width="36" height="24" alt="">
+            </div>
+            <div class="languages__content">
+              <p class="languages__text">Select language</p>
+              <ul class="">
+                <li class="">
+                  <a href="">
+                  <img src="assets/flag/en.png" width="36" height="24">
+                  <span>English</span>
+                  </a>
+                </li>
+                <li class="active">
+                  <a href="">
+                  <img src="assets/flag/cn.png" width="36" height="24">
+                  <span>Chinese</span>
+                  </a>
+                </li>
+                <li class="active">
+                  <a href="">
+                  <img src="assets/flag/vi.png" width="36" height="24">
+                  <span>Tiếng Việt</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="d-lg-none d-lg-none ms-3">
+            <div class="menu-mb__btn" data-id="menu__mobile">
+              <span class="iconz-bar"></span>
+              <span class="iconz-bar"></span>
+              <span class="iconz-bar"></span>
+            </div>
+          </div>
+
+        </nav>
+      </div>
+    </header>
+
+
+
+
+    <div class="wrapper">
+      <div class="archive__slider">
+        <div class="el__slider flickity" data-flickity='{ "autoPlay": true, "wrapAround": true, "cellAlign": "left", "prevNextButtons": false, "pageDots": true }'>
+          <div class="slider__item__wrap w-100">
+            <div class="el__item">
+              <div class="el__item__thumb">
+                <div class="dnfix__thumb">
+                  <img src="images/header-banner-01.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider__item__wrap w-100">
+            <div class="el__item">
+              <div class="el__item__thumb">
+                <div class="dnfix__thumb">
+                  <img src="images/header-banner-01.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider__item__wrap w-100">
+            <div class="el__item">
+              <div class="el__item__thumb">
+                <div class="dnfix__thumb">
+                  <img src="images/header-banner-01.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="search__archive">
+        <div class="container">
+          <form role="search" method="get" class="box__searchAdvanced" action="">
+            <div class="row g-2 g-xl-3 align-items-center justify-content-center">
+
+              <div class="col-12 col-xl mt-3 order-xl order-xl-3">
+                  <div class="search-field__wrap -st2">
+                    <input type="text" class="search-field form-control" value="" name="s" placeholder="Tìm theo tên Đường, Phường hoặc Quận">
+
+                    <button type="submit" class="searchAdvanced__submit"><i class="icon-search me-md-2"></i><span class="d-none d-md-inline-block">Tìm kiếm</span></button>
+                  </div>
+              </div>
+
+              <div class="col-auto bds__col--select d-none d-md-block order-2">
+                <div class="dnselect js-dnselect">
+                  <div class="dnselect__label js-dnselect__label">Chọn loại BĐS</div>
+                  <div class="dnselect__content">
+                    <ul class="js-dnselect__list">
+                      <li><label><input type="radio" name="cate" value=""><span class="checkmark"></span><span class="-text"><span>Chung cư</span></label></li>
+                      <li><label><input type="radio" name="cate" value="20"><span class="checkmark"></span><span class="-text"><span>Chung cư mini</span></label></li>
+                      <li><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span class="-text"><span>Tập thể</span></label></li>
+                      <li><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span class="-text"><span>Condotel</span></label></li>
+                      <li><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span class="-text"><span>Nhà ở</span></label></li>
+                      <li><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span class="-text"><span>Nhà mặt tiền</span></label></li>
+                      <li><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span class="-text"><span>Nhà liền kề & Biệt thự</span></label></li>
+                      <li><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span class="-text"><span>Shophouse</span></label></li>
+                      <li><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span class="-text"><span>Đất ở</span></label></li>
+                      <li><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span class="-text"><span>Đất nền dự án</span></label></li>
+                      <li><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span class="-text"><span>Đất nông nghiệp</span></label></li>
+                      <li><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span class="-text"><span>Trang trại</span></label></li>
+                      <li><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span class="-text"><span>Khách sạn</span></label></li>
+                      <li><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span class="-text"><span>Nhà nghỉ</span></label></li>
+                    </ul>
+                    <div class="p-2 text-center">
+                      <a href="" class="dnselect__ok">Áp dụng</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-auto order-2">
+                <div class="dnselect js-dnselect -price">
+                  <div class="dnselect__label js-dnselect__label" data-pc="Khoảng giá" data-mb="Giá">Khoảng giá</div>
+                  <div class="dnselect__content">
+                    <div class="dnselect__content__header">
+                      <button class="btn js-close">Đóng</button>
+                      <span>Khoảng giá</span>
+                      <button class="btn-reset"> Đặt lại </button>
+                    </div>
+                    <ul class="js-dnselect__list">
+                      <li><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span class="-text">Thỏa thuận</span></label></li>
+                      <li><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span class="-text"><= 1 tỷ</span></label></li>
+                      <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">1 - 2 tỷ</span></label></li>
+                      <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">2 - 3 tỷ</span></label></li>
+                      <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">3 - 5 tỷ</span></label></li>
+                      <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">5 - 7 tỷ</span></label></li>
+                      <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">7 - 10 tỷ</span></label></li>
+                      <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">10 - 20 tỷ</span></label></li>
+                      <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">20 - 30 tỷ</span></label></li>
+                      <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">30 - 50 tỷ</span></label></li>
+                      <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">30 - 50 tỷ</span></label></li>
+                      <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">50 - 100 tỷ</span></label></li>
+                      <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">> 100 tỷ</span></label></li>
+                    </ul>
+                    <div class="dnselect__content__footer p-2 text-center">
+                      <a href="" class="dnselect__ok">Áp dụng</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-auto order-2">
+                <div class="dnselect js-dnselect order-2">
+                  <div class="dnselect__label js-dnselect__label">Khu vực</div>
+                  <div class="dnselect__content">
+
+                      <div class="dnselect__content__header">
+                        <button class="btn js-close">Đóng</button>
+                        <span>Khu vực</span>
+                        <button class="btn-reset"> Đặt lại </button>
+                      </div>
+                      <ul class="nav nav-pills nav__citytab" id="cityTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link active" id="citytab01-tab" data-bs-toggle="tab" data-bs-target="#citytab01" type="button" role="tab" aria-controls="citytab01" aria-selected="true">Tỉnh/Thành phố</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="citytab02-tab" data-bs-toggle="tab" data-bs-target="#citytab02" type="button" role="tab" aria-controls="citytab02" aria-selected="false">Quận/Huyện</button>
+                        </li>
+                      </ul>
+                      <div class="tab-content" id="cityTabContent">
+                        <div class="tab-pane fade show active" id="citytab01" role="tabpanel" aria-labelledby="citytab01-tab">
+                            <div class="p-3">
+                              <input type="text" class="citytab__isearch form-control" placeholder="Tìm kiếm">
+                            </div>
+                            <div class="nav__citytab__list">
+                              <div><label><input type="radio" name="city[]" value="1"><span class="checkmark"></span><span class="-text">Thành phố Hồ Chí Minh</span></label></div>
+                              <div><label><input type="radio" name="city[]" value="2"><span class="checkmark"></span><span class="-text">Thành phố Hà Nội</span></label></div>
+                              <div><label><input type="radio" name="city[]" value="3"><span class="checkmark"></span><span class="-text">Thành phố Đà Nẵng</span></label></div>
+                              <div><label><input type="radio" name="city[]" value="4"><span class="checkmark"></span><span class="-text">Tỉnh Bình Dương</span></label></div>
+                              <div><label><input type="radio" name="city[]" value="5"><span class="checkmark"></span><span class="-text">Thành phố Hải Phòng</span></label></div>
+                              <div><label><input type="radio" name="city[]" value="6"><span class="checkmark"></span><span class="-text">Tỉnh Quảng Ninh</span></label></div>
+                            </div>
+                            <div class="dnselect__content__footer p-2 text-center">
+                              <a href="" class="dnselect__ok">Áp dụng</a>
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="citytab02" role="tabpanel" aria-labelledby="citytab02-tab">
+
+                            <div class="p-3">
+                              <input type="text" class="citytab__isearch form-control" placeholder="Tìm kiếm">
+                            </div>
+
+                            <div class="nav__citytab__list">
+                              <div><label><input type="checkbox" name="district[]" value="1"><span class="checkmark"></span><span class="-text">Huyện Bàu Bàng</span></label></div>
+                              <div><label><input type="checkbox" name="district[]" value="2"><span class="checkmark"></span><span class="-text">Huyện Bàu Bàng 1</span></label></div>
+                              <div><label><input type="checkbox" name="district[]" value="3"><span class="checkmark"></span><span class="-text">Huyện Bàu Bàng 2</span></label></div>
+                              <div><label><input type="checkbox" name="district[]" value="4"><span class="checkmark"></span><span class="-text">Huyện Bàu Bàng 3</span></label></div>
+                              <div><label><input type="checkbox" name="district[]" value="5"><span class="checkmark"></span><span class="-text">Huyện Bàu Bàng 4</span></label></div>
+                              <div><label><input type="checkbox" name="district[]" value="6"><span class="checkmark"></span><span class="-text">Huyện Bàu Bàng 5</span></label></div>
+                              <div><label><input type="checkbox" name="district[]" value="7"><span class="checkmark"></span><span class="-text">Huyện Bàu Bàng 6</span></label></div>
+                            </div>
+                            <div class="p-2 text-center">
+                              <a href="" class="dnselect__ok">Áp dụng</a>
+                            </div>
+
+                        </div>
+                      </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-auto d-none d-md-block order-2">
+                <div class="dnselect js-dnselect">
+                  <div class="dnselect__label js-dnselect__label">Diện tích</div>
+                  <div class="dnselect__content">
+                    <ul class="js-dnselect__list">
+                      <li><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span class="-text">< 30 m²</span></label></li>
+                      <li><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span class="-text">30 - 50 m²</span></label></li>
+                      <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">50 - 70 m²</span></label></li>
+                      <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">70 - 100 m²</span></label></li>
+                      <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">100 - 150 m²</span></label></li>
+                      <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">150 - 300 m²</span></label></li>
+                      <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">300 - 500 m²</span></label></li>
+                      <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">>= 500 m²</span></label></li>
+                    </ul>
+                    <div class="dnselect__content__footer p-2 text-center">
+                      <a href="" class="dnselect__ok">Áp dụng</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-auto d-none d-md-block order-2">
+                <div class="dropdown">
+                  <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"  data-bs-auto-close="outside" aria-expanded="false">
+                    Tìm kiếm nâng cao
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-end -large" aria-labelledby="dropdownMenuButton1">
+
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                      <span>Số phòng tắm</span>
+                      <div class="dnselect js-dnselect">
+                        <div class="dnselect__label js-dnselect__label">Tất cả</div>
+                        <div class="dnselect__content">
+                          <ul class="js-dnselect__list">
+                            <li><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span class="-text">1</span></label></li>
+                            <li><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span class="-text">2 Phòng</span></label></li>
+                            <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">3 Phòng</span></label></li>
+                            <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">4 Phòng</span></label></li>
+                            <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">5 Phòng</span></label></li>
+                            <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">>= 6</span></label></li>
+                          </ul>
+                          <div class="dnselect__content__footer p-2 text-center">
+                            <a href="" class="dnselect__ok">Áp dụng</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                      <span>Số phòng ngủ</span>
+                      <div class="dnselect js-dnselect">
+                        <div class="dnselect__label js-dnselect__label">Tất cả</div>
+                        <div class="dnselect__content">
+                          <ul class="js-dnselect__list">
+                            <li><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span class="-text">1</span></label></li>
+                            <li><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span class="-text">2 Phòng</span></label></li>
+                            <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">3 Phòng</span></label></li>
+                            <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">4 Phòng</span></label></li>
+                            <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">5 Phòng</span></label></li>
+                            <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">>= 6</span></label></li>
+                          </ul>
+                          <div class="dnselect__content__footer p-2 text-center">
+                            <a href="" class="dnselect__ok">Áp dụng</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                      <span>Hướng</span>
+
+                      <div class="dnselect js-dnselect">
+                          <div class="dnselect__label js-dnselect__label">Tất cả</div>
+                          <div class="dnselect__content">
+                            <ul class="js-dnselect__list">
+                              <li><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span class="-text">Đông</span></label></li>
+                              <li><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span class="-text">Tây</span></label></li>
+                              <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">Nam</span></label></li>
+                              <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">Bắc</span></label></li>
+                              <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">Đông Bác</span></label></li>
+                              <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">Đông Nam</span></label></li>
+                              <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">Tây Bắc</span></label></li>
+                              <li><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">Tây Nam</span></label></li>
+                            </ul>
+                            <div class="dnselect__content__footer p-2 text-center">
+                              <a href="" class="dnselect__ok">Áp dụng</a>
+                            </div>
+                          </div>
+                        </div>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col-auto d-md-none order-2">
+                <div class="dnselect js-dnselect">
+                  <div class="dnselect__label js-dnselect__label -filter">Bộ lọc</div>
+                  <div class="dnselect__content">
+                    <div class="dnselect__content__header">
+                      <button class="btn js-close">Đóng</button>
+                      <span>Bộ lọc</span>
+                      <button class="btn-reset"> Đặt lại </button>
+                    </div>
+                    <div class="dnselect__items">
+                      <div class="dnselect__item">
+                        <div class="dnselect__mb__header px-3 pt-3">Loại nhà đất</div>
+                        <ul class="js-dnselect__list row gx-0 pb-0">
+                            <li class="col-6"><label><input type="radio" name="cate" value=""><span class="checkmark"></span><span class="-text">Chung cư</span></label></li>
+                          <li class="col-6"><label><input type="radio" name="cate" value="20"><span class="checkmark"></span><span class="-text">Chung cư mini</span></label></li>
+                          <li class="col-6"><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span class="-text">Tập thể</span></label></li>
+                          <li class="col-6"><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span class="-text">Condotel</span></label></li>
+                          <li class="col-6"><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span class="-text">Nhà ở</span></label></li>
+                          <li class="col-6"><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span class="-text">Nhà mặt tiền</span></label></li>
+                          <li class="col-6"><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span class="-text">Nhà liền kề & Biệt thự</span></label></li>
+                          <li class="col-6"><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span class="-text">Shophouse</span></label></li>
+                          <li class="col-6"><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span class="-text">Đất ở</span></label></li>
+                          <li class="col-6"><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span class="-text">Đất nền dự án</span></label></li>
+                          <li class="col-6"><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span class="-text">Đất nông nghiệp</span></label></li>
+                          <li class="col-6"><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span class="-text">Trang trại</span></label></li>
+                          <li class="col-6"><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span class="-text">Khách sạn</span></label></li>
+                          <li class="col-6"><label><input type="radio" name="cate" value="13"><span class="checkmark"></span><span class="-text">Nhà nghỉ</span></label></li>
+                        </ul>
+
+                      </div>
+                      <hr class="m-1">
+                      <div class="dnselect__item">
+                        <div class="dnselect__mb__header px-3 pt-3">Diện tích</div>
+                        <ul class="js-dnselect__list row gx-0 pb-0">
+                          <li class="col-6"><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span class="-text">< 30 m²</span></label></li>
+                          <li class="col-6"><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span class="-text">30 - 50 m²</span></label></li>
+                          <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">50 - 70 m²</span></label></li>
+                          <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">70 - 100 m²</span></label></li>
+                          <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">100 - 150 m²</span></label></li>
+                          <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">150 - 300 m²</span></label></li>
+                          <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">300 - 500 m²</span></label></li>
+                          <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">>= 500 m²</span></label></li>
+                        </ul>
+                      </div>
+                      <hr class="m-1">
+                      <div class="dnselect__item">
+                        <div class="dnselect__mb__header px-3 pt-3">Số phòng ngủ</div>
+                        <ul class="js-dnselect__list row gx-0 pb-0">
+                          <li class="col-6"><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span class="-text">1</span></label></li>
+                          <li class="col-6"><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span class="-text">2 Phòng</span></label></li>
+                          <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">3 Phòng</span></label></li>
+                          <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">4 Phòng</span></label></li>
+                          <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">5 Phòng</span></label></li>
+                          <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">>= 6</span></label></li>
+                        </ul>
+                      </div>
+                      <hr class="m-1">
+                      <div class="dnselect__item">
+                          <div class="dnselect__mb__header px-3 pt-3">Số phòng tắm</div>
+                          <ul class="js-dnselect__list row gx-0 pb-0">
+                            <li class="col-6"><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span class="-text">1</span></label></li>
+                            <li class="col-6"><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span class="-text">2 Phòng</span></label></li>
+                            <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">3 Phòng</span></label></li>
+                            <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">4 Phòng</span></label></li>
+                            <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">5 Phòng</span></label></li>
+                            <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">>= 6</span></label></li>
+                          </ul>
+                      </div>
+                      <hr class="m-1">
+                      <div class="dnselect__item">
+                          <div class="dnselect__mb__header px-3 pt-3">Hướng</div>
+                          <ul class="js-dnselect__list row gx-0 pb-0">
+                            <li class="col-6"><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span class="-text">Đông</span></label></li>
+                            <li class="col-6"><label><input type="checkbox" name="price[]" value="20"><span class="checkmark"></span><span class="-text">Tây</span></label></li>
+                            <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">Nam</span></label></li>
+                            <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">Bắc</span></label></li>
+                            <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">Đông Bác</span></label></li>
+                            <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">Đông Nam</span></label></li>
+                            <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">Tây Bắc</span></label></li>
+                            <li class="col-6"><label><input type="checkbox" name="price[]" value="13"><span class="checkmark"></span><span class="-text">Tây Nam</span></label></li>
+                          </ul>
+                      </div>
+                    </div>
+
+                    <div class="dnselect__content__footer p-2 text-center">
+                      <a href="" class="dnselect__ok">Áp dụng</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-auto d-md-none order-2">
+                <div class="dnselect js-dnselect">
+                  <div class="dnselect__label js-dnselect__label -order">Sắp xếp</div>
+                  <div class="dnselect__content">
+                    <div class="dnselect__content__header">
+                      <button class="btn js-close">Đóng</button>
+                      <span>Sắp xếp</span>
+                      <button class="btn-reset"> Đặt lại </button>
+                    </div>
+                    <ul class="js-dnselect__list">
+                      <li><label><input type="radio" name="price[]" value="20"><span class="checkmark"></span><span class="-text">Mới nhất</span></label></li>
+                      <li><label><input type="radio" name="price[]" value="20"><span class="checkmark"></span><span class="-text">Cũ nhất</span></label></li>
+                      <li><label><input type="radio" name="price[]" value="13"><span class="checkmark"></span><span class="-text">Giá tăng dần</span></label></li>
+                      <li><label><input type="radio" name="price[]" value="13"><span class="checkmark"></span><span class="-text">Giá giảm dần</span></label></li>
+                    </ul>
+                    <div class="dnselect__content__footer p-2 text-center">
+                      <a href="" class="dnselect__ok">Áp dụng</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </form>
+        </div>
+      </div>
+
+
+      <div class="wrap__page">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-xlz-3 d-none d-xlz-block">
+              <div class="widget-area widget__left">
+                <div class="sidebar__inner border rounded p-4">
+
+                  <div class="widget widget__search">
+                    <h3 class="widget__title">Loại nhà đất</h3>
+                    <div class="widget__content">
+                      <ul>
+                        <li><a href="" class="link-checkbox d-flex align-items-center justify-content-between active"><span>Chung cư</span><div class="ms-value">1,729</div></a></li>
+                        <li><a href="" class="link-checkbox d-flex align-items-center justify-content-between"><span>Chung cư mini</span><div class="ms-value">1,729</div></a></li>
+                        <li><a href="" class="link-checkbox d-flex align-items-center justify-content-between"><span>Tập thể</span><div class="ms-value">1,729</div></a></li>
+                        <li><a href="" class="link-checkbox d-flex align-items-center justify-content-between"><span>Condotel</span><div class="ms-value">1,729</div></a></li>
+                        <li><a href="" class="link-checkbox d-flex align-items-center justify-content-between"><span>Nhà ở</span><div class="ms-value">1,729</div></a></li>
+                        <li><a href="" class="link-checkbox d-flex align-items-center justify-content-between"><span>Nhà mặt tiền</span><div class="ms-value">1,729</div></a></li>
+                        <li><a href="" class="link-checkbox d-flex align-items-center justify-content-between"><span>Nhà liền kề & Biệt thự</span><div class="ms-value">1,729</div></a></li>
+                        <li><a href="" class="link-checkbox d-flex align-items-center justify-content-between"><span>Shophouse</span><div class="ms-value">1,729</div></a></li>
+                        <li><a href="" class="link-checkbox d-flex align-items-center justify-content-between"><span>Đất ở</span><div class="ms-value">1,729</div></a></li>
+                        <li><a href="" class="link-checkbox d-flex align-items-center justify-content-between"><span>Đất nền dự án</span><div class="ms-value">1,729</div></a></li>
+                        <li><a href="" class="link-checkbox d-flex align-items-center justify-content-between"><span>Đất nông nghiệp</span><div class="ms-value">1,729</div></a></li>
+                        <li><a href="" class="link-checkbox d-flex align-items-center justify-content-between"><span>Trang trại</span><div class="ms-value">1,729</div></a></li>
+                        <li><a href="" class="link-checkbox d-flex align-items-center justify-content-between"><span>Khách sạn</span><div class="ms-value">1,729</div></a></li>
+                        <li><a href="" class="link-checkbox d-flex align-items-center justify-content-between"><span>Nhà nghỉ</span><div class="ms-value">1,729</div></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="widget widget__search widget--collapse">
+                    <h3 class="widget__title">Khu vực</h3>
+                    <div class="widget__content">
+                      <ul>
+                        <li class="li-active"><a href="" class="link-checkbox d-flex align-items-center justify-content-between"><span>Thành phố Hồ Chí Minh</span><div class="ms-value">1,729</div></a></li>
+                        <li class="li-active"><a href="" class="link-checkbox d-flex align-items-center justify-content-between"><span>Thành phố Hà Nội</span><div class="ms-value">1,729</div></a></li>
+                        <li class="li-active"><a href="" class="link-checkbox d-flex align-items-center justify-content-between"><span>Thành phố Đà Nẵng</span><div class="ms-value">1,729</div></a></li>
+                        <li class="li-active"><a href="" class="link-checkbox d-flex align-items-center justify-content-between"><span>Tỉnh Bình Dương</span><div class="ms-value">1,729</div></a></li>
+                        <li class="li-active"><a href="" class="link-checkbox d-flex align-items-center justify-content-between"><span>Thành phố Hải Phòng</span><div class="ms-value">1,729</div></a></li>
+                        <li class="li-active"><a href="" class="link-checkbox d-flex align-items-center justify-content-between"><span>Tỉnh Quảng Ninh</span><div class="ms-value">1,729</div></a></li>
+                        <li class="li-active"><a href="" class="link-checkbox d-flex align-items-center justify-content-between"><span>Thành phố Hồ Chí Minh</span><div class="ms-value">1,729</div></a></li>
+                        <li><a href="" class="link-checkbox d-flex align-items-center justify-content-between"><span>Thành phố Hà Nội</span><div class="ms-value">1,729</div></a></li>
+                        <li><a href="" class="link-checkbox d-flex align-items-center justify-content-between"><span>Thành phố Đà Nẵng</span><div class="ms-value">1,729</div></a></li>
+                        <li><a href="" class="link-checkbox d-flex align-items-center justify-content-between"><span>Tỉnh Bình Dương</span><div class="ms-value">1,729</div></a></li>
+                        <li><a href="" class="link-checkbox d-flex align-items-center justify-content-between"><span>Thành phố Hải Phòng</span><div class="ms-value">1,729</div></a></li>
+                        <li><a href="" class="link-checkbox d-flex align-items-center justify-content-between"><span>Tỉnh Quảng Ninh</span><div class="ms-value">1,729</div></a></li>
+                        <li><a href="" class="link-checkbox d-flex align-items-center justify-content-between"><span>Thành phố Hồ Chí Minh</span><div class="ms-value">1,729</div></a></li>
+                        <li><a href="" class="link-checkbox d-flex align-items-center justify-content-between"><span>Thành phố Hà Nội</span><div class="ms-value">1,729</div></a></li>
+                        <li><a href="" class="link-checkbox d-flex align-items-center justify-content-between"><span>Thành phố Đà Nẵng</span><div class="ms-value">1,729</div></a></li>
+                        <li><a href="" class="link-checkbox d-flex align-items-center justify-content-between"><span>Tỉnh Bình Dương</span><div class="ms-value">1,729</div></a></li>
+                        <li><a href="" class="link-checkbox d-flex align-items-center justify-content-between"><span>Thành phố Hải Phòng</span><div class="ms-value">1,729</div></a></li>
+                        <li><a href="" class="link-checkbox d-flex align-items-center justify-content-between"><span>Tỉnh Quảng Ninh</span><div class="ms-value">1,729</div></a></li>
+                      </ul>
+                      <a class="widget--collapse__btn js-widget--collapse" data-text="Xem thêm" data-text2="Thu gọn">Xem thêm</a>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="widget widget__search">
+                    <h3 class="widget__title">Mức giá</h3>
+                    <div class="widget__content">
+                      <ul>
+                        <li><a href="" class="link-checkbox d-flex align-items-center justify-content-between"><span>Thỏa thuận</span><div class="ms-value">1,729</div></a></li>
+                        <li><a href="" class="link-checkbox d-flex align-items-center justify-content-between"><span><= 1 tỷ</span><div class="ms-value">1,729</div></a></li>
+                        <li><a href="" class="link-checkbox d-flex align-items-center justify-content-between"><span>1 - 2 tỷ</span><div class="ms-value">1,729</div></a></li>
+                        <li><a href="" class="link-checkbox d-flex align-items-center justify-content-between"><span>2 - 3 tỷ</span><div class="ms-value">1,729</div></a></li>
+                        <li><a href="" class="link-checkbox d-flex align-items-center justify-content-between"><span>3 - 5 tỷ</span><div class="ms-value">1,729</div></a></li>
+                        <li><a href="" class="link-checkbox d-flex align-items-center justify-content-between"><span>5 - 7 tỷ</span><div class="ms-value">1,729</div></a></li>
+                        <li><a href="" class="link-checkbox d-flex align-items-center justify-content-between"><span>7 - 10 tỷ</span><div class="ms-value">1,729</div></a></li>
+                        <li><a href="" class="link-checkbox d-flex align-items-center justify-content-between"><span>10 - 20 tỷ</span><div class="ms-value">1,729</div></a></li>
+                        <li><a href="" class="link-checkbox d-flex align-items-center justify-content-between"><span>20 - 30 tỷ</span><div class="ms-value">1,729</div></a></li>
+                        <li><a href="" class="link-checkbox d-flex align-items-center justify-content-between"><span>30 - 50 tỷ</span><div class="ms-value">1,729</div></a></li>
+                        <li><a href="" class="link-checkbox d-flex align-items-center justify-content-between"><span>30 - 50 tỷ</span><div class="ms-value">1,729</div></a></li>
+                        <li><a href="" class="link-checkbox d-flex align-items-center justify-content-between"><span>50 - 100 tỷ</span><div class="ms-value">1,729</div></a></li>
+                        <li><a href="" class="link-checkbox d-flex align-items-center justify-content-between"><span>> 100 tỷ</span><div class="ms-value">1,729</div></a></li>
+                      </ul>
+                    </div>
+                  </div>
+
+
+
+
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-xlz-9">
+              <div class="sc__breadcrumb">
+                <span><a  href="" class="home"><span>Trang chủ</span></a> / <span>
+                <span><span  class="current-item">BDS Bán</span></span>
+              </div>
+
+              <header class="page__header">
+                <h1 class="page-title">BẤT ĐỘNG SẢN MUA BÁN</h1>
+              </header>
+
+              <div class="archive__content">
+
+                  <div class="archive__content__top d-flex justify-content-between">
+                    <span>Có 288,461 kết quả</span>
+                    <div>
+                        <div class="dnselect js-dnselect -right -background">
+                          <div class="dnselect__label js-dnselect__label rounded">Sắp xếp</div>
+                          <div class="dnselect__content rounded">
+                            <div class="dnselect__content__header">
+                              <button class="btn js-close">Đóng</button>
+                              <span>Sắp xếp</span>
+                              <button class="btn-reset"> Đặt lại </button>
+                            </div>
+                            <ul class="js-dnselect__list">
+                              <li><a href="">Mới nhất</a></li>
+                              <li><a href="">Cũ nhất</a></li>
+                              <li><a href="">Giá tăng dần</a></li>
+                              <li><a href="">Giá giảm dần</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+
+                    <div class="col-sm-6 col-lg-4 col-xl-4">
+                      <div class="project__item">
+                        <div class="project__item__thumb">
+                          <span class="project__item__stt">Đang mở bán</span>
+                          <a href="bds-ban-chitiet.html" class="dnfix__thumb">
+                            <img src="images/project2-item-01-small.png" alt="">
+                          </a>
+                        </div>
+                        <div class="project__item__meta">
+                          <a href="bds-ban-chitiet.html"><h3 class="project__item__title text__truncate -n2">Nhà Đẹp cho thuê giá hợp lí thị trường bên Hải Châu</h3></a>
+                          <div class="project__item__address mb-1">
+                            Ngũ Hành Sơn - Đà Nẵng
+                          </div>
+                          <div class="d-flex mb-2">
+                              <p class="price">Giá: <b>14.5 triệu/tháng</b></p>
+                              <p class="ms-auto">Kiệt ô tô</p>
+                          </div>
+                          <div class="project__item__option row gx-1">
+                            <p class="col-4"><i class="icon-info"></i> 70m2</p>
+                            <p class="col-4 text-center">4 PN - 3WC</p>
+                            <p class="col-4 text-end">Đông Nam</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div><!-- .col-md-3 -->
+                    <div class="col-sm-6 col-lg-4 col-xl-4">
+                      <div class="project__item">
+                        <div class="project__item__thumb">
+                          <a href="bds-ban-chitiet.html" class="dnfix__thumb">
+                            <img src="images/project2-item-02-small.png" alt="">
+                          </a>
+                        </div>
+                        <div class="project__item__meta">
+                          <a href="bds-ban-chitiet.html"><h3 class="project__item__title text__truncate -n2">Bán nhà MT Điện Biên Phủ, khu kinh doanh sầm uất</h3></a>
+                          <div class="project__item__address mb-1">
+                            Thanh Khê - Đà Nẵng
+                          </div>
+                          <div class="d-flex mb-2">
+                              <p class="price">Giá: <b>8 tỷ</b></p>
+                              <p class="ms-auto">Nhà phố</p>
+                          </div>
+                          <div class="project__item__option row gx-1">
+                            <p class="col-4"><i class="icon-info"></i> 100m2</p>
+                            <p class="col-4 text-center">4 PN - 3WC</p>
+                            <p class="col-4 text-end">Đông Nam</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div><!-- .col-md-3 -->
+                    <div class="col-sm-6 col-lg-4 col-xl-4">
+                      <div class="project__item">
+                        <div class="project__item__thumb">
+                          <span class="project__item__stt">Đang mở bán</span>
+                          <a href="bds-ban-chitiet.html" class="dnfix__thumb">
+                            <img src="images/project2-item-03-small.png" alt="">
+                          </a>
+                        </div>
+                        <div class="project__item__meta">
+                          <a href="bds-ban-chitiet.html"><h3 class="project__item__title text__truncate -n2">Bán nhà 3 tầng mặt tiền Lý Tự Trọng khu trung tâm</h3></a>
+                          <div class="project__item__address mb-1">
+                            Hải Châu - Đà Nẵng
+                          </div>
+                          <div class="d-flex mb-2">
+                              <p class="price">Giá: <b>3.45 tỷ</b></p>
+                              <p class="ms-auto">Kiệt ô tô</p>
+                          </div>
+                          <div class="project__item__option row gx-1">
+                            <p class="col-4"><i class="icon-info"></i> 20m2</p>
+                            <p class="col-4 text-center">2 PN - 2WC</p>
+                            <p class="col-4 text-end">Đông Nam</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div><!-- .col-md-3 -->
+                    <div class="col-sm-6 col-lg-4 col-xl-4">
+                      <div class="project__item">
+                        <div class="project__item__thumb">
+                          <a href="bds-ban-chitiet.html" class="dnfix__thumb">
+                            <img src="images/project2-item-04-small.png" alt="">
+                          </a>
+                        </div>
+                        <div class="project__item__meta">
+                          <a href="bds-ban-chitiet.html"><h3 class="project__item__title text__truncate -n2">MT Kỳ Đồng nhà 3 tầng gần chợ kinh doanh sầm uất</h3></a>
+                          <div class="project__item__address mb-1">
+                            Ngũ Hành Sơn - Đà Nẵng
+                          </div>
+                          <div class="d-flex mb-2">
+                              <p class="price">Giá: <b>3.9 tỷ</b></p>
+                              <p class="ms-auto">Nhà phố</p>
+                          </div>
+                          <div class="project__item__option row gx-1">
+                            <p class="col-4"><i class="icon-info"></i> 22m2</p>
+                            <p class="col-4 text-center">4 PN - 3WC</p>
+                            <p class="col-4 text-end">Đông Nam</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div><!-- .col-md-3 -->
+                    <div class="col-sm-6 col-lg-4 col-xl-4">
+                      <div class="project__item">
+                        <div class="project__item__thumb">
+                          <a href="bds-ban-chitiet.html" class="dnfix__thumb">
+                            <img src="images/project2-item-05-small.png" alt="">
+                          </a>
+                        </div>
+                        <div class="project__item__meta">
+                          <a href="bds-ban-chitiet.html"><h3 class="project__item__title text__truncate -n2">Nhà Đẹp cho thuê giá hợp lí thị trường bên Hải Châu</h3></a>
+                          <div class="project__item__address mb-1">
+                            Ngũ Hành Sơn - Đà Nẵng
+                          </div>
+                          <div class="d-flex mb-2">
+                              <p class="price">Giá: <b>14.5 triệu/tháng</b></p>
+                              <p class="ms-auto">Kiệt ô tô</p>
+                          </div>
+                          <div class="project__item__option row gx-1">
+                            <p class="col-4"><i class="icon-info"></i> 70m2</p>
+                            <p class="col-4 text-center">4 PN - 3WC</p>
+                            <p class="col-4 text-end">Đông Nam</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div><!-- .col-md-3 -->
+                    <div class="col-sm-6 col-lg-4 col-xl-4">
+                      <div class="project__item">
+                        <div class="project__item__thumb">
+                          <span class="project__item__stt">Đang mở bán</span>
+                          <a href="bds-ban-chitiet.html" class="dnfix__thumb">
+                            <img src="images/project2-item-06-small.png" alt="">
+                          </a>
+                        </div>
+                        <div class="project__item__meta">
+                          <a href="bds-ban-chitiet.html"><h3 class="project__item__title text__truncate -n2">Bán nhà MT Điện Biên Phủ, khu kinh doanh sầm uất</h3></a>
+                          <div class="project__item__address mb-1">
+                            Thanh Khê - Đà Nẵng
+                          </div>
+                          <div class="d-flex mb-2">
+                              <p class="price">Giá: <b>8 tỷ</b></p>
+                              <p class="ms-auto">Nhà phố</p>
+                          </div>
+                          <div class="project__item__option row gx-1">
+                            <p class="col-4"><i class="icon-info"></i> 100m2</p>
+                            <p class="col-4 text-center">4 PN - 3WC</p>
+                            <p class="col-4 text-end">Đông Nam</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div><!-- .col-md-3 -->
+                    <div class="col-sm-6 col-lg-4 col-xl-4">
+                      <div class="project__item">
+                        <div class="project__item__thumb">
+                          <a href="bds-ban-chitiet.html" class="dnfix__thumb">
+                            <img src="images/project2-item-07-small.png" alt="">
+                          </a>
+                        </div>
+                        <div class="project__item__meta">
+                          <a href="bds-ban-chitiet.html"><h3 class="project__item__title text__truncate -n2">Bán nhà 3 tầng mặt tiền Lý Tự Trọng khu trung tâm</h3></a>
+                          <div class="project__item__address mb-1">
+                            Hải Châu - Đà Nẵng
+                          </div>
+                          <div class="d-flex mb-2">
+                              <p class="price">Giá: <b>3.45 tỷ</b></p>
+                              <p class="ms-auto">Kiệt ô tô</p>
+                          </div>
+                          <div class="project__item__option row gx-1">
+                            <p class="col-4"><i class="icon-info"></i> 20m2</p>
+                            <p class="col-4 text-center">2 PN - 2WC</p>
+                            <p class="col-4 text-end">Đông Nam</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div><!-- .col-md-3 -->
+                    <div class="col-sm-6 col-lg-4 col-xl-4">
+                      <div class="project__item">
+                        <div class="project__item__thumb">
+                          <a href="bds-ban-chitiet.html" class="dnfix__thumb">
+                            <img src="images/project2-item-08-small.png" alt="">
+                          </a>
+                        </div>
+                        <div class="project__item__meta">
+                          <a href="bds-ban-chitiet.html"><h3 class="project__item__title text__truncate -n2">MT Kỳ Đồng nhà 3 tầng gần chợ kinh doanh sầm uất</h3></a>
+                          <div class="project__item__address mb-1">
+                            Ngũ Hành Sơn - Đà Nẵng
+                          </div>
+                          <div class="d-flex mb-2">
+                              <p class="price">Giá: <b>3.9 tỷ</b></p>
+                              <p class="ms-auto">Nhà phố</p>
+                          </div>
+                          <div class="project__item__option row gx-1">
+                            <p class="col-4"><i class="icon-info"></i> 22m2</p>
+                            <p class="col-4 text-center">4 PN - 3WC</p>
+                            <p class="col-4 text-end">Đông Nam</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div><!-- .col-md-3 -->
+                    <div class="col-sm-6 col-lg-4 col-xl-4">
+                      <div class="project__item">
+                        <div class="project__item__thumb">
+                          <span class="project__item__stt">Đang mở bán</span>
+                          <a href="bds-ban-chitiet.html" class="dnfix__thumb">
+                            <img src="images/project2-item-09-small.png" alt="">
+                          </a>
+                        </div>
+                        <div class="project__item__meta">
+                          <a href="bds-ban-chitiet.html"><h3 class="project__item__title text__truncate -n2">Nhà Đẹp cho thuê giá hợp lí thị trường bên Hải Châu</h3></a>
+                          <div class="project__item__address mb-1">
+                            Ngũ Hành Sơn - Đà Nẵng
+                          </div>
+                          <div class="d-flex mb-2">
+                              <p class="price">Giá: <b>14.5 triệu/tháng</b></p>
+                              <p class="ms-auto">Kiệt ô tô</p>
+                          </div>
+                          <div class="project__item__option row gx-1">
+                            <p class="col-4"><i class="icon-info"></i> 70m2</p>
+                            <p class="col-4 text-center">4 PN - 3WC</p>
+                            <p class="col-4 text-end">Đông Nam</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div><!-- .col-md-3 -->
+                    <div class="col-sm-6 col-lg-4 col-xl-4">
+                      <div class="project__item">
+                        <div class="project__item__thumb">
+                          <a href="bds-ban-chitiet.html" class="dnfix__thumb">
+                            <img src="images/project2-item-10-small.png" alt="">
+                          </a>
+                        </div>
+                        <div class="project__item__meta">
+                          <a href="bds-ban-chitiet.html"><h3 class="project__item__title text__truncate -n2">Bán nhà MT Điện Biên Phủ, khu kinh doanh sầm uất</h3></a>
+                          <div class="project__item__address mb-1">
+                            Thanh Khê - Đà Nẵng
+                          </div>
+                          <div class="d-flex mb-2">
+                              <p class="price">Giá: <b>8 tỷ</b></p>
+                              <p class="ms-auto">Nhà phố</p>
+                          </div>
+                          <div class="project__item__option row gx-1">
+                            <p class="col-4"><i class="icon-info"></i> 100m2</p>
+                            <p class="col-4 text-center">4 PN - 3WC</p>
+                            <p class="col-4 text-end">Đông Nam</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div><!-- .col-md-3 -->
+                    <div class="col-sm-6 col-lg-4 col-xl-4">
+                      <div class="project__item">
+                        <div class="project__item__thumb">
+                          <a href="bds-ban-chitiet.html" class="dnfix__thumb">
+                            <img src="images/project2-item-11-small.png" alt="">
+                          </a>
+                        </div>
+                        <div class="project__item__meta">
+                          <a href="bds-ban-chitiet.html"><h3 class="project__item__title text__truncate -n2">Bán nhà 3 tầng mặt tiền Lý Tự Trọng khu trung tâm</h3></a>
+                          <div class="project__item__address mb-1">
+                            Hải Châu - Đà Nẵng
+                          </div>
+                          <div class="d-flex mb-2">
+                              <p class="price">Giá: <b>3.45 tỷ</b></p>
+                              <p class="ms-auto">Kiệt ô tô</p>
+                          </div>
+                          <div class="project__item__option row gx-1">
+                            <p class="col-4"><i class="icon-info"></i> 20m2</p>
+                            <p class="col-4 text-center">2 PN - 2WC</p>
+                            <p class="col-4 text-end">Đông Nam</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div><!-- .col-md-3 -->
+                    <div class="col-sm-6 col-lg-4 col-xl-4">
+                      <div class="project__item">
+                        <div class="project__item__thumb">
+                          <a href="bds-ban-chitiet.html" class="dnfix__thumb">
+                            <img src="images/project2-item-12-small.png" alt="">
+                          </a>
+                        </div>
+                        <div class="project__item__meta">
+                          <a href="bds-ban-chitiet.html"><h3 class="project__item__title text__truncate -n2">MT Kỳ Đồng nhà 3 tầng gần chợ kinh doanh sầm uất</h3></a>
+                          <div class="project__item__address mb-1">
+                            Ngũ Hành Sơn - Đà Nẵng
+                          </div>
+                          <div class="d-flex mb-2">
+                              <p class="price">Giá: <b>3.9 tỷ</b></p>
+                              <p class="ms-auto">Nhà phố</p>
+                          </div>
+                          <div class="project__item__option row gx-1">
+                            <p class="col-4"><i class="icon-info"></i> 22m2</p>
+                            <p class="col-4 text-center">4 PN - 3WC</p>
+                            <p class="col-4 text-end">Đông Nam</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div><!-- .col-md-3 -->
+
+                  </div>
+
+
+                  <nav class="navigation paging-navigation" role="navigation">
+                    <div class="pagination loop-pagination">
+                      <a class="next page-numbers" href="#"><span class="icon-arrow-left-long"></span></a>
+                      <span aria-current="page" class="page-numbers current">1</span>
+                      <a class="page-numbers" href="#">2</a>
+                      <a class="page-numbers" href="#">3</a>
+                      <a class="page-numbers" href="#">4</a>
+                      <a class="next page-numbers" href="#"><span class="icon-arrow-right-long"></span></a>
+                    </div><!-- .pagination -->
+                  </nav>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+          <div class=" row">
+              <div class="footer__item col-md-12 col-lg-4 mb-4 mb-lg-0">
+                <div class="footer__logo">
+                  <img src="images/logo.png" alt="">
+                </div>
+                <div class="footer__header -logo">
+                  <h3 class="footer__title">Công ty Cổ phần Đầu tư King Real</h3>
+                </div>
+                <ul class="footer__address">
+                    <li><i class="icon-location"></i>Số 296 Đường 2/9, Q. Hải Châu, TP. Đà Nẵng Số 05 Đỗ Quang, Tam Kỳ</li>
+                    <li class=""><i class="icon-email"></i><a href="mailto:info@kingreal.com" class="footer--email">info@kingreal.com</a></li>
+                </ul>
+
+                <div>
+                  <a href="0905789789" class="btn__cskh"><span class="-text"><i class="icon-cskh"></i>CSKH</span><strong>0905.789.789 - 0909.789.789</strong></a>
+                </div>
+              </div>
+              <div class="col-md-12 col-lg-8">
+                  <div class="row">
+                    <div class="footer__item col-6 col-md-4">
+                      <div class="footer__header">
+                        <h3 class="footer__title">Công ty</h3>
+                      </div>
+                      <ul class="footer__list">
+                        <li><a href="">Tuyển dụng</a></li>
+                        <li><a href="">Quy chế hoạt động</a></li>
+                        <li><a href="">Về King Real</a></li>
+                        <li><a href="">Điều khoản thỏa thuận</a></li>
+                      </ul>
+                    </div>
+                    <div class="footer__item col-6 col-md-4">
+                      <div class="footer__header">
+                        <h3 class="footer__title">Dịch vụ BĐS</h3>
+                      </div>
+                      <ul class="footer__list">
+                        <li><a href="">Mua bán BĐS</a></li>
+                        <li><a href="">Cho thuê BĐS</a></li>
+                        <li><a href="">Định giá BĐS</a></li>
+                        <li><a href="">Thông tin Quy hoạch</a></li>
+                        <li><a href="">Ký gửi BĐS</a></li>
+                      </ul>
+                    </div>
+                    <div class="footer__item col-6 col-md-4">
+                      <div class="footer__header">
+                        <h3 class="footer__title">Kết nối với chúng tôi</h3>
+                      </div>
+                      <ul class="footer__socical">
+                        <li><a href="https://www.facebook.com/kingreal.vn"><i class="icon-facebook"></i> Facebook</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCzC-MlOAcqlvbAUeR4yjL_w/featured"><i class="icon-youtube"></i> Youtube</a></li>
+                        <li><a href="https://rd.zapps.vn/detail/3772327780181913788?id=6834812ec46b2d35747a&pageId=3772327780181913788"><i class="icon-zalo"></i> Zalo</a></li>
+                        <li><a href="https://www.instagram.com/kingreal.vn/"><i class="icon-instagram"></i> Instagram</a></li>
+                      </ul>
+                    </div>
+
+
+                  </div>
+              </div>
+
+          </div>
+      </div>
+    </footer>
+    <div class="footer__copyright">
+      <div class="container text-center">
+        <p>© 2011-2021 Công ty Cổ phần Đầu tư King Real</p>
+      </div>
+    </div>
+
+    <nav id="menu__mobile" class="nav__mobile">
+      <div class="nav__mobile__header d-flex">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo-header.png" alt="Logo">
+          </a>
+        </div>
+        <div class="ms-auto">
+          <!-- <span class="icon-close js-menu__close"></span> -->
+          <div class="menu-mb__btn">
+            <span class="iconz-bar"></span>
+            <span class="iconz-bar"></span>
+            <span class="iconz-bar"></span>
+          </div>
+
+        </div>
+      </div>
+      <div class="nav__mobile__content">
+        <ul class="nav__mobile--ul">
+          <li class="menu-item"><a href="">Về Kingreal</a></li>
+          <li class="menu-item"><a href="bds-duan.html">Dự Án BĐS</a></li>
+          <li class="menu-item active"><a href="bds-ban.html">Dịch vụ bán</a></li>
+          <li class="menu-item"><a href="bds-ban.html">Dịch vụ cho thuê</a></li>
+          <li class="menu-item"><a href="">Tin tức - Sự kiện</a></li>
+          <li class="menu-item"><a href="">Tuyển dụng</a></li>
+          <li class="menu-item"><a href="">Liên hệ</a></li>
+        </ul>
+
+        <div class="footer__item ">
+          <h3 class="">Kết nối với chúng tôi</h3>
+          <ul class="footer__socical">
+            <li><a href="https://www.facebook.com/kingreal.vn">Facebook</a></li>
+            <li><a href="https://www.youtube.com/channel/UCzC-MlOAcqlvbAUeR4yjL_w/featured">Youtube</a></li>
+            <li><a href="https://rd.zapps.vn/detail/3772327780181913788?id=6834812ec46b2d35747a&pageId=3772327780181913788">Zalo</a></li>
+            <li><a href="https://www.instagram.com/kingreal.vn/">Instagram</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="assets/libs/bootstrap/bootstrap.bundle.min.js"></script>
+
+    <script type="text/javascript" src="assets/libs/flickity/flickity.pkgd.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

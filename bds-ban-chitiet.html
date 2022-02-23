@@ -1,0 +1,656 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/favicon.png" />
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="assets/libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/libs/flickity/flickity.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/libs/fancybox-v4/fancybox.css"/>
+    <link href="style.css" rel="stylesheet">
+
+    <title>Kingreal - Đại siêu thị dự án cho mọi nhu cầu bất động sản.</title>
+  </head>
+  <body class="">
+
+    <header class="header">
+      <div class="container">
+        <nav class="navbar navbar-expand">
+          <h1 class="header__logo me-3">
+            <a href="index.html">
+              <img src="images/logo-header.png" alt="Logo">
+            </a>
+          </h1>
+
+          <div class="main__nav ms-auto me-xxl-5 d-none d-lg-block">
+            <ul class="dn__menu">
+              <li class="menu-item"><a href="">Về Kingreal</a></li>
+              <li class="menu-item"><a href="bds-duan.html">Dự Án BĐS</a></li>
+              <li class="menu-item active"><a href="bds-ban.html">Dịch vụ bán</a></li>
+              <li class="menu-item"><a href="bds-ban.html">Dịch vụ cho thuê</a></li>
+              <li class="menu-item"><a href="">Tin tức - Sự kiện</a></li>
+              <li class="menu-item"><a href="">Tuyển dụng</a></li>
+              <li class="menu-item"><a href="">Liên hệ</a></li>
+            </ul>
+          </div>
+          <div class="languages ms-auto">
+            <div class="languages__label">
+              <img src="assets/flag/vi.png" width="36" height="24" alt="">
+            </div>
+            <div class="languages__content">
+              <p class="languages__text">Select language</p>
+              <ul class="">
+                <li class="">
+                  <a href="">
+                  <img src="assets/flag/en.png" width="36" height="24">
+                  <span>English</span>
+                  </a>
+                </li>
+                <li class="active">
+                  <a href="">
+                  <img src="assets/flag/cn.png" width="36" height="24">
+                  <span>Chinese</span>
+                  </a>
+                </li>
+                <li class="active">
+                  <a href="">
+                  <img src="assets/flag/vi.png" width="36" height="24">
+                  <span>Tiếng Việt</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="d-lg-none d-lg-none ms-3">
+            <div class="menu-mb__btn" data-id="menu__mobile">
+              <span class="iconz-bar"></span>
+              <span class="iconz-bar"></span>
+              <span class="iconz-bar"></span>
+            </div>
+          </div>
+
+        </nav>
+      </div>
+    </header>
+    <div class="wrapper">
+
+      <div class="sproduct__gallery">
+        <!-- Flickity HTML init -->
+        <div class="carousel carousel-main flickity-fix" data-flickity='{ "wrapAround": true, "cellAlign": "left", "prevNextButtons": true, "pageDots": false }'>
+          <div class="slider__item__wrap col-12 col-md-4">
+            <div class="el__item">
+              <a href="images/project2-item-04-small.png" class="el__item__thumb" data-fancybox="gallery">
+                <div class="dnfix__thumb">
+                  <img src="images/project2-item-04-small.png" alt="">
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="slider__item__wrap col-12 col-md-4">
+            <div class="el__item">
+              <a href="images/project2-item-04-small.png" class="el__item__thumb" data-fancybox="gallery">
+                <div class="dnfix__thumb">
+                  <img src="images/project2-item-04-small.png" alt="">
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="slider__item__wrap col-12 col-md-4">
+            <div class="el__item">
+              <a href="images/project2-item-04-small.png" class="el__item__thumb" data-fancybox="gallery">
+                <div class="dnfix__thumb">
+                  <img src="images/project2-item-04-small.png" alt="">
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="slider__item__wrap col-12 col-md-4">
+            <div class="el__item">
+              <a href="images/project2-item-04-small.png" class="el__item__thumb" data-fancybox="gallery">
+                <div class="dnfix__thumb">
+                  <img src="images/project2-item-04-small.png" alt="">
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="slider__item__wrap col-12 col-md-4">
+            <div class="el__item">
+              <a href="images/project2-item-04-small.png" class="el__item__thumb" data-fancybox="gallery">
+                <div class="dnfix__thumb">
+                  <img src="images/project2-item-04-small.png" alt="">
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="slider__item__wrap col-12 col-md-4">
+            <div class="el__item">
+              <a href="images/project2-item-04-small.png" class="el__item__thumb" data-fancybox="gallery">
+                <div class="dnfix__thumb">
+                  <img src="images/project2-item-04-small.png" alt="">
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel__footer">
+          <div class="row">
+            <div class="col-md-5">
+              <div class="carousel carousel-nav flickity-fix"
+              data-flickity='{ "asNavFor": ".carousel-main", "contain": true, "pageDots": false, "prevNextButtons": false, "cellAlign": "left" }'>
+              <div class="slider__item__wrap">
+                <div class="el__item">
+                  <div class="el__item__thumb">
+                    <div class="dnfix__thumb">
+                      <img src="images/project2-item-04-small.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__item__wrap">
+                <div class="el__item">
+                  <div class="el__item__thumb">
+                    <div class="dnfix__thumb">
+                      <img src="images/project2-item-04-small.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__item__wrap">
+                <div class="el__item">
+                  <div class="el__item__thumb">
+                    <div class="dnfix__thumb">
+                      <img src="images/project2-item-04-small.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__item__wrap">
+                <div class="el__item">
+                  <div class="el__item__thumb">
+                    <div class="dnfix__thumb">
+                      <img src="images/project2-item-04-small.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__item__wrap">
+                <div class="el__item">
+                  <div class="el__item__thumb">
+                    <div class="dnfix__thumb">
+                      <img src="images/project2-item-04-small.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__item__wrap">
+                <div class="el__item">
+                  <div class="el__item__thumb">
+                    <div class="dnfix__thumb">
+                      <img src="images/project2-item-04-small.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="col-md-7 pt-1">
+              <div class="carousel__map d-flex align-items-center">
+                <p class="carousel__map__control ms-auto" data-toggle="tooltip" data-placement="top" id="btnviewearth" title="Bản đồ vệ tinh" data-original-title="" data-bs-toggle="modal" data-bs-target="#viewearthModal">
+                  <i class="icon-global-americas mb-2"></i>
+                  Vệ tinh
+                </p>
+                <p class="carousel__map__control -map" data-toggle="tooltip" data-placement="top" id="btnviewmap" title="Bản đồ giao thông" data-original-title="" data-bs-toggle="modal" data-bs-target="#viewmapModal">
+                  <i class="icon-map mb-2"></i>
+                  Giao thông
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="wrap__page">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-9">
+              <div class="sc__breadcrumb">
+                <span><a  href="" class="home"><span>Trang chủ</span></a> / <span>
+                <span><span  class="current-item">BDS Bán</span></span>
+              </div>
+
+              <div class="sproject-info d-md-flex justify-content-between">
+                <div class="sproject-info__left">
+                  <header class="page__header mb-3">
+                    <h1 class="page-title">Hơn 1 tỷ/100m2 đất dự án (100% là đất thổ cư sổ đỏ, pháp lý rõ ràng)đất nội đô Đồng Doi</h1>
+                  </header>
+                  <p class="d-flex align-items-center mb-3"><i class="icon-i-location me-2"></i> Quận Tân Bình, Thành phố Hồ Chí Minh <a href="" class="btn-view-map ms-3" data-bs-toggle="modal" data-bs-target="#viewmapModal">Xem trên bản đồ</a></p>
+                  <ul class="sproject-info__options d-flex justify-content-between text-secondary">
+                    <li><i class="icon-pn me-2"></i>---</li>
+                    <li><i class="icon-wc me-2"></i>---</li>
+                    <li><i class="icon-area me-2"></i>260 m²</li>
+                    <li><i class="icon-huong me-2"></i>Bắc</li>
+                    <li><i class="icon-calande me-2r"></i>Năm xây dựng: ---</li>
+                  </ul>
+                </div>
+
+                <div class="sproject-info__right">
+                  <div class="sproject__price">
+                    <p class="sproject__total-price">18 triệu<span>/tháng</span></p>
+                    <p class="sproject__price__sub text-secondary">
+                        <span class="me-4">300,000 đ/m²</span>
+                        <span>60 m²</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <h4 class="sproduct__header__title">THÔNG TIN MÔ TẢ</h4>
+              <div class="sproject__content entry-content mb-5">
+                <p>Căn hộ mới 100%, chưa từng cho thuê.</p>
+                <p>Nội thất cơ bản (máy lạnh toshiba inverter, bếp từ Bosch, máy hút mùi Nhật, lót sàn gỗ xịn, toilet,...), mới 100%.</p>
+                <p>Cách các quận trung tâm 15 phút đi xe.</p>
+                <p>Gần bệnh viện Đại học Y Dược Tp.HCM.</p>
+                <p>Gần chợ, đầy đủ các cửa hàng tiện lợi (Vinmart, Ministop), ngân hàng, ATM. - Không gian yên tĩnh, không bị ồn bởi xe cộ hay quán xá.</p>
+                <p>Chính chủ cho thuê, thuê dài hạn sẽ có ưu đãi.</p>
+              </div>
+
+              <div class="sproduct__user d-flex align-items-center border rounded-3 p-3">
+                <div class="sproduct__user__left flex-grow-1 d-flex">
+                    <div class="el__avatar">
+                        <a href="javascript:void(0)">
+                            <div class="el__avatar--name" style="background-color: rgb(0, 170, 85);">t</div>
+                        </a>
+                    </div>
+                    <div class="right">
+                        <div class="right-head">
+                            <a href="javascript:void(0)">
+                                <p class="el__avatar--fullname">Trần Nhật Thanh</p>
+                            </a>
+                        </div>
+                        <small class="text d-block text-secondary">Đối tác</small>
+                    </div>
+                </div>
+                <div class="sproduct__user__right">
+                    <a href="javascript:void(0)" class="btn el__phone js-sproduct-phone" data-phone="0772011232" data-hidden="077201xxxx">077201xxxx</a>
+                </div>
+              </div>
+
+              <h4 class="sproduct__header__title">Vị trí</h4>
+              <div class="sproduct__properties mb-3">
+                <ul class="row">
+                  <li class="col-md-4 d-flex"><label>Địa chỉ:</label><span>1472 Võ Văn Kiệt</span></li>
+                  <li class="col-md-4 d-flex"><label>Phường/Xã:</label><span> 03</span></li>
+                  <li class="col-md-4 d-flex"><label>Quận/Huyện:</label><span> 6</span></li>
+                  <li class="col-md-4 d-flex"><label>Tỉnh/Thành phố:</label><span> Hồ Chí Minh</span></li>
+                  <li class="col-md-4 d-flex"><label>Quốc gia:</label><span>Việt Nam</span></li>
+                </ul>
+              </div>
+
+              <div class="sproduct__gmap">
+                <img src="images/single-gmap.PNG" alt="">
+              </div>
+
+              <h4 class="sproduct__header__title">ĐẶC ĐIỂM</h4>
+              <div class="sproduct__properties">
+                <ul class="row">
+                    <div class="col-6">
+                      <ul>
+                        <li><label>Loại hình:</label><span>Nhà mặt tiền</span><li>
+                        <li><label>Diện tích:</label><span>35 m² </span><li>
+                        <li><label>Số tầng:</label><span>3 tầng</span><li>
+                        <li><label>Hướng nhà:</label><span>Nam</span><li>
+                        <li><label>Số phòng ngủ:</label><span>---</span><li>
+                        <li><label>Số phòng tắm:</label><span>---</span><li>
+                      </ul>
+                    </div>
+                    <div class="col-6">
+                        <li><label>Năm xây dựng:</label><span>---</span><li>
+                        <li><label>Loại công trình:</label><span>Nhà tầng</span><li>
+                        <li><label>Nội thất:</label><span>Nội thất cơ bản</span><li>
+                        <li><label>Pháp lý:</label><span>Sổ đỏ lâu dài</span><li>
+                    </div>
+                  </ul>
+              </div>
+
+              <h4 class="sproduct__header__title">BĐS Liên quan</h4>
+              <div class="sproduct__related">
+                <div class="row row--scroll">
+                  <div class="col-sm-6 col-lg-4 col-xl-4">
+                    <div class="project__item">
+                      <div class="project__item__thumb">
+                        <a href="bds-ban-chitiet.html" class="dnfix__thumb">
+                          <img src="images/project2-item-02-small.png" alt="">
+                        </a>
+                      </div>
+                      <div class="project__item__meta">
+                        <a href="bds-ban-chitiet.html"><h3 class="project__item__title text__truncate -n2">Bán nhà MT Điện Biên Phủ, khu kinh doanh sầm uất</h3></a>
+                        <div class="project__item__address mb-1">
+                          Thanh Khê - Đà Nẵng
+                        </div>
+                        <div class="d-flex mb-2">
+                            <p class="price">Giá: <b>8 tỷ</b></p>
+                            <p class="ms-auto">Nhà phố</p>
+                        </div>
+                        <div class="project__item__option row gx-1">
+                          <p class="col-4"><i class="icon-info"></i> 100m2</p>
+                          <p class="col-4 text-center">4 PN - 3WC</p>
+                          <p class="col-4 text-end">Đông Nam</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- .col-md-3 -->
+                  <div class="col-sm-6 col-lg-4 col-xl-4">
+                    <div class="project__item">
+                      <div class="project__item__thumb">
+                        <a href="bds-ban-chitiet.html" class="dnfix__thumb">
+                          <img src="images/project2-item-02-small.png" alt="">
+                        </a>
+                      </div>
+                      <div class="project__item__meta">
+                        <a href="bds-ban-chitiet.html"><h3 class="project__item__title text__truncate -n2">Bán nhà MT Điện Biên Phủ, khu kinh doanh sầm uất</h3></a>
+                        <div class="project__item__address mb-1">
+                          Thanh Khê - Đà Nẵng
+                        </div>
+                        <div class="d-flex mb-2">
+                            <p class="price">Giá: <b>8 tỷ</b></p>
+                            <p class="ms-auto">Nhà phố</p>
+                        </div>
+                        <div class="project__item__option row gx-1">
+                          <p class="col-4"><i class="icon-info"></i> 100m2</p>
+                          <p class="col-4 text-center">4 PN - 3WC</p>
+                          <p class="col-4 text-end">Đông Nam</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- .col-md-3 -->
+                  <div class="col-sm-6 col-lg-4 col-xl-4">
+                    <div class="project__item">
+                      <div class="project__item__thumb">
+                        <a href="bds-ban-chitiet.html" class="dnfix__thumb">
+                          <img src="images/project2-item-02-small.png" alt="">
+                        </a>
+                      </div>
+                      <div class="project__item__meta">
+                        <a href="bds-ban-chitiet.html"><h3 class="project__item__title text__truncate -n2">Bán nhà MT Điện Biên Phủ, khu kinh doanh sầm uất</h3></a>
+                        <div class="project__item__address mb-1">
+                          Thanh Khê - Đà Nẵng
+                        </div>
+                        <div class="d-flex mb-2">
+                            <p class="price">Giá: <b>8 tỷ</b></p>
+                            <p class="ms-auto">Nhà phố</p>
+                        </div>
+                        <div class="project__item__option row gx-1">
+                          <p class="col-4"><i class="icon-info"></i> 100m2</p>
+                          <p class="col-4 text-center">4 PN - 3WC</p>
+                          <p class="col-4 text-end">Đông Nam</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- .col-md-3 -->
+                  <div class="col-sm-6 col-lg-4 col-xl-4">
+                    <div class="project__item">
+                      <div class="project__item__thumb">
+                        <a href="bds-ban-chitiet.html" class="dnfix__thumb">
+                          <img src="images/project2-item-02-small.png" alt="">
+                        </a>
+                      </div>
+                      <div class="project__item__meta">
+                        <a href="bds-ban-chitiet.html"><h3 class="project__item__title text__truncate -n2">Bán nhà MT Điện Biên Phủ, khu kinh doanh sầm uất</h3></a>
+                        <div class="project__item__address mb-1">
+                          Thanh Khê - Đà Nẵng
+                        </div>
+                        <div class="d-flex mb-2">
+                            <p class="price">Giá: <b>8 tỷ</b></p>
+                            <p class="ms-auto">Nhà phố</p>
+                        </div>
+                        <div class="project__item__option row gx-1">
+                          <p class="col-4"><i class="icon-info"></i> 100m2</p>
+                          <p class="col-4 text-center">4 PN - 3WC</p>
+                          <p class="col-4 text-end">Đông Nam</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- .col-md-3 -->
+                  <div class="col-sm-6 col-lg-4 col-xl-4">
+                    <div class="project__item">
+                      <div class="project__item__thumb">
+                        <a href="bds-ban-chitiet.html" class="dnfix__thumb">
+                          <img src="images/project2-item-02-small.png" alt="">
+                        </a>
+                      </div>
+                      <div class="project__item__meta">
+                        <a href="bds-ban-chitiet.html"><h3 class="project__item__title text__truncate -n2">Bán nhà MT Điện Biên Phủ, khu kinh doanh sầm uất</h3></a>
+                        <div class="project__item__address mb-1">
+                          Thanh Khê - Đà Nẵng
+                        </div>
+                        <div class="d-flex mb-2">
+                            <p class="price">Giá: <b>8 tỷ</b></p>
+                            <p class="ms-auto">Nhà phố</p>
+                        </div>
+                        <div class="project__item__option row gx-1">
+                          <p class="col-4"><i class="icon-info"></i> 100m2</p>
+                          <p class="col-4 text-center">4 PN - 3WC</p>
+                          <p class="col-4 text-end">Đông Nam</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- .col-md-3 -->
+                  <div class="col-sm-6 col-lg-4 col-xl-4">
+                    <div class="project__item">
+                      <div class="project__item__thumb">
+                        <a href="bds-ban-chitiet.html" class="dnfix__thumb">
+                          <img src="images/project2-item-02-small.png" alt="">
+                        </a>
+                      </div>
+                      <div class="project__item__meta">
+                        <a href="bds-ban-chitiet.html"><h3 class="project__item__title text__truncate -n2">Bán nhà MT Điện Biên Phủ, khu kinh doanh sầm uất</h3></a>
+                        <div class="project__item__address mb-1">
+                          Thanh Khê - Đà Nẵng
+                        </div>
+                        <div class="d-flex mb-2">
+                            <p class="price">Giá: <b>8 tỷ</b></p>
+                            <p class="ms-auto">Nhà phố</p>
+                        </div>
+                        <div class="project__item__option row gx-1">
+                          <p class="col-4"><i class="icon-info"></i> 100m2</p>
+                          <p class="col-4 text-center">4 PN - 3WC</p>
+                          <p class="col-4 text-end">Đông Nam</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- .col-md-3 -->
+                </div>
+              </div>
+              
+
+
+            </div>
+            <div class="col-lg-3">
+              <div class="sproduct-sidebar">
+                <div class="sproduct__widget mb-4">
+                  <div class="sidebar__inner border rounded p-4">
+                    <h3 class="widget__title">Cho thuê Nhà mặt tiền tại Quận 11</h3>
+                    <div class="list-link">
+                        <a href="/thue-nha/nha-mat-tien-phuong-05-quan-11-ho-chi-minh" class="d-flex justify-content-between">Phường 05<span class="count">9</span></a>
+                        <a href="/thue-nha/nha-mat-tien-phuong-15-quan-11-ho-chi-minh" class="d-flex justify-content-between">Phường 15<span class="count">4</span></a>
+                        <a href="/thue-nha/nha-mat-tien-phuong-11-quan-11-ho-chi-minh" class="d-flex justify-content-between">Phường 11<span class="count">4</span></a>
+                        <a href="/thue-nha/nha-mat-tien-phuong-10-quan-11-ho-chi-minh" class="d-flex justify-content-between">Phường 10<span class="count">4</span></a>
+                        <a href="/thue-nha/nha-mat-tien-phuong-09-quan-11-ho-chi-minh" class="d-flex justify-content-between">Phường 09<span class="count">4</span></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="sproduct__widget">
+                  <div class="sidebar__inner border rounded p-4">
+                    <h3 class="widget__title">Cho thuê Nhà mặt tiền tại Quận 11</h3>
+                    <div class="list-link">
+                        <a href="/thue-nha/nha-mat-tien-phuong-05-quan-11-ho-chi-minh" class="d-flex justify-content-between">Phường 05<span class="count">9</span></a>
+                        <a href="/thue-nha/nha-mat-tien-phuong-15-quan-11-ho-chi-minh" class="d-flex justify-content-between">Phường 15<span class="count">4</span></a>
+                        <a href="/thue-nha/nha-mat-tien-phuong-11-quan-11-ho-chi-minh" class="d-flex justify-content-between">Phường 11<span class="count">4</span></a>
+                        <a href="/thue-nha/nha-mat-tien-phuong-10-quan-11-ho-chi-minh" class="d-flex justify-content-between">Phường 10<span class="count">4</span></a>
+                        <a href="/thue-nha/nha-mat-tien-phuong-09-quan-11-ho-chi-minh" class="d-flex justify-content-between">Phường 09<span class="count">4</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="container">
+            <div class=" row">
+                <div class="footer__item col-md-12 col-lg-4 mb-4 mb-lg-0">
+                  <div class="footer__logo">
+                    <img src="images/logo.png" alt="">
+                  </div>
+                  <div class="footer__header -logo">
+                    <h3 class="footer__title">Công ty Cổ phần Đầu tư King Real</h3>
+                  </div>
+                  <ul class="footer__address">
+                      <li><i class="icon-i-location"></i>Số 296 Đường 2/9, Q. Hải Châu, TP. Đà Nẵng Số 05 Đỗ Quang, Tam Kỳ</li>
+                      <li class=""><i class="icon-email"></i><a href="mailto:info@kingreal.com" class="footer--email">info@kingreal.com</a></li>
+                  </ul>
+  
+                  <div>
+                    <a href="0905789789" class="btn__cskh"><span class="-text"><i class="icon-cskh"></i>CSKH</span><strong>0905.789.789 - 0909.789.789</strong></a>
+                  </div>
+                </div>
+                <div class="col-md-12 col-lg-8">
+                    <div class="row">
+                      <div class="footer__item col-6 col-md-4">
+                        <div class="footer__header">
+                          <h3 class="footer__title">Công ty</h3>
+                        </div>
+                        <ul class="footer__list">
+                          <li><a href="">Tuyển dụng</a></li>
+                          <li><a href="">Quy chế hoạt động</a></li>
+                          <li><a href="">Về King Real</a></li>
+                          <li><a href="">Điều khoản thỏa thuận</a></li>
+                        </ul>
+                      </div>
+                      <div class="footer__item col-6 col-md-4">
+                        <div class="footer__header">
+                          <h3 class="footer__title">Dịch vụ BĐS</h3>
+                        </div>
+                        <ul class="footer__list">
+                          <li><a href="">Mua bán BĐS</a></li>
+                          <li><a href="">Cho thuê BĐS</a></li>
+                          <li><a href="">Định giá BĐS</a></li>
+                          <li><a href="">Thông tin Quy hoạch</a></li>
+                          <li><a href="">Ký gửi BĐS</a></li>
+                        </ul>
+                      </div>
+                      <div class="footer__item col-6 col-md-4">
+                        <div class="footer__header">
+                          <h3 class="footer__title">Kết nối với chúng tôi</h3>
+                        </div>
+                        <ul class="footer__socical">
+                          <li><a href="https://www.facebook.com/kingreal.vn"><i class="icon-facebook"></i> Facebook</a></li>
+                          <li><a href="https://www.youtube.com/channel/UCzC-MlOAcqlvbAUeR4yjL_w/featured"><i class="icon-youtube"></i> Youtube</a></li>
+                          <li><a href="https://rd.zapps.vn/detail/3772327780181913788?id=6834812ec46b2d35747a&pageId=3772327780181913788"><i class="icon-zalo"></i> Zalo</a></li>
+                          <li><a href="https://www.instagram.com/kingreal.vn/"><i class="icon-instagram"></i> Instagram</a></li>
+                        </ul>
+                      </div>
+  
+  
+                    </div>
+                </div>
+  
+            </div>
+        </div>
+      </footer>
+      <div class="footer__copyright">
+        <div class="container text-center">
+          <p>© 2011-2021 Công ty Cổ phần Đầu tư King Real</p>
+        </div>
+      </div>
+   </div>  <!-- .wrapper -->
+
+    <nav id="menu__mobile" class="nav__mobile">
+      <div class="nav__mobile__header d-flex">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo-header.png" alt="Logo">
+          </a>
+        </div>
+        <div class="ms-auto">
+          <!-- <span class="icon-close js-menu__close"></span> -->
+          <div class="menu-mb__btn">
+            <span class="iconz-bar"></span>
+            <span class="iconz-bar"></span>
+            <span class="iconz-bar"></span>
+          </div>
+
+        </div>
+      </div>
+      <div class="nav__mobile__content">
+        <ul class="nav__mobile--ul">
+          <li class="menu-item"><a href="">Về Kingreal</a></li>
+          <li class="menu-item"><a href="bds-duan.html">Dự Án BĐS</a></li>
+          <li class="menu-item active"><a href="bds-ban.html">Dịch vụ bán</a></li>
+          <li class="menu-item"><a href="bds-ban.html">Dịch vụ cho thuê</a></li>
+          <li class="menu-item"><a href="">Tin tức - Sự kiện</a></li>
+          <li class="menu-item"><a href="">Tuyển dụng</a></li>
+          <li class="menu-item"><a href="">Liên hệ</a></li>
+        </ul>
+
+        <div class="footer__item ">
+          <h3 class="">Kết nối với chúng tôi</h3>
+          <ul class="footer__socical">
+            <li><a href="https://www.facebook.com/kingreal.vn">Facebook</a></li>
+            <li><a href="https://www.youtube.com/channel/UCzC-MlOAcqlvbAUeR4yjL_w/featured">Youtube</a></li>
+            <li><a href="https://rd.zapps.vn/detail/3772327780181913788?id=6834812ec46b2d35747a&pageId=3772327780181913788">Zalo</a></li>
+            <li><a href="https://www.instagram.com/kingreal.vn/">Instagram</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="viewearthModal" tabindex="-1" aria-labelledby="viewearthModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Google map
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="viewmapModal" tabindex="-1" aria-labelledby="viewmapModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Google map
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="assets/libs/bootstrap/bootstrap.bundle.min.js"></script>
+
+    <script type="text/javascript" src="assets/libs/flickity/flickity.pkgd.min.js"></script>
+    <script type="text/javascript" src="assets/libs/fancybox-v4/fancybox.umd.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

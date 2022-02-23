@@ -1,32 +1,15 @@
 $(document).ready(function(){
 	// Stick header
-    if ( $('body.home .header').offset().top >= 10 ) $('body.home .header').addClass("is-sticky");
-    $(window).scroll(function(){
-        $(this).scrollTop()>10?$('body.home .header').addClass("is-sticky"):$('body.home .header').removeClass("is-sticky")
-    })
+    // if ( $('body.home .header').offset().top >= 10 ) $('body.home .header').addClass("is-sticky");
+    // $(window).scroll(function(){
+    //     $(this).scrollTop()>10?$('body.home .header').addClass("is-sticky"):$('body.home .header').removeClass("is-sticky")
+    // })
 
     /*----Languages---*/
     $('.languages__label').click(function() {
         $(this).closest('.languages').toggleClass('is-active');
         $(this).next().toggleClass('dropdown-languages');
         isClicked = true;
-    });
-
-    //-------------------------------------------------
-    // Header Search
-    //-------------------------------------------------
-    var $headerSearchToggle = $('.header__search--toggle');
-    var $headerSearchForm = $('.header__search__form');
-
-    $headerSearchToggle.on('click', function() {
-        var $this = $(this);
-        if(!$this.hasClass('open-search')) {
-            // $this.addClass('open-search').find('i').removeClass('fa-search').addClass('fa-times');
-            $headerSearchForm.slideDown();
-        } else {
-            // $this.removeClass('open-search').find('i').removeClass('fa-times').addClass('fa-search');
-            $headerSearchForm.slideUp();
-        }
     });
 
     //-------------------------------------------------
@@ -143,6 +126,21 @@ $(document).ready(function(){
     }
     dnselect('.js-dnselect__label')
 
+    /*Wiget*/
 
+    $('.js-widget--collapse').on("click",function(e) {
+        e.preventDefault()
+
+        let parent = $(this).closest('.widget--collapse')
+        if(parent.hasClass('active')){
+            parent.removeClass('active')
+            $(this).text( $(this).data('text') )
+        }else{
+            parent.addClass('active')
+            $(this).text( $(this).data('text2') )
+        }
+    })
+    /*Product*/
+    $('[data-toggle="tooltip"]').tooltip()
 
 });
