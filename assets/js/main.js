@@ -143,4 +143,17 @@ $(document).ready(function(){
     /*Product*/
     $('[data-toggle="tooltip"]').tooltip()
 
+    if( $('div').is('.carousel-main')){
+        var flkty = new Flickity('.carousel-main');
+        var carouselStatus = document.querySelector('.carousel-status');
+
+        function updateStatus() {
+        var slideNumber = flkty.selectedIndex + 1;
+        carouselStatus.textContent = slideNumber + '/' + flkty.slides.length;
+        }
+        updateStatus();
+
+        flkty.on( 'select', updateStatus );
+    }
+
 });
