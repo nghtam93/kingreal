@@ -23,7 +23,7 @@ h3,.h3{font-size:18px;margin-bottom:6px;}
 h4,.h4{font-size:16px;margin-bottom:6px;}
 h5,.h5,h6,.h6{font-size:14px;line-height:18px;margin-bottom:5px;}
 h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6{line-height:normal;}
-a{text-decoration:none;-webkit-transition-duration:0.4s;-o-transition-duration:0.4s;transition-duration:0.4s;}
+a{text-decoration:none;}
 a:hover{text-decoration:none;}
 iframe{max-width:100%;}
 img{max-width:100%;height:auto;}
