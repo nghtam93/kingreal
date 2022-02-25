@@ -32,9 +32,9 @@
               <li class="menu-item"><a href="bds-duan.html">Dự Án BĐS</a></li>
               <li class="menu-item active"><a href="bds-ban.html">Dịch vụ bán</a></li>
               <li class="menu-item"><a href="bds-ban.html">Dịch vụ cho thuê</a></li>
-              <li class="menu-item"><a href="">Tin tức - Sự kiện</a></li>
-              <li class="menu-item"><a href="">Tuyển dụng</a></li>
-              <li class="menu-item"><a href="">Liên hệ</a></li>
+              <li class="menu-item"><a href="tintuc.html">Tin tức - Sự kiện</a></li>
+              <li class="menu-item"><a href="tuyendung.html">Tuyển dụng</a></li>
+              <!-- <li class="menu-item"><a href="">Liên hệ</a></li> -->
             </ul>
           </div>
           <div class="languages ms-auto">
@@ -78,6 +78,20 @@
       </div>
     </header>
     <div class="wrapper">
+      <section class="tab-info-container" id="tab_info">
+            <div class="container">
+                <nav class="header-content">
+                    <div class="nav-tabs">
+                        <div class="nav-tabs">
+                            <!-- <a class="nav-item toogle-nav" href="#tab_gallery">Ảnh</a> -->
+                            <a class="nav-item toogle-nav" href="#tab_description">Tổng quan</a>
+                            <a class="nav-item toogle-nav" href="#tab_position">Vị trí</a>
+                            <a class="nav-item toogle-nav active" href="#tab_feature">Đặc điểm bất động sản</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+      </section>
 
       <div class="sproduct__gallery">
         <!-- Flickity HTML init -->
@@ -211,7 +225,7 @@
                 <span><span  class="current-item">BDS Bán</span></span>
               </div>
 
-              <div class="sproject-info d-flex flex-wrap flex-xl-nowrap justify-content-between">
+              <div id="tab_overview" class="sproject-info d-flex flex-wrap flex-xl-nowrap justify-content-between">
                 <div class="sproject-info__right order-xl-2">
                   <div class="sproject__price">
                     <p class="sproject__total-price">18 triệu<span>/tháng</span> <span class="d-xl-none">- 60 m²</span></p>
@@ -237,14 +251,16 @@
                 </div>
               </div>
 
-              <h4 class="sproduct__header__title">THÔNG TIN MÔ TẢ</h4>
-              <div class="sproject__content entry-content mb-5">
-                <p>Căn hộ mới 100%, chưa từng cho thuê.</p>
-                <p>Nội thất cơ bản (máy lạnh toshiba inverter, bếp từ Bosch, máy hút mùi Nhật, lót sàn gỗ xịn, toilet,...), mới 100%.</p>
-                <p>Cách các quận trung tâm 15 phút đi xe.</p>
-                <p>Gần bệnh viện Đại học Y Dược Tp.HCM.</p>
-                <p>Gần chợ, đầy đủ các cửa hàng tiện lợi (Vinmart, Ministop), ngân hàng, ATM. - Không gian yên tĩnh, không bị ồn bởi xe cộ hay quán xá.</p>
-                <p>Chính chủ cho thuê, thuê dài hạn sẽ có ưu đãi.</p>
+              <div id="tab_description">
+                <h4 class="sproduct__header__title">THÔNG TIN MÔ TẢ</h4>
+                <div class="sproject__content entry-content mb-5">
+                  <p>Căn hộ mới 100%, chưa từng cho thuê.</p>
+                  <p>Nội thất cơ bản (máy lạnh toshiba inverter, bếp từ Bosch, máy hút mùi Nhật, lót sàn gỗ xịn, toilet,...), mới 100%.</p>
+                  <p>Cách các quận trung tâm 15 phút đi xe.</p>
+                  <p>Gần bệnh viện Đại học Y Dược Tp.HCM.</p>
+                  <p>Gần chợ, đầy đủ các cửa hàng tiện lợi (Vinmart, Ministop), ngân hàng, ATM. - Không gian yên tĩnh, không bị ồn bởi xe cộ hay quán xá.</p>
+                  <p>Chính chủ cho thuê, thuê dài hạn sẽ có ưu đãi.</p>
+                </div>
               </div>
 
               <div class="sproduct__user d-flex flex-wrap flex-md-nowrap align-items-center border rounded-3 p-3">
@@ -264,19 +280,21 @@
                     </div>
                 </div>
                 <div class="sproduct__user__right">
-                    <a href="javascript:void(0)" class="btn el__phone js-sproduct-phone" data-phone="0772011232" data-hidden="077201xxxx">077201xxxx</a>
+                    <a href="tel:077201xxxx" class="btn el__phone js-sproduct-phone" data-phone="0772011232" data-hidden="077201xxxx">077201xxxx</a>
                 </div>
               </div>
 
-              <h4 class="sproduct__header__title">Vị trí</h4>
-              <div class="sproduct__properties mb-3">
-                <ul class="row">
-                  <li class="col-md-6 col-lg-4 d-flex"><label>Địa chỉ:</label><span>1472 Võ Văn Kiệt</span></li>
-                  <li class="col-md-6 col-lg-4 d-flex"><label>Phường/Xã:</label><span> 03</span></li>
-                  <li class="col-md-6 col-lg-4 d-flex"><label>Quận/Huyện:</label><span> 6</span></li>
-                  <li class="col-md-6 col-lg-4 d-flex"><label>Tỉnh/Thành phố:</label><span> Hồ Chí Minh</span></li>
-                  <li class="col-md-6 col-lg-4 d-flex"><label>Quốc gia:</label><span>Việt Nam</span></li>
-                </ul>
+              <div id="tab_position">
+                <h4 class="sproduct__header__title">Vị trí</h4>
+                <div class="sproduct__properties mb-3">
+                  <ul class="row">
+                    <li class="col-md-6 col-lg-4 d-flex"><label>Địa chỉ:</label><span>1472 Võ Văn Kiệt</span></li>
+                    <li class="col-md-6 col-lg-4 d-flex"><label>Phường/Xã:</label><span> 03</span></li>
+                    <li class="col-md-6 col-lg-4 d-flex"><label>Quận/Huyện:</label><span> 6</span></li>
+                    <li class="col-md-6 col-lg-4 d-flex"><label>Tỉnh/Thành phố:</label><span> Hồ Chí Minh</span></li>
+                    <li class="col-md-6 col-lg-4 d-flex"><label>Quốc gia:</label><span>Việt Nam</span></li>
+                  </ul>
+                </div>
               </div>
 
 
@@ -286,26 +304,28 @@
                 </div>
               </div>
 
-              <h4 class="sproduct__header__title">ĐẶC ĐIỂM</h4>
-              <div class="sproduct__properties">
-                <ul class="row">
-                    <div class="col-md-6">
-                      <ul>
-                        <li><label>Loại hình:</label><span>Nhà mặt tiền</span><li>
-                        <li><label>Diện tích:</label><span>35 m² </span><li>
-                        <li><label>Số tầng:</label><span>3 tầng</span><li>
-                        <li><label>Hướng nhà:</label><span>Nam</span><li>
-                        <li><label>Số phòng ngủ:</label><span>---</span><li>
-                        <li><label>Số phòng tắm:</label><span>---</span><li>
-                      </ul>
-                    </div>
-                    <div class="col-md-6">
-                        <li><label>Năm xây dựng:</label><span>---</span><li>
-                        <li><label>Loại công trình:</label><span>Nhà tầng</span><li>
-                        <li><label>Nội thất:</label><span>Nội thất cơ bản</span><li>
-                        <li><label>Pháp lý:</label><span>Sổ đỏ lâu dài</span><li>
-                    </div>
-                  </ul>
+              <div id="tab_feature">
+                <h4 class="sproduct__header__title">ĐẶC ĐIỂM</h4>
+                <div class="sproduct__properties">
+                  <ul class="row">
+                      <div class="col-md-6">
+                        <ul>
+                          <li><label>Loại hình:</label><span>Nhà mặt tiền</span><li>
+                          <li><label>Diện tích:</label><span>35 m² </span><li>
+                          <li><label>Số tầng:</label><span>3 tầng</span><li>
+                          <li><label>Hướng nhà:</label><span>Nam</span><li>
+                          <li><label>Số phòng ngủ:</label><span>---</span><li>
+                          <li><label>Số phòng tắm:</label><span>---</span><li>
+                        </ul>
+                      </div>
+                      <div class="col-md-6">
+                          <li><label>Năm xây dựng:</label><span>---</span><li>
+                          <li><label>Loại công trình:</label><span>Nhà tầng</span><li>
+                          <li><label>Nội thất:</label><span>Nội thất cơ bản</span><li>
+                          <li><label>Pháp lý:</label><span>Sổ đỏ lâu dài</span><li>
+                      </div>
+                    </ul>
+                </div>
               </div>
 
               <h4 class="sproduct__header__title">BĐS Liên quan</h4>

@@ -156,4 +156,110 @@ $(document).ready(function(){
         flkty.on( 'select', updateStatus );
     }
 
+    if($('section').is("#tab_info")){
+        (function () {
+            const getTabList = () => {
+                let tabList = ['#tab-information']
+                // if ($('#tab_agency').length > 0) tabList.push('#tab_agency')
+                // if ($('#tab_board').length > 0 && $('#tab_board').hasClass('active')){
+                //     tabList.push('#tab_board')
+                // }else{
+                //     $('[href="#tab_board"]').css('display', 'none')
+                // }
+                // if ($('#tab_link_article').length > 0 && $('#tab_link_article').hasClass('active')){
+                //     tabList.push('#tab_link_article')
+                // }else{
+                //     $('[href="#tab_link_article"]').css('display', 'none')
+                // }
+
+                if ($('#tab_description').length > 0) tabList.push('#tab_description')
+                if ($('#tab_design').length > 0) tabList.push('#tab_design')
+                if ($('#tab_extension').length > 0) tabList.push('#tab_extension')
+                if ($('#tab_map_extension').length > 0) tabList.push('#tab_map_extension')
+                if ($('#tab_galleryall').length > 0) tabList.push('#tab_galleryall')
+
+
+
+                if ($('#tab_position').length > 0) tabList.push('#tab_position')
+                if ($('#tab_feature').length > 0) tabList.push('#tab_feature')
+
+
+                return tabList
+            }
+            const configScrollTab = getTabList()
+            const buffOffset = 80;
+            const initScrollPage = (windowOffset, tabOffset) => {
+                const $tab_info = $('#tab_info');
+                if (windowOffset >= tabOffset) {
+                    if ($tab_info.hasClass('show') == false) {
+                        $tab_info.addClass('show');
+                        $('.mark-tab-info').addClass('active');
+                    }
+                } else {
+                    if ($tab_info.hasClass('show') == true) {
+                        $tab_info.removeClass('show');
+                        $('.mark-tab-info').removeClass('active');
+                    }
+                }
+
+                for (let i = 0; i < configScrollTab.length; i++) {
+                    if (i == configScrollTab.length - 1) {
+                        if (windowOffset >= $(configScrollTab[i]).offset().top - buffOffset) {
+                            const $btnElm = $('.toogle-nav[href="' + configScrollTab[i] + '"]');
+                            if ($btnElm.hasClass('active') === false) {
+                                $('.toogle-nav').removeClass('active');
+                                $btnElm.addClass('active');
+                            }
+                        }
+                        continue;
+                    }
+                    if (i == 0) {
+                        continue;
+                    }
+                    if (windowOffset >= $(configScrollTab[i]).offset().top - buffOffset && windowOffset < $(configScrollTab[i + 1]).offset().top - buffOffset) {
+                       console.log(configScrollTab[i])
+                        const $btnElm = $('.toogle-nav[href="' + configScrollTab[i] + '"]');
+                        if ($btnElm.hasClass('active') === false) {
+                            $('.toogle-nav').removeClass('active');
+                            $btnElm.addClass('active');
+                        }
+                    }
+                }
+            };
+
+            const navTabInit = () => {
+                $('.toogle-nav').click(function (e) {
+                    e.preventDefault();
+                    const $btn = $(this);
+                    const elm = $btn.attr('href');
+                    if ($(elm).length > 0) {
+                        let offset = $(elm).offset().top - buffOffset;
+                        let time = Math.abs(offset - $(window).scrollTop()) / 2;//1ms ~ 2px
+                        $([document.documentElement, document.body]).animate({
+                            scrollTop: offset
+                        }, time);
+                    }
+                    return false;
+                });
+
+                if( $('#tab-information').length > 0 ){
+                    tabOffset = $('#tab-information').offset().top
+                }else{
+                    tabOffset = $('#tab_overview').offset().top
+                }
+
+                $(window).scroll(function () {
+                    let windowOffset = $(window).scrollTop();
+                    initScrollPage(windowOffset + 15, tabOffset);
+                });
+                initScrollPage($(window).scrollTop() + 15, tabOffset);
+            };
+            $(document).ready(function () {
+
+               navTabInit();
+
+            });
+        }());
+    }
+
 });
